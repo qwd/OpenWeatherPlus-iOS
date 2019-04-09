@@ -2,7 +2,7 @@
 
 > 中文介绍请往下翻，使用文档请参考[这里](https://github.com/heweather/OpenWeatherPlus-iOS/wiki/使用文档)
 
-**OpenWeatherPlus** is an open source weather APP that allows developers to quickly publish and integrate weather services.
+**OpenWeatherPlus for iOS** is an open source weather APP that allows developers to quickly publish and integrate weather services.
 
 ## 3rd Data
 
@@ -40,6 +40,10 @@ See [WIKI](https://github.com/heweather/OpenWeatherPlus-iOS/wiki/Documents)
 
 ![city search](https://raw.githubusercontent.com/heweather/OpenWeatherPlus-iOS/761821a9a1c25084c69ad20865638433b8df88ef/screenshots-for-readme/owp3.PNG) ![setting](https://raw.githubusercontent.com/heweather/OpenWeatherPlus-iOS/761821a9a1c25084c69ad20865638433b8df88ef/screenshots-for-readme/owp4.PNG)
 
+## Compatibility
+
+Requires iOS 9.0 or later. Compatible with iPhone, untested on iPad or iPod touch.
+
 ## License
 
 [Apache 2.0](https://github.com/heweather/OpenWeatherPlus-iOS/blob/master/LICENSE)
@@ -48,7 +52,7 @@ See [WIKI](https://github.com/heweather/OpenWeatherPlus-iOS/wiki/Documents)
 
 # 天气普拉斯 OpenWeatherPlus
 
-**天气普拉斯** 是一款开源天气APP，方便开发者快速发布和集成天气服务。
+**天气普拉斯iOS 版** 是一款开源天气APP，方便开发者快速发布和集成天气服务。
 
 ## 第三方数据
 
@@ -83,6 +87,10 @@ See [WIKI](https://github.com/heweather/OpenWeatherPlus-iOS/wiki/Documents)
 ## 截图
 
 往上翻
+
+## 兼容适配
+
+需要iOS 9.0或更新版本。适配iPhone，未测试iPad和iPod touch。
 
 ## 许可证
 
