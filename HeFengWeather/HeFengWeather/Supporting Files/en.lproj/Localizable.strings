@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  HeFengWeather
+
+  Created by he on 2019/3/29.
+  Copyright © 2019 HeFengTianQi. All rights reserved.
+*/
+
+
+"hengfengLocalString_1" = "Today Details";
+"hengfengLocalString_2" = "Precipitation";
+"hengfengLocalString_3" = "Humidity";
+"hengfengLocalString_4" = "Pressure";
+"hengfengLocalString_5" = "Visibility";
+"hengfengLocalString_6" = "Wind";
+"hengfengLocalString_7" = "Air Quality";
+"hengfengLocalString_8" = "Sun and Moon";
+"hengfengLocalString_9" = "Sunrise";
+"hengfengLocalString_10" = "Sunset";
+"hengfengLocalString_11" = "Moonrise";
+"hengfengLocalString_12" = "Moonset";
+"hengfengLocalString_13" = "Setting";
+"hengfengLocalString_14" = "My City";
+"hengfengLocalString_15" = "Language";
+"hengfengLocalString_16" = "System language";
+"hengfengLocalString_17" = "Simplified Chinese";
+"hengfengLocalString_18" = "English";
+"hengfengLocalString_19" = "Units";
+"hengfengLocalString_20" = "°F";
+"hengfengLocalString_21" = "°C";
+"hengfengLocalString_22" = "Small";
+"hengfengLocalString_23" = "Medium";
+"hengfengLocalString_24" = "Large";
+"hengfengLocalString_25" = "About";
+"hengfengLocalString_26" = "Current Version";
+"hengfengLocalString_27" = "OpenWeather+";
+"hengfengLocalString_28" = "Forecast";
+"hengfengLocalString_29" = "OpenAPP";
+"hengfengLocalString_30" = "Powered By heweather.com";
+"hengfengLocalString_31" = "Font";
+"hengfengLocalString_32" = "Level";
+"hengfengLocalString_33" = "Now";
+"hengfengLocalString_34" = "Temp ↑";
+"hengfengLocalString_35" = "Temp ↓";
+"hengfengLocalString_36" = "ADD City";
+
+"hengfengLocalString_37" = "Mon";
+"hengfengLocalString_38" = "Tues";
+"hengfengLocalString_39" = "Wed";
+"hengfengLocalString_40" = "Thur";
+"hengfengLocalString_41" = "Fri";
+"hengfengLocalString_42" = "Sat";
+"hengfengLocalString_43" = "Sun";
+"hengfengLocalString_44" = "Today";
+"hengfengLocalString_45" = "History";
+"hengfengLocalString_46" = "Enable Location";
+"hengfengLocalString_47" = "Provide weather services based on your location ";
+"hengfengLocalString_48" = "Enable";
+"hengfengLocalString_49" = "Not now";
+"hengfengLocalString_50" = "Popular Location";
+"hengfengLocalString_51" = "Setting";

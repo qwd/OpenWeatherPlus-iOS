@@ -1,0 +1,1102 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		590AC966073D037CDCB36224 /* libPods-HeFengWeatherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56915BB9650C4810844EB00B /* libPods-HeFengWeatherTests.a */; };
+		8705B4FF225B40AB000903A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8705B501225B40AB000903A8 /* InfoPlist.strings */; };
+		873DA146224B52F400F8FC1E /* HeFengSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA145224B52F400F8FC1E /* HeFengSearchCell.m */; };
+		873DA14A224B63D500F8FC1E /* HeFengCollectionCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA148224B63D500F8FC1E /* HeFengCollectionCityCell.m */; };
+		873DA151224C5DEE00F8FC1E /* HeFengBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA150224C5DEE00F8FC1E /* HeFengBaseLabel.m */; };
+		873DA157224C6B1B00F8FC1E /* HeFengBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA156224C6B1B00F8FC1E /* HeFengBaseButton.m */; };
+		873DA15A224C6FD600F8FC1E /* HeFengBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA159224C6FD600F8FC1E /* HeFengBaseTextField.m */; };
+		873DA15D224C844400F8FC1E /* HeFengWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA15C224C844400F8FC1E /* HeFengWeatherRequest.m */; };
+		873DA15F224C8AAC00F8FC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873DA15E224C8AAC00F8FC1E /* Assets.xcassets */; };
+		87B58868224CDD6300CAB314 /* HeFengNowWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B58867224CDD6300CAB314 /* HeFengNowWeatherView.m */; };
+		87B5886B224DC11D00CAB314 /* HeFengRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B5886A224DC11D00CAB314 /* HeFengRefreshHeader.m */; };
+		87B5886E224DC7C100CAB314 /* HeFengWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B5886D224DC7C100CAB314 /* HeFengWaterWaveView.m */; };
+		87B588732251AA1600CAB314 /* HeFengAuthorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B588722251AA1600CAB314 /* HeFengAuthorityViewController.m */; };
+		87B588792252234E00CAB314 /* HeFengHourlyLineImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B588782252234E00CAB314 /* HeFengHourlyLineImagesView.m */; };
+		87D44D982254A5AB0060BB6F /* hefeng_refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87D44D972254A5AB0060BB6F /* hefeng_refresh.gif */; };
+		87DB8DEF224A233C00A4ACFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DB8DED224A233C00A4ACFC /* LaunchScreen.storyboard */; };
+		87DB8DF2224A233C00A4ACFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8DF1224A233C00A4ACFC /* main.m */; };
+		87DB8DFC224A233C00A4ACFC /* HeFengWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8DFB224A233C00A4ACFC /* HeFengWeatherTests.m */; };
+		87DB8E07224A233C00A4ACFC /* HeFengWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E06224A233C00A4ACFC /* HeFengWeatherUITests.m */; };
+		87DB8E69224A239B00A4ACFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E16224A239B00A4ACFC /* AppDelegate.m */; };
+		87DB8E6A224A239B00A4ACFC /* HeFengHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E1E224A239B00A4ACFC /* HeFengHomeViewController.m */; };
+		87DB8E6C224A239B00A4ACFC /* HeFengAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E22224A239B00A4ACFC /* HeFengAboutViewController.m */; };
+		87DB8E6D224A239B00A4ACFC /* HeFengSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E26224A239B00A4ACFC /* HeFengSettingViewController.m */; };
+		87DB8E6E224A239B00A4ACFC /* HeFengSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E27224A239B00A4ACFC /* HeFengSearchViewController.m */; };
+		87DB8E6F224A239B00A4ACFC /* HeFengCityManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E28224A239B00A4ACFC /* HeFengCityManagerViewController.m */; };
+		87DB8E70224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E2D224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m */; };
+		87DB8E71224A239B00A4ACFC /* HeFengSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E2E224A239B00A4ACFC /* HeFengSettingModel.m */; };
+		87DB8E72224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87DB8E32224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib */; };
+		87DB8E73224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E36224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m */; };
+		87DB8E74224A239B00A4ACFC /* HeFengHourlyWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E37224A239B00A4ACFC /* HeFengHourlyWeatherView.m */; };
+		87DB8E75224A239B00A4ACFC /* HeFengHomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3A224A239B00A4ACFC /* HeFengHomeScrollView.m */; };
+		87DB8E76224A239B00A4ACFC /* HeFengDayWeatherRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3B224A239B00A4ACFC /* HeFengDayWeatherRowView.m */; };
+		87DB8E77224A239B00A4ACFC /* HeFengHomeNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3C224A239B00A4ACFC /* HeFengHomeNavView.m */; };
+		87DB8E78224A239B00A4ACFC /* HeFengInstructionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3D224A239B00A4ACFC /* HeFengInstructionView.m */; };
+		87DB8E79224A239B00A4ACFC /* HeFengHourlyLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3E224A239B00A4ACFC /* HeFengHourlyLineView.m */; };
+		87DB8E7A224A239B00A4ACFC /* HeFengDayWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E40224A239B00A4ACFC /* HeFengDayWeatherView.m */; };
+		87DB8E7B224A239B00A4ACFC /* HeFengHourlyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E43224A239B00A4ACFC /* HeFengHourlyImageView.m */; };
+		87DB8E7C224A239B00A4ACFC /* HeFengCityManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E46224A239B00A4ACFC /* HeFengCityManagerCell.m */; };
+		87DB8E7D224A239B00A4ACFC /* HeFengTodayWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E49224A239B00A4ACFC /* HeFengTodayWeatherView.m */; };
+		87DB8E7E224A239B00A4ACFC /* HeFengTodayWeatherItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E4A224A239B00A4ACFC /* HeFengTodayWeatherItemView.m */; };
+		87DB8E7F224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E4D224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m */; };
+		87DB8E80224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E4F224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m */; };
+		87DB8E81224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E51224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m */; };
+		87DB8E82224A239B00A4ACFC /* HeFengSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E54224A239B00A4ACFC /* HeFengSearchBarView.m */; };
+		87DB8E83224A239B00A4ACFC /* HeFengBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E58224A239B00A4ACFC /* HeFengBaseViewController.m */; };
+		87DB8E84224A239B00A4ACFC /* HeFengBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5A224A239B00A4ACFC /* HeFengBaseNavigationViewController.m */; };
+		87DB8E85224A239B00A4ACFC /* HeFengBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5B224A239B00A4ACFC /* HeFengBaseView.m */; };
+		87DB8E86224A239B00A4ACFC /* HeFengBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5C224A239B00A4ACFC /* HeFengBaseModel.m */; };
+		87DB8E87224A239B00A4ACFC /* UIBezierPath+HeFengPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5F224A239B00A4ACFC /* UIBezierPath+HeFengPath.m */; };
+		87DB8E89224A239B00A4ACFC /* HeFengWeatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E65224A239B00A4ACFC /* HeFengWeatherTool.m */; };
+		87DB8E8A224A239B00A4ACFC /* HeFengWeatherDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E68224A239B00A4ACFC /* HeFengWeatherDataManager.m */; };
+		87DB8E95224A250B00A4ACFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87DB8E8D224A250B00A4ACFC /* Localizable.strings */; };
+		8F0DA026E046938480EB68DB /* libPods-HeFengWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B90599F87F3726BDD250284 /* libPods-HeFengWeather.a */; };
+		DC5CFFEDF8BD65DA7FF6EF4D /* libPods-HeFengWeatherUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722BFD37AE0C2E07AF5AF79 /* libPods-HeFengWeatherUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87DB8DF8224A233C00A4ACFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87DB8DD7224A233A00A4ACFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87DB8DDE224A233A00A4ACFC;
+			remoteInfo = HeFengWeather;
+		};
+		87DB8E03224A233C00A4ACFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87DB8DD7224A233A00A4ACFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87DB8DDE224A233A00A4ACFC;
+			remoteInfo = HeFengWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1722BFD37AE0C2E07AF5AF79 /* libPods-HeFengWeatherUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HeFengWeatherUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		277AC768FCA483F622850442 /* Pods-HeFengWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeFengWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeFengWeather/Pods-HeFengWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE4834B23E5B43D0725F3A6 /* Pods-HeFengWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeFengWeatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeFengWeatherUITests/Pods-HeFengWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B90599F87F3726BDD250284 /* libPods-HeFengWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HeFengWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56915BB9650C4810844EB00B /* libPods-HeFengWeatherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HeFengWeatherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D39C68B46F0BCD68FDEDE43 /* Pods-HeFengWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeFengWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeFengWeatherTests/Pods-HeFengWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E7C8D1E97AC4C93FE3D5599 /* Pods-HeFengWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeFengWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeFengWeather/Pods-HeFengWeather.release.xcconfig"; sourceTree = "<group>"; };
+		8705B500225B40AB000903A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8705B502225B40AF000903A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		873DA144224B52F400F8FC1E /* HeFengSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengSearchCell.h; sourceTree = "<group>"; };
+		873DA145224B52F400F8FC1E /* HeFengSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchCell.m; sourceTree = "<group>"; };
+		873DA147224B63D500F8FC1E /* HeFengCollectionCityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengCollectionCityCell.h; sourceTree = "<group>"; };
+		873DA148224B63D500F8FC1E /* HeFengCollectionCityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengCollectionCityCell.m; sourceTree = "<group>"; };
+		873DA14F224C5DEE00F8FC1E /* HeFengBaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengBaseLabel.h; sourceTree = "<group>"; };
+		873DA150224C5DEE00F8FC1E /* HeFengBaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseLabel.m; sourceTree = "<group>"; };
+		873DA155224C6B1B00F8FC1E /* HeFengBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengBaseButton.h; sourceTree = "<group>"; };
+		873DA156224C6B1B00F8FC1E /* HeFengBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseButton.m; sourceTree = "<group>"; };
+		873DA158224C6FD600F8FC1E /* HeFengBaseTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengBaseTextField.h; sourceTree = "<group>"; };
+		873DA159224C6FD600F8FC1E /* HeFengBaseTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseTextField.m; sourceTree = "<group>"; };
+		873DA15B224C844400F8FC1E /* HeFengWeatherRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherRequest.h; sourceTree = "<group>"; };
+		873DA15C224C844400F8FC1E /* HeFengWeatherRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherRequest.m; sourceTree = "<group>"; };
+		873DA15E224C8AAC00F8FC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87B58866224CDD6300CAB314 /* HeFengNowWeatherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengNowWeatherView.h; sourceTree = "<group>"; };
+		87B58867224CDD6300CAB314 /* HeFengNowWeatherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengNowWeatherView.m; sourceTree = "<group>"; };
+		87B58869224DC11D00CAB314 /* HeFengRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengRefreshHeader.h; sourceTree = "<group>"; };
+		87B5886A224DC11D00CAB314 /* HeFengRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengRefreshHeader.m; sourceTree = "<group>"; };
+		87B5886C224DC7C100CAB314 /* HeFengWaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengWaterWaveView.h; sourceTree = "<group>"; };
+		87B5886D224DC7C100CAB314 /* HeFengWaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengWaterWaveView.m; sourceTree = "<group>"; };
+		87B588712251AA1600CAB314 /* HeFengAuthorityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengAuthorityViewController.h; sourceTree = "<group>"; };
+		87B588722251AA1600CAB314 /* HeFengAuthorityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengAuthorityViewController.m; sourceTree = "<group>"; };
+		87B588772252234E00CAB314 /* HeFengHourlyLineImagesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyLineImagesView.h; sourceTree = "<group>"; };
+		87B588782252234E00CAB314 /* HeFengHourlyLineImagesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyLineImagesView.m; sourceTree = "<group>"; };
+		87D44D972254A5AB0060BB6F /* hefeng_refresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hefeng_refresh.gif; sourceTree = "<group>"; };
+		87DB8DDF224A233A00A4ACFC /* HeFengWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeFengWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DB8DEE224A233C00A4ACFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87DB8DF0224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87DB8DF1224A233C00A4ACFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87DB8DF7224A233C00A4ACFC /* HeFengWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeFengWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DB8DFB224A233C00A4ACFC /* HeFengWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherTests.m; sourceTree = "<group>"; };
+		87DB8DFD224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87DB8E02224A233C00A4ACFC /* HeFengWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeFengWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DB8E06224A233C00A4ACFC /* HeFengWeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherUITests.m; sourceTree = "<group>"; };
+		87DB8E08224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87DB8E15224A239B00A4ACFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87DB8E16224A239B00A4ACFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87DB8E18224A239B00A4ACFC /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		87DB8E19224A239B00A4ACFC /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		87DB8E1A224A239B00A4ACFC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		87DB8E1B224A239B00A4ACFC /* FontAndColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
+		87DB8E1E224A239B00A4ACFC /* HeFengHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeViewController.m; sourceTree = "<group>"; };
+		87DB8E20224A239B00A4ACFC /* HeFengSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSettingViewController.h; sourceTree = "<group>"; };
+		87DB8E21224A239B00A4ACFC /* HeFengSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSearchViewController.h; sourceTree = "<group>"; };
+		87DB8E22224A239B00A4ACFC /* HeFengAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengAboutViewController.m; sourceTree = "<group>"; };
+		87DB8E23224A239B00A4ACFC /* HeFengCityManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengCityManagerViewController.h; sourceTree = "<group>"; };
+		87DB8E25224A239B00A4ACFC /* HeFengHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeViewController.h; sourceTree = "<group>"; };
+		87DB8E26224A239B00A4ACFC /* HeFengSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSettingViewController.m; sourceTree = "<group>"; };
+		87DB8E27224A239B00A4ACFC /* HeFengSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchViewController.m; sourceTree = "<group>"; };
+		87DB8E28224A239B00A4ACFC /* HeFengCityManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengCityManagerViewController.m; sourceTree = "<group>"; };
+		87DB8E29224A239B00A4ACFC /* HeFengAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengAboutViewController.h; sourceTree = "<group>"; };
+		87DB8E2B224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeTabelViewDataModel.h; sourceTree = "<group>"; };
+		87DB8E2C224A239B00A4ACFC /* HeFengSettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSettingModel.h; sourceTree = "<group>"; };
+		87DB8E2D224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeTabelViewDataModel.m; sourceTree = "<group>"; };
+		87DB8E2E224A239B00A4ACFC /* HeFengSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSettingModel.m; sourceTree = "<group>"; };
+		87DB8E31224A239B00A4ACFC /* HeFengDayWeatherRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengDayWeatherRowView.h; sourceTree = "<group>"; };
+		87DB8E32224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeFengHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		87DB8E33224A239B00A4ACFC /* HeFengInstructionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengInstructionView.h; sourceTree = "<group>"; };
+		87DB8E34224A239B00A4ACFC /* HeFengHomeNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeNavView.h; sourceTree = "<group>"; };
+		87DB8E35224A239B00A4ACFC /* HeFengDayWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengDayWeatherView.h; sourceTree = "<group>"; };
+		87DB8E36224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		87DB8E37224A239B00A4ACFC /* HeFengHourlyWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyWeatherView.m; sourceTree = "<group>"; };
+		87DB8E38224A239B00A4ACFC /* HeFengHourlyLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyLineView.h; sourceTree = "<group>"; };
+		87DB8E39224A239B00A4ACFC /* HeFengHourlyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyImageView.h; sourceTree = "<group>"; };
+		87DB8E3A224A239B00A4ACFC /* HeFengHomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeScrollView.m; sourceTree = "<group>"; };
+		87DB8E3B224A239B00A4ACFC /* HeFengDayWeatherRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengDayWeatherRowView.m; sourceTree = "<group>"; };
+		87DB8E3C224A239B00A4ACFC /* HeFengHomeNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeNavView.m; sourceTree = "<group>"; };
+		87DB8E3D224A239B00A4ACFC /* HeFengInstructionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengInstructionView.m; sourceTree = "<group>"; };
+		87DB8E3E224A239B00A4ACFC /* HeFengHourlyLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyLineView.m; sourceTree = "<group>"; };
+		87DB8E3F224A239B00A4ACFC /* HeFengHourlyWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyWeatherView.h; sourceTree = "<group>"; };
+		87DB8E40224A239B00A4ACFC /* HeFengDayWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengDayWeatherView.m; sourceTree = "<group>"; };
+		87DB8E41224A239B00A4ACFC /* HeFengHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		87DB8E42224A239B00A4ACFC /* HeFengHomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeScrollView.h; sourceTree = "<group>"; };
+		87DB8E43224A239B00A4ACFC /* HeFengHourlyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyImageView.m; sourceTree = "<group>"; };
+		87DB8E45224A239B00A4ACFC /* HeFengCityManagerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengCityManagerCell.h; sourceTree = "<group>"; };
+		87DB8E46224A239B00A4ACFC /* HeFengCityManagerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengCityManagerCell.m; sourceTree = "<group>"; };
+		87DB8E48224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherMoonRiseView.h; sourceTree = "<group>"; };
+		87DB8E49224A239B00A4ACFC /* HeFengTodayWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherView.m; sourceTree = "<group>"; };
+		87DB8E4A224A239B00A4ACFC /* HeFengTodayWeatherItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherItemView.m; sourceTree = "<group>"; };
+		87DB8E4B224A239B00A4ACFC /* HeFengTodayWeatherAQIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherAQIView.h; sourceTree = "<group>"; };
+		87DB8E4C224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherMoonRiseCurveView.h; sourceTree = "<group>"; };
+		87DB8E4D224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherMoonRiseView.m; sourceTree = "<group>"; };
+		87DB8E4E224A239B00A4ACFC /* HeFengTodayWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherView.h; sourceTree = "<group>"; };
+		87DB8E4F224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherAQIView.m; sourceTree = "<group>"; };
+		87DB8E50224A239B00A4ACFC /* HeFengTodayWeatherItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherItemView.h; sourceTree = "<group>"; };
+		87DB8E51224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherMoonRiseCurveView.m; sourceTree = "<group>"; };
+		87DB8E53224A239B00A4ACFC /* HeFengSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSearchBarView.h; sourceTree = "<group>"; };
+		87DB8E54224A239B00A4ACFC /* HeFengSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchBarView.m; sourceTree = "<group>"; };
+		87DB8E56224A239B00A4ACFC /* HeFengBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseNavigationViewController.h; sourceTree = "<group>"; };
+		87DB8E57224A239B00A4ACFC /* HeFengBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseView.h; sourceTree = "<group>"; };
+		87DB8E58224A239B00A4ACFC /* HeFengBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseViewController.m; sourceTree = "<group>"; };
+		87DB8E59224A239B00A4ACFC /* HeFengBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseModel.h; sourceTree = "<group>"; };
+		87DB8E5A224A239B00A4ACFC /* HeFengBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseNavigationViewController.m; sourceTree = "<group>"; };
+		87DB8E5B224A239B00A4ACFC /* HeFengBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseView.m; sourceTree = "<group>"; };
+		87DB8E5C224A239B00A4ACFC /* HeFengBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseModel.m; sourceTree = "<group>"; };
+		87DB8E5D224A239B00A4ACFC /* HeFengBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseViewController.h; sourceTree = "<group>"; };
+		87DB8E5F224A239B00A4ACFC /* UIBezierPath+HeFengPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+HeFengPath.m"; sourceTree = "<group>"; };
+		87DB8E60224A239B00A4ACFC /* UIBezierPath+HeFengPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+HeFengPath.h"; sourceTree = "<group>"; };
+		87DB8E65224A239B00A4ACFC /* HeFengWeatherTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherTool.m; sourceTree = "<group>"; };
+		87DB8E66224A239B00A4ACFC /* HeFengWeatherDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherDataManager.h; sourceTree = "<group>"; };
+		87DB8E67224A239B00A4ACFC /* HeFengWeatherTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherTool.h; sourceTree = "<group>"; };
+		87DB8E68224A239B00A4ACFC /* HeFengWeatherDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherDataManager.m; sourceTree = "<group>"; };
+		87DB8E8B224A24E200A4ACFC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		87DB8E8E224A250B00A4ACFC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		87DB8E8F224A250B00A4ACFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9809CEDB2F58D53B55F18BBC /* Pods-HeFengWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeFengWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeFengWeatherUITests/Pods-HeFengWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC7FA903D30354FC67BB3198 /* Pods-HeFengWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeFengWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeFengWeatherTests/Pods-HeFengWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87DB8DDC224A233A00A4ACFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0DA026E046938480EB68DB /* libPods-HeFengWeather.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DB8DF4224A233C00A4ACFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590AC966073D037CDCB36224 /* libPods-HeFengWeatherTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DB8DFF224A233C00A4ACFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5CFFEDF8BD65DA7FF6EF4D /* libPods-HeFengWeatherUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B892D0A81DA36931B46F89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B90599F87F3726BDD250284 /* libPods-HeFengWeather.a */,
+				56915BB9650C4810844EB00B /* libPods-HeFengWeatherTests.a */,
+				1722BFD37AE0C2E07AF5AF79 /* libPods-HeFengWeatherUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87DB8DD6224A233A00A4ACFC = {
+			isa = PBXGroup;
+			children = (
+				87DB8DE1224A233A00A4ACFC /* HeFengWeather */,
+				87DB8DFA224A233C00A4ACFC /* HeFengWeatherTests */,
+				87DB8E05224A233C00A4ACFC /* HeFengWeatherUITests */,
+				87DB8DE0224A233A00A4ACFC /* Products */,
+				C6672715CB2E9263DC5CE17F /* Pods */,
+				02B892D0A81DA36931B46F89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87DB8DE0224A233A00A4ACFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8DDF224A233A00A4ACFC /* HeFengWeather.app */,
+				87DB8DF7224A233C00A4ACFC /* HeFengWeatherTests.xctest */,
+				87DB8E02224A233C00A4ACFC /* HeFengWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87DB8DE1224A233A00A4ACFC /* HeFengWeather */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E14224A239B00A4ACFC /* AppDelegate */,
+				87DB8E1C224A239B00A4ACFC /* Modules */,
+				87DB8E55224A239B00A4ACFC /* Base */,
+				87DB8E5E224A239B00A4ACFC /* Category */,
+				87DB8E61224A239B00A4ACFC /* Helpers */,
+				87DB8E17224A239B00A4ACFC /* Define */,
+				87DB8E8C224A250B00A4ACFC /* Supporting Files */,
+			);
+			path = HeFengWeather;
+			sourceTree = "<group>";
+		};
+		87DB8DFA224A233C00A4ACFC /* HeFengWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8DFB224A233C00A4ACFC /* HeFengWeatherTests.m */,
+				87DB8DFD224A233C00A4ACFC /* Info.plist */,
+			);
+			path = HeFengWeatherTests;
+			sourceTree = "<group>";
+		};
+		87DB8E05224A233C00A4ACFC /* HeFengWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E06224A233C00A4ACFC /* HeFengWeatherUITests.m */,
+				87DB8E08224A233C00A4ACFC /* Info.plist */,
+			);
+			path = HeFengWeatherUITests;
+			sourceTree = "<group>";
+		};
+		87DB8E14224A239B00A4ACFC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E15224A239B00A4ACFC /* AppDelegate.h */,
+				87DB8E16224A239B00A4ACFC /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		87DB8E17224A239B00A4ACFC /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E19224A239B00A4ACFC /* CommonMacros.h */,
+				87DB8E18224A239B00A4ACFC /* UtilsMacros.h */,
+				87DB8E1A224A239B00A4ACFC /* PrefixHeader.pch */,
+				87DB8E1B224A239B00A4ACFC /* FontAndColorMacros.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		87DB8E1C224A239B00A4ACFC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E1D224A239B00A4ACFC /* Controller */,
+				87DB8E2A224A239B00A4ACFC /* Model */,
+				87DB8E2F224A239B00A4ACFC /* View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		87DB8E1D224A239B00A4ACFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87B588712251AA1600CAB314 /* HeFengAuthorityViewController.h */,
+				87B588722251AA1600CAB314 /* HeFengAuthorityViewController.m */,
+				87DB8E25224A239B00A4ACFC /* HeFengHomeViewController.h */,
+				87DB8E1E224A239B00A4ACFC /* HeFengHomeViewController.m */,
+				87DB8E21224A239B00A4ACFC /* HeFengSearchViewController.h */,
+				87DB8E27224A239B00A4ACFC /* HeFengSearchViewController.m */,
+				87DB8E20224A239B00A4ACFC /* HeFengSettingViewController.h */,
+				87DB8E26224A239B00A4ACFC /* HeFengSettingViewController.m */,
+				87DB8E23224A239B00A4ACFC /* HeFengCityManagerViewController.h */,
+				87DB8E28224A239B00A4ACFC /* HeFengCityManagerViewController.m */,
+				87DB8E29224A239B00A4ACFC /* HeFengAboutViewController.h */,
+				87DB8E22224A239B00A4ACFC /* HeFengAboutViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87DB8E2A224A239B00A4ACFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E2C224A239B00A4ACFC /* HeFengSettingModel.h */,
+				87DB8E2E224A239B00A4ACFC /* HeFengSettingModel.m */,
+				87DB8E2B224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.h */,
+				87DB8E2D224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87DB8E2F224A239B00A4ACFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E47224A239B00A4ACFC /* HeFengTodayWeatherView */,
+				87DB8E30224A239B00A4ACFC /* Home */,
+				87DB8E44224A239B00A4ACFC /* City */,
+				87DB8E52224A239B00A4ACFC /* Search */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87DB8E30224A239B00A4ACFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E34224A239B00A4ACFC /* HeFengHomeNavView.h */,
+				87DB8E3C224A239B00A4ACFC /* HeFengHomeNavView.m */,
+				87DB8E41224A239B00A4ACFC /* HeFengHomeCollectionViewCell.h */,
+				87DB8E36224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m */,
+				87DB8E32224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib */,
+				87DB8E42224A239B00A4ACFC /* HeFengHomeScrollView.h */,
+				87DB8E3A224A239B00A4ACFC /* HeFengHomeScrollView.m */,
+				87B58869224DC11D00CAB314 /* HeFengRefreshHeader.h */,
+				87B5886A224DC11D00CAB314 /* HeFengRefreshHeader.m */,
+				87B58866224CDD6300CAB314 /* HeFengNowWeatherView.h */,
+				87B58867224CDD6300CAB314 /* HeFengNowWeatherView.m */,
+				87B5886C224DC7C100CAB314 /* HeFengWaterWaveView.h */,
+				87B5886D224DC7C100CAB314 /* HeFengWaterWaveView.m */,
+				87DB8E3F224A239B00A4ACFC /* HeFengHourlyWeatherView.h */,
+				87DB8E37224A239B00A4ACFC /* HeFengHourlyWeatherView.m */,
+				87DB8E38224A239B00A4ACFC /* HeFengHourlyLineView.h */,
+				87DB8E3E224A239B00A4ACFC /* HeFengHourlyLineView.m */,
+				87B588772252234E00CAB314 /* HeFengHourlyLineImagesView.h */,
+				87B588782252234E00CAB314 /* HeFengHourlyLineImagesView.m */,
+				87DB8E39224A239B00A4ACFC /* HeFengHourlyImageView.h */,
+				87DB8E43224A239B00A4ACFC /* HeFengHourlyImageView.m */,
+				87DB8E35224A239B00A4ACFC /* HeFengDayWeatherView.h */,
+				87DB8E40224A239B00A4ACFC /* HeFengDayWeatherView.m */,
+				87DB8E31224A239B00A4ACFC /* HeFengDayWeatherRowView.h */,
+				87DB8E3B224A239B00A4ACFC /* HeFengDayWeatherRowView.m */,
+				87DB8E33224A239B00A4ACFC /* HeFengInstructionView.h */,
+				87DB8E3D224A239B00A4ACFC /* HeFengInstructionView.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		87DB8E44224A239B00A4ACFC /* City */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E45224A239B00A4ACFC /* HeFengCityManagerCell.h */,
+				87DB8E46224A239B00A4ACFC /* HeFengCityManagerCell.m */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		87DB8E47224A239B00A4ACFC /* HeFengTodayWeatherView */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E4E224A239B00A4ACFC /* HeFengTodayWeatherView.h */,
+				87DB8E49224A239B00A4ACFC /* HeFengTodayWeatherView.m */,
+				87DB8E50224A239B00A4ACFC /* HeFengTodayWeatherItemView.h */,
+				87DB8E4A224A239B00A4ACFC /* HeFengTodayWeatherItemView.m */,
+				87DB8E4B224A239B00A4ACFC /* HeFengTodayWeatherAQIView.h */,
+				87DB8E4F224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m */,
+				87DB8E48224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.h */,
+				87DB8E4D224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m */,
+				87DB8E4C224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.h */,
+				87DB8E51224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m */,
+			);
+			path = HeFengTodayWeatherView;
+			sourceTree = "<group>";
+		};
+		87DB8E52224A239B00A4ACFC /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				873DA147224B63D500F8FC1E /* HeFengCollectionCityCell.h */,
+				873DA148224B63D500F8FC1E /* HeFengCollectionCityCell.m */,
+				87DB8E53224A239B00A4ACFC /* HeFengSearchBarView.h */,
+				87DB8E54224A239B00A4ACFC /* HeFengSearchBarView.m */,
+				873DA144224B52F400F8FC1E /* HeFengSearchCell.h */,
+				873DA145224B52F400F8FC1E /* HeFengSearchCell.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		87DB8E55224A239B00A4ACFC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E57224A239B00A4ACFC /* HeFengBaseView.h */,
+				87DB8E5B224A239B00A4ACFC /* HeFengBaseView.m */,
+				87DB8E5D224A239B00A4ACFC /* HeFengBaseViewController.h */,
+				87DB8E58224A239B00A4ACFC /* HeFengBaseViewController.m */,
+				87DB8E56224A239B00A4ACFC /* HeFengBaseNavigationViewController.h */,
+				87DB8E5A224A239B00A4ACFC /* HeFengBaseNavigationViewController.m */,
+				87DB8E59224A239B00A4ACFC /* HeFengBaseModel.h */,
+				87DB8E5C224A239B00A4ACFC /* HeFengBaseModel.m */,
+				873DA14F224C5DEE00F8FC1E /* HeFengBaseLabel.h */,
+				873DA150224C5DEE00F8FC1E /* HeFengBaseLabel.m */,
+				873DA155224C6B1B00F8FC1E /* HeFengBaseButton.h */,
+				873DA156224C6B1B00F8FC1E /* HeFengBaseButton.m */,
+				873DA158224C6FD600F8FC1E /* HeFengBaseTextField.h */,
+				873DA159224C6FD600F8FC1E /* HeFengBaseTextField.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		87DB8E5E224A239B00A4ACFC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E60224A239B00A4ACFC /* UIBezierPath+HeFengPath.h */,
+				87DB8E5F224A239B00A4ACFC /* UIBezierPath+HeFengPath.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		87DB8E61224A239B00A4ACFC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				87DB8E67224A239B00A4ACFC /* HeFengWeatherTool.h */,
+				87DB8E65224A239B00A4ACFC /* HeFengWeatherTool.m */,
+				87DB8E66224A239B00A4ACFC /* HeFengWeatherDataManager.h */,
+				87DB8E68224A239B00A4ACFC /* HeFengWeatherDataManager.m */,
+				873DA15B224C844400F8FC1E /* HeFengWeatherRequest.h */,
+				873DA15C224C844400F8FC1E /* HeFengWeatherRequest.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		87DB8E8C224A250B00A4ACFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87D44D972254A5AB0060BB6F /* hefeng_refresh.gif */,
+				873DA15E224C8AAC00F8FC1E /* Assets.xcassets */,
+				87DB8DED224A233C00A4ACFC /* LaunchScreen.storyboard */,
+				87DB8DF0224A233C00A4ACFC /* Info.plist */,
+				87DB8DF1224A233C00A4ACFC /* main.m */,
+				8705B501225B40AB000903A8 /* InfoPlist.strings */,
+				87DB8E8D224A250B00A4ACFC /* Localizable.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6672715CB2E9263DC5CE17F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				277AC768FCA483F622850442 /* Pods-HeFengWeather.debug.xcconfig */,
+				6E7C8D1E97AC4C93FE3D5599 /* Pods-HeFengWeather.release.xcconfig */,
+				AC7FA903D30354FC67BB3198 /* Pods-HeFengWeatherTests.debug.xcconfig */,
+				5D39C68B46F0BCD68FDEDE43 /* Pods-HeFengWeatherTests.release.xcconfig */,
+				9809CEDB2F58D53B55F18BBC /* Pods-HeFengWeatherUITests.debug.xcconfig */,
+				2DE4834B23E5B43D0725F3A6 /* Pods-HeFengWeatherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87DB8DDE224A233A00A4ACFC /* HeFengWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DB8E0B224A233C00A4ACFC /* Build configuration list for PBXNativeTarget "HeFengWeather" */;
+			buildPhases = (
+				76C249F498B7635F8F4E5954 /* [CP] Check Pods Manifest.lock */,
+				87DB8DDB224A233A00A4ACFC /* Sources */,
+				87DB8DDC224A233A00A4ACFC /* Frameworks */,
+				87DB8DDD224A233A00A4ACFC /* Resources */,
+				E35BDEC4861C408568793AD7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeFengWeather;
+			productName = HeFengWeather;
+			productReference = 87DB8DDF224A233A00A4ACFC /* HeFengWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87DB8DF6224A233C00A4ACFC /* HeFengWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DB8E0E224A233C00A4ACFC /* Build configuration list for PBXNativeTarget "HeFengWeatherTests" */;
+			buildPhases = (
+				FA60A15B8B4F229F92B7B7A4 /* [CP] Check Pods Manifest.lock */,
+				87DB8DF3224A233C00A4ACFC /* Sources */,
+				87DB8DF4224A233C00A4ACFC /* Frameworks */,
+				87DB8DF5224A233C00A4ACFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87DB8DF9224A233C00A4ACFC /* PBXTargetDependency */,
+			);
+			name = HeFengWeatherTests;
+			productName = HeFengWeatherTests;
+			productReference = 87DB8DF7224A233C00A4ACFC /* HeFengWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87DB8E01224A233C00A4ACFC /* HeFengWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DB8E11224A233C00A4ACFC /* Build configuration list for PBXNativeTarget "HeFengWeatherUITests" */;
+			buildPhases = (
+				CE86E3880AD9D3274F187E99 /* [CP] Check Pods Manifest.lock */,
+				87DB8DFE224A233C00A4ACFC /* Sources */,
+				87DB8DFF224A233C00A4ACFC /* Frameworks */,
+				87DB8E00224A233C00A4ACFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87DB8E04224A233C00A4ACFC /* PBXTargetDependency */,
+			);
+			name = HeFengWeatherUITests;
+			productName = HeFengWeatherUITests;
+			productReference = 87DB8E02224A233C00A4ACFC /* HeFengWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87DB8DD7224A233A00A4ACFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HeFeng;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = HeFengTianQi;
+				TargetAttributes = {
+					87DB8DDE224A233A00A4ACFC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					87DB8DF6224A233C00A4ACFC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 87DB8DDE224A233A00A4ACFC;
+					};
+					87DB8E01224A233C00A4ACFC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 87DB8DDE224A233A00A4ACFC;
+					};
+				};
+			};
+			buildConfigurationList = 87DB8DDA224A233A00A4ACFC /* Build configuration list for PBXProject "HeFengWeather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 87DB8DD6224A233A00A4ACFC;
+			productRefGroup = 87DB8DE0224A233A00A4ACFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87DB8DDE224A233A00A4ACFC /* HeFengWeather */,
+				87DB8DF6224A233C00A4ACFC /* HeFengWeatherTests */,
+				87DB8E01224A233C00A4ACFC /* HeFengWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87DB8DDD224A233A00A4ACFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DB8E72224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib in Resources */,
+				8705B4FF225B40AB000903A8 /* InfoPlist.strings in Resources */,
+				87DB8E95224A250B00A4ACFC /* Localizable.strings in Resources */,
+				87DB8DEF224A233C00A4ACFC /* LaunchScreen.storyboard in Resources */,
+				87D44D982254A5AB0060BB6F /* hefeng_refresh.gif in Resources */,
+				873DA15F224C8AAC00F8FC1E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DB8DF5224A233C00A4ACFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DB8E00224A233C00A4ACFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76C249F498B7635F8F4E5954 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeFengWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE86E3880AD9D3274F187E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeFengWeatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E35BDEC4861C408568793AD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeFengWeather/Pods-HeFengWeather-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeFengWeather/Pods-HeFengWeather-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeFengWeather/Pods-HeFengWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA60A15B8B4F229F92B7B7A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeFengWeatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87DB8DDB224A233A00A4ACFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DB8E77224A239B00A4ACFC /* HeFengHomeNavView.m in Sources */,
+				873DA15D224C844400F8FC1E /* HeFengWeatherRequest.m in Sources */,
+				87DB8E79224A239B00A4ACFC /* HeFengHourlyLineView.m in Sources */,
+				87DB8E6E224A239B00A4ACFC /* HeFengSearchViewController.m in Sources */,
+				87DB8E84224A239B00A4ACFC /* HeFengBaseNavigationViewController.m in Sources */,
+				87DB8E86224A239B00A4ACFC /* HeFengBaseModel.m in Sources */,
+				873DA15A224C6FD600F8FC1E /* HeFengBaseTextField.m in Sources */,
+				87DB8E89224A239B00A4ACFC /* HeFengWeatherTool.m in Sources */,
+				87DB8E83224A239B00A4ACFC /* HeFengBaseViewController.m in Sources */,
+				87DB8E6C224A239B00A4ACFC /* HeFengAboutViewController.m in Sources */,
+				87DB8E6D224A239B00A4ACFC /* HeFengSettingViewController.m in Sources */,
+				87DB8E69224A239B00A4ACFC /* AppDelegate.m in Sources */,
+				873DA14A224B63D500F8FC1E /* HeFengCollectionCityCell.m in Sources */,
+				873DA157224C6B1B00F8FC1E /* HeFengBaseButton.m in Sources */,
+				87DB8E7E224A239B00A4ACFC /* HeFengTodayWeatherItemView.m in Sources */,
+				87B58868224CDD6300CAB314 /* HeFengNowWeatherView.m in Sources */,
+				87DB8E75224A239B00A4ACFC /* HeFengHomeScrollView.m in Sources */,
+				87DB8E74224A239B00A4ACFC /* HeFengHourlyWeatherView.m in Sources */,
+				873DA146224B52F400F8FC1E /* HeFengSearchCell.m in Sources */,
+				87DB8E7C224A239B00A4ACFC /* HeFengCityManagerCell.m in Sources */,
+				87DB8E8A224A239B00A4ACFC /* HeFengWeatherDataManager.m in Sources */,
+				87DB8E6A224A239B00A4ACFC /* HeFengHomeViewController.m in Sources */,
+				87B5886E224DC7C100CAB314 /* HeFengWaterWaveView.m in Sources */,
+				87DB8E73224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m in Sources */,
+				87DB8E71224A239B00A4ACFC /* HeFengSettingModel.m in Sources */,
+				87B588732251AA1600CAB314 /* HeFengAuthorityViewController.m in Sources */,
+				87DB8E7F224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m in Sources */,
+				87DB8DF2224A233C00A4ACFC /* main.m in Sources */,
+				87DB8E7D224A239B00A4ACFC /* HeFengTodayWeatherView.m in Sources */,
+				87DB8E80224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m in Sources */,
+				87DB8E70224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m in Sources */,
+				87B5886B224DC11D00CAB314 /* HeFengRefreshHeader.m in Sources */,
+				87DB8E7B224A239B00A4ACFC /* HeFengHourlyImageView.m in Sources */,
+				87DB8E6F224A239B00A4ACFC /* HeFengCityManagerViewController.m in Sources */,
+				87DB8E7A224A239B00A4ACFC /* HeFengDayWeatherView.m in Sources */,
+				87DB8E82224A239B00A4ACFC /* HeFengSearchBarView.m in Sources */,
+				87B588792252234E00CAB314 /* HeFengHourlyLineImagesView.m in Sources */,
+				87DB8E78224A239B00A4ACFC /* HeFengInstructionView.m in Sources */,
+				87DB8E76224A239B00A4ACFC /* HeFengDayWeatherRowView.m in Sources */,
+				873DA151224C5DEE00F8FC1E /* HeFengBaseLabel.m in Sources */,
+				87DB8E81224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m in Sources */,
+				87DB8E87224A239B00A4ACFC /* UIBezierPath+HeFengPath.m in Sources */,
+				87DB8E85224A239B00A4ACFC /* HeFengBaseView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DB8DF3224A233C00A4ACFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DB8DFC224A233C00A4ACFC /* HeFengWeatherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DB8DFE224A233C00A4ACFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DB8E07224A233C00A4ACFC /* HeFengWeatherUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87DB8DF9224A233C00A4ACFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87DB8DDE224A233A00A4ACFC /* HeFengWeather */;
+			targetProxy = 87DB8DF8224A233C00A4ACFC /* PBXContainerItemProxy */;
+		};
+		87DB8E04224A233C00A4ACFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87DB8DDE224A233A00A4ACFC /* HeFengWeather */;
+			targetProxy = 87DB8E03224A233C00A4ACFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8705B501225B40AB000903A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8705B500225B40AB000903A8 /* en */,
+				8705B502225B40AF000903A8 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		87DB8DED224A233C00A4ACFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87DB8DEE224A233C00A4ACFC /* Base */,
+				87DB8E8B224A24E200A4ACFC /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		87DB8E8D224A250B00A4ACFC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87DB8E8E224A250B00A4ACFC /* zh-Hans */,
+				87DB8E8F224A250B00A4ACFC /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87DB8E09224A233C00A4ACFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87DB8E0A224A233C00A4ACFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87DB8E0C224A233C00A4ACFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 277AC768FCA483F622850442 /* Pods-HeFengWeather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HeFengWeather/Define/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/HeFengWeather/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heweather.owp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87DB8E0D224A233C00A4ACFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7C8D1E97AC4C93FE3D5599 /* Pods-HeFengWeather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HeFengWeather/Define/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/HeFengWeather/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heweather.owp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87DB8E0F224A233C00A4ACFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC7FA903D30354FC67BB3198 /* Pods-HeFengWeatherTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				INFOPLIST_FILE = HeFengWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hefengtianqi.HeFengWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeFengWeather.app/HeFengWeather";
+			};
+			name = Debug;
+		};
+		87DB8E10224A233C00A4ACFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D39C68B46F0BCD68FDEDE43 /* Pods-HeFengWeatherTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				INFOPLIST_FILE = HeFengWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hefengtianqi.HeFengWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeFengWeather.app/HeFengWeather";
+			};
+			name = Release;
+		};
+		87DB8E12224A233C00A4ACFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9809CEDB2F58D53B55F18BBC /* Pods-HeFengWeatherUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				INFOPLIST_FILE = HeFengWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hefengtianqi.HeFengWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeFengWeather;
+			};
+			name = Debug;
+		};
+		87DB8E13224A233C00A4ACFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE4834B23E5B43D0725F3A6 /* Pods-HeFengWeatherUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				INFOPLIST_FILE = HeFengWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hefengtianqi.HeFengWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeFengWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87DB8DDA224A233A00A4ACFC /* Build configuration list for PBXProject "HeFengWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DB8E09224A233C00A4ACFC /* Debug */,
+				87DB8E0A224A233C00A4ACFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87DB8E0B224A233C00A4ACFC /* Build configuration list for PBXNativeTarget "HeFengWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DB8E0C224A233C00A4ACFC /* Debug */,
+				87DB8E0D224A233C00A4ACFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87DB8E0E224A233C00A4ACFC /* Build configuration list for PBXNativeTarget "HeFengWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DB8E0F224A233C00A4ACFC /* Debug */,
+				87DB8E10224A233C00A4ACFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87DB8E11224A233C00A4ACFC /* Build configuration list for PBXNativeTarget "HeFengWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DB8E12224A233C00A4ACFC /* Debug */,
+				87DB8E13224A233C00A4ACFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87DB8DD7224A233A00A4ACFC /* Project object */;
+}
