@@ -1,0 +1,24 @@
+ platform :ios, '9.0'
+
+target 'OpenWeatherPlus' do
+  pod 'Masonry'
+  pod 'DateTools'
+  pod 'HeWeatherSDK'
+  pod 'ReactiveObjC'
+  pod 'YYText'
+  pod 'YYCache'
+  pod 'FDFullscreenPopGesture'
+  pod 'QMUIKit'
+  pod 'CocoaLumberjack'
+  pod 'AMapLocation'
+  pod 'MJRefresh'
+  target 'OpenWeatherPlusTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  target 'OpenWeatherPlusUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
