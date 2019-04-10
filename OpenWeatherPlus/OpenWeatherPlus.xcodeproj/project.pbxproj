@@ -12,6 +12,8 @@
 		870BF958225CAE7800C9CF77 /* HeFengWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF952225CAE7800C9CF77 /* HeFengWeatherRequest.m */; };
 		870BF959225CAE7800C9CF77 /* HeFengWeatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF956225CAE7800C9CF77 /* HeFengWeatherTool.m */; };
 		870BF95A225CAE7800C9CF77 /* HeFengWeatherDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF957225CAE7800C9CF77 /* HeFengWeatherDataManager.m */; };
+		870BF95C225D84EC00C9CF77 /* OpenWeatherPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF95B225D84EC00C9CF77 /* OpenWeatherPlusTests.m */; };
+		870BF95E225D858400C9CF77 /* OpenWeatherPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF95D225D858400C9CF77 /* OpenWeatherPlusUITests.m */; };
 		873DA146224B52F400F8FC1E /* HeFengSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA145224B52F400F8FC1E /* HeFengSearchCell.m */; };
 		873DA14A224B63D500F8FC1E /* HeFengCollectionCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA148224B63D500F8FC1E /* HeFengCollectionCityCell.m */; };
 		873DA151224C5DEE00F8FC1E /* HeFengBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA150224C5DEE00F8FC1E /* HeFengBaseLabel.m */; };
@@ -26,8 +28,6 @@
 		87D44D982254A5AB0060BB6F /* hefeng_refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87D44D972254A5AB0060BB6F /* hefeng_refresh.gif */; };
 		87DB8DEF224A233C00A4ACFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DB8DED224A233C00A4ACFC /* LaunchScreen.storyboard */; };
 		87DB8DF2224A233C00A4ACFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8DF1224A233C00A4ACFC /* main.m */; };
-		87DB8DFC224A233C00A4ACFC /* OpenWeatherPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8DFB224A233C00A4ACFC /* OpenWeatherPlusTests.m */; };
-		87DB8E07224A233C00A4ACFC /* OpenWeatherPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E06224A233C00A4ACFC /* OpenWeatherPlusUITests.m */; };
 		87DB8E69224A239B00A4ACFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E16224A239B00A4ACFC /* AppDelegate.m */; };
 		87DB8E6A224A239B00A4ACFC /* HeFengHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E1E224A239B00A4ACFC /* HeFengHomeViewController.m */; };
 		87DB8E6C224A239B00A4ACFC /* HeFengAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E22224A239B00A4ACFC /* HeFengAboutViewController.m */; };
@@ -96,6 +96,8 @@
 		870BF955225CAE7800C9CF77 /* HeFengWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherRequest.h; sourceTree = "<group>"; };
 		870BF956225CAE7800C9CF77 /* HeFengWeatherTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherTool.m; sourceTree = "<group>"; };
 		870BF957225CAE7800C9CF77 /* HeFengWeatherDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherDataManager.m; sourceTree = "<group>"; };
+		870BF95B225D84EC00C9CF77 /* OpenWeatherPlusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusTests.m; sourceTree = "<group>"; };
+		870BF95D225D858400C9CF77 /* OpenWeatherPlusUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusUITests.m; sourceTree = "<group>"; };
 		873DA144224B52F400F8FC1E /* HeFengSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengSearchCell.h; sourceTree = "<group>"; };
 		873DA145224B52F400F8FC1E /* HeFengSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchCell.m; sourceTree = "<group>"; };
 		873DA147224B63D500F8FC1E /* HeFengCollectionCityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengCollectionCityCell.h; sourceTree = "<group>"; };
@@ -123,10 +125,8 @@
 		87DB8DF0224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DB8DF1224A233C00A4ACFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87DB8DF7224A233C00A4ACFC /* OpenWeatherPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWeatherPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87DB8DFB224A233C00A4ACFC /* OpenWeatherPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusTests.m; sourceTree = "<group>"; };
 		87DB8DFD224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DB8E02224A233C00A4ACFC /* OpenWeatherPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWeatherPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87DB8E06224A233C00A4ACFC /* OpenWeatherPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusUITests.m; sourceTree = "<group>"; };
 		87DB8E08224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DB8E15224A239B00A4ACFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		87DB8E16224A239B00A4ACFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -275,7 +275,7 @@
 		87DB8DFA224A233C00A4ACFC /* OpenWeatherPlusTests */ = {
 			isa = PBXGroup;
 			children = (
-				87DB8DFB224A233C00A4ACFC /* OpenWeatherPlusTests.m */,
+				870BF95B225D84EC00C9CF77 /* OpenWeatherPlusTests.m */,
 				87DB8DFD224A233C00A4ACFC /* Info.plist */,
 			);
 			path = OpenWeatherPlusTests;
@@ -284,7 +284,7 @@
 		87DB8E05224A233C00A4ACFC /* OpenWeatherPlusUITests */ = {
 			isa = PBXGroup;
 			children = (
-				87DB8E06224A233C00A4ACFC /* OpenWeatherPlusUITests.m */,
+				870BF95D225D858400C9CF77 /* OpenWeatherPlusUITests.m */,
 				87DB8E08224A233C00A4ACFC /* Info.plist */,
 			);
 			path = OpenWeatherPlusUITests;
@@ -767,7 +767,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87DB8DFC224A233C00A4ACFC /* OpenWeatherPlusTests.m in Sources */,
+				870BF95C225D84EC00C9CF77 /* OpenWeatherPlusTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +775,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87DB8E07224A233C00A4ACFC /* OpenWeatherPlusUITests.m in Sources */,
+				870BF95E225D858400C9CF77 /* OpenWeatherPlusUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
