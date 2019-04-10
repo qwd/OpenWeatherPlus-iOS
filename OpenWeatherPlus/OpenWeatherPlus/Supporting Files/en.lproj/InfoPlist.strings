@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  OpenWeatherPlus
+
+  Created by he on 2019/4/8.
+  Copyright © 2019 HeFengTianQi. All rights reserved.
+*/
+"CFBundleDisplayName" = "OpenWeather+";
+"NSLocationAlwaysUsageDescription" = "Provide weather services based on your location and view the weather directly on the map.";
+"NSLocationWhenInUseUsageDescription" = "Provide weather services based on your location and view the weather directly on the map.";
