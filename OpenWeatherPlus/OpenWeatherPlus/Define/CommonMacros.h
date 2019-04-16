@@ -10,9 +10,9 @@
 #define CommonMacros_h
 #pragma mark - ——————— 第三方相关Key ————————
 
-#define KAMapLocationAPPKey @""
-#define HeWeatherSDK_USERKey  @""
-#define HeWeatherSDK_USERNameKey  @""
+#define KAMapLocationAPPKey @"请添加key"
+#define HeWeatherSDK_USERKey  @"请添加key"
+#define HeWeatherSDK_USERNameKey  @"请添加key"
 
 
 #pragma mark - ——————— 通知相关key ————————
@@ -24,6 +24,7 @@
 #define KNotificationRefreshEnd @"KNotificationRefreshEnd"
 #define KNotificationChangeNavBackColor @"KNotificationChangeNavBackColor"
 #define KNotificationScrollImages @"KNotificationScrollImages"
+#define KNotificationOpenSafari @"KNotificationOpenSafari"
 
 //时间Format
 #define HeFengFormatString1 @"yyyy-MM-dd HH:mm"
