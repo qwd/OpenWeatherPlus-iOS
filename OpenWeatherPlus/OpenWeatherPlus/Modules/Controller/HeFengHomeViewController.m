@@ -34,6 +34,9 @@
     [self addNotice];
 }
 -(void)addNotice{
+    [[HeFengNotificationCenter rac_addObserverForName:KNotificationOpenSafari object:nil ]subscribeNext:^(NSNotification * _Nullable x) {
+        [kApplication openURL:[NSURL URLWithString:@"https://www.heweather.com"]];
+    }];
     
     [[HeFengNotificationCenter rac_addObserverForName:KNotificationRefreshCity object:nil ]subscribeNext:^(NSNotification * _Nullable x) {
         [self getDataWithLocation:x.object isLoaction:NO];

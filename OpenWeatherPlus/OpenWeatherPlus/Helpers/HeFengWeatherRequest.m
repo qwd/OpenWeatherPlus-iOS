@@ -41,6 +41,8 @@
             __block AirBaseClass *AirBaseDataModel;
             __block AirBaseClass *locationAirBaseDataModel;
             __block WeatherBaseClass *WeatherBaseDataModel;
+            __block AlarmBaseClass *alarmBaseClass;
+
             __block NSError *error;
             HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
             dispatch_group_t group = dispatch_group_create();
@@ -66,7 +68,6 @@
                     dispatch_group_leave(group);
                 }];
             }
-            
             dispatch_group_enter(group);
             HeConfigInstance.location = [input objectForKey:@"location"];
             HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
@@ -77,14 +78,22 @@
                 error = error;
                 dispatch_group_leave(group);
             }];
-            
+            //预警
+            dispatch_group_enter(group);
+            HeConfigInstance.location = [input objectForKey:@"cityId"];
+            HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
+            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_ALARM WithSuccess:^(AlarmBaseClass  *responseObject) {
+                alarmBaseClass = responseObject;
+                dispatch_group_leave(group);
+            } faileureForError:^(NSError *error) {
+                dispatch_group_leave(group);
+            }];
             dispatch_group_notify(group, dispatch_get_main_queue(), ^{
                 if (error) {
                     [subscriber sendError:error];
                     [subscriber sendCompleted];
                 }else{
                   
-                    
                     HeFengHomeTabelViewDataModel *model = [HeFengHomeTabelViewDataModel new];
                     if (HeFengStrValid(locationAirBaseDataModel.air_now_city.pm25)) {
                         model.airDataModel = locationAirBaseDataModel;
@@ -92,6 +101,7 @@
                         model.airDataModel = AirBaseDataModel;
                     }
                     model.dataModel = WeatherBaseDataModel;
+                    model.AlarmDataModel = alarmBaseClass;
                     [subscriber sendNext:model];
                     [subscriber sendCompleted];
                 }

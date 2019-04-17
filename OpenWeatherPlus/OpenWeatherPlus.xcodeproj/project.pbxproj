@@ -944,8 +944,9 @@
 			baseConfigurationReference = 277AC768FCA483F622850442 /* Pods-OpenWeatherPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenWeatherPlus/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenWeatherPlus/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -965,8 +966,9 @@
 			baseConfigurationReference = 6E7C8D1E97AC4C93FE3D5599 /* Pods-OpenWeatherPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenWeatherPlus/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenWeatherPlus/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

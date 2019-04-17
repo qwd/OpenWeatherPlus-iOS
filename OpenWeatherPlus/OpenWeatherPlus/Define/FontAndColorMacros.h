@@ -27,6 +27,7 @@
 #define KBlueColor [UIColor blueColor]
 #define KRedColor [UIColor redColor]
 
+#define HeFengColor_333333  [UIColor qmui_colorWithHexString:@"#333333"]
 #define HeFengColor_F7F8FA  [UIColor qmui_colorWithHexString:@"#F7F8FA"]
 #define HeFengColor_F5F5F5  [UIColor qmui_colorWithHexString:@"#F5F5F5"]
 #define HeFengColor_F0F0F0  [UIColor qmui_colorWithHexString:@"#F0F0F0"]
@@ -46,6 +47,16 @@
 #define HeFengColor_ED802D  [UIColor qmui_colorWithHexString:@"#ED802D"]
 #define HeFengColor_DCDDE3  [UIColor qmui_colorWithHexString:@"#DCDDE3"]
 #define HeFengColor_EE8F46  [UIColor qmui_colorWithHexString:@"#EE8F46"]
+
+
+#define HeFengColor_318BF8  [UIColor qmui_colorWithHexString:@"#318BF8"]//蓝
+#define HeFengColor_D1CA13  [UIColor qmui_colorWithHexString:@"#D1CA13"]//黄
+#define HeFengColor_D76801  [UIColor qmui_colorWithHexString:@"#D76801"]//橙
+#define HeFengColor_C01B09  [UIColor qmui_colorWithHexString:@"#C01B09"]//红
+
+
+
+
 
 
 

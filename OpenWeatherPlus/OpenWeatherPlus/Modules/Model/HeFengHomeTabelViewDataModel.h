@@ -16,13 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HeFengHomeTabelViewDataModel : HeFengBaseModel
 /**
- 数据模型
+ 天气数据模型
  */
 @property (nonatomic,strong) WeatherBaseClass *dataModel;
 /**
- 数据模型
+ 空气数据模型
  */
 @property (nonatomic,strong) AirBaseClass *airDataModel;
+/**
+ 预警数据模型
+ */
+@property (nonatomic,strong) AlarmBaseClass *AlarmDataModel;
+
 
 @end
 

@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) HeFengWaterWaveView *waterWaveView;
 @property (strong, nonatomic) HeFengBaseLabel *tempLabel;
 @property (strong, nonatomic) HeFengBaseLabel *weatherStateLabel;
+@property (strong, nonatomic) HeFengBaseLabel *alarmLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END
