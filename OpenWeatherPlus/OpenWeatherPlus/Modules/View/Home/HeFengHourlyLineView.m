@@ -54,7 +54,7 @@
     }];
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
-    if (model.dataModel.hourly.count==0) {
+    if (model.dataModel.hourly.count!=8||model.dataModel.hourly.count!=25) {
         return;
     }
     NSMutableArray<WeatherBaseClassHourly*> *dataArray = [NSMutableArray array];
