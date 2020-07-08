@@ -98,19 +98,19 @@
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
     NSArray *numbArray;
-    if (!model.airDataModel.air_now_city.pm25) {
+    if (!model.airDataModel.now.pm2p5) {
         numbArray = @[@"",@"",@"",@"",@"",@""];
         self.aqiLabel.text = @"";
         self.aqiBackView.backgroundColor = KClearColor;
     }else{
-        numbArray  = @[model.airDataModel.air_now_city.pm25,
-                       model.airDataModel.air_now_city.pm10,
-                       model.airDataModel.air_now_city.so2,
-                       model.airDataModel.air_now_city.no2,
-                       model.airDataModel.air_now_city.co,
-                       model.airDataModel.air_now_city.o3];
-        self.aqiLabel.text = HeFengStringFormat(@"%@ %@",model.airDataModel.air_now_city.aqi,model.airDataModel.air_now_city.qlty);
-        self.aqiBackView.backgroundColor = [HeFengWeatherTool getAqiColorWithString:model.airDataModel.air_now_city.aqi];
+        numbArray  = @[model.airDataModel.now.pm2p5,
+                       model.airDataModel.now.pm10,
+                       model.airDataModel.now.so2,
+                       model.airDataModel.now.no2,
+                       model.airDataModel.now.co,
+                       model.airDataModel.now.o3];
+        self.aqiLabel.text = HeFengStringFormat(@"%@ %@",model.airDataModel.now.aqi,model.airDataModel.now.category);
+        self.aqiBackView.backgroundColor = [HeFengWeatherTool getAqiColorWithString:model.airDataModel.now.aqi];
     }
     [self.itemViewArray enumerateObjectsUsingBlock:^(HeFengBaseLabel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:HeFengStringFormat(@"%@ %@",self->titlesArray[idx],numbArray[idx])];

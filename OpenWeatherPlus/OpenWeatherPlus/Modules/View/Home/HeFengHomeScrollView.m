@@ -95,7 +95,7 @@
 }
 -(void)setDataModel:(HeFengHomeTabelViewDataModel *)dataModel{
     _dataModel = dataModel;
-    self.backgroundColor = [[[[HeFengWeatherTool getWeatherImageWithWeatherCode:dataModel.dataModel.now.cond_code date:dataModel.dataModel.update.loc formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop] qmui_averageColor];
+    self.backgroundColor = [[[[HeFengWeatherTool getWeatherImageWithWeatherCode:dataModel.dataModel.now.icon date:dataModel.dataModel.updateTime formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop] qmui_averageColor];
     [self.nowWeatherView reloadViewWithModel:dataModel];
     [self.hourlyWeatherView reloadViewWithModel:dataModel];
     [self.threeDayWeatherView reloadViewWithModel:dataModel];

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HeFengHourlyLineImagesView : HeFengBaseView
 @property (nonatomic,strong) NSMutableArray<HeFengHourlyImageView *> *imageViewArray;
--(void)reloadViewWithModelArray:(NSArray<WeatherBaseClassHourly*> *)array;
+-(void)reloadViewWithModelArray:(NSArray<Hourly*> *)array;
 
 @end
 

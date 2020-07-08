@@ -38,7 +38,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HeFengCityManagerCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HeFengCityManagerCell class])];
-    cell.titleLabel.text = HeFengWeatherManager.collectionDataArray[indexPath.row+1].dataModel.basic.location;
+    cell.titleLabel.text = HeFengWeatherManager.collectionDataArray[indexPath.row+1].basic.name;
     [[[cell.delButton rac_signalForControlEvents:UIControlEventTouchUpInside] takeUntil:cell.rac_prepareForReuseSignal] subscribeNext:^(__kindof UIControl * _Nullable x) {
         [HeFengWeatherManager delCollectionDataArrayWithIndex:indexPath.row+1];
         [tableView reloadData];

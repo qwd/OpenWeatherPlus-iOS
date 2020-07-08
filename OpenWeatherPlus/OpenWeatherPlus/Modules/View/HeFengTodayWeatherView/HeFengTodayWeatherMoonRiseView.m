@@ -33,12 +33,12 @@
 
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
-    self.sunriseLabel.text = model.dataModel.daily_forecast.firstObject.sr;
-    self.sunsetLabel.text = model.dataModel.daily_forecast.firstObject.ss;
-    self.monthlyLabel.text =model.dataModel.daily_forecast.firstObject.mr;
-    self.moonfallLabel.text = model.dataModel.daily_forecast.firstObject.ms;
-    [self.sunCurveView setStartTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily_forecast.firstObject.date,model.dataModel.daily_forecast.firstObject.sr) endTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily_forecast.firstObject.date,model.dataModel.daily_forecast.firstObject.ss) tz:model.dataModel.basic.tz];
-    [self.moonCurveView setStartTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily_forecast.firstObject.date,model.dataModel.daily_forecast.firstObject.mr) endTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily_forecast.firstObject.date,model.dataModel.daily_forecast.firstObject.ms) tz:model.dataModel.basic.tz];
+    self.sunriseLabel.text = model.dataModel.daily.firstObject.sunrise;
+    self.sunsetLabel.text = model.dataModel.daily.firstObject.sunset;
+    self.monthlyLabel.text =model.dataModel.daily.firstObject.moonrise;
+    self.moonfallLabel.text = model.dataModel.daily.firstObject.moonset;
+    [self.sunCurveView setStartTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily.firstObject.fxDate,model.dataModel.daily.firstObject.sunrise) endTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily.firstObject.fxDate,model.dataModel.daily.firstObject.sunset) tz:model.basic.tz];
+    [self.moonCurveView setStartTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily.firstObject.fxDate,model.dataModel.daily.firstObject.moonrise) endTime:HeFengStringFormat(@"%@ %@",model.dataModel.daily.firstObject.fxDate,model.dataModel.daily.firstObject.moonset) tz:model.basic.tz];
    
 }
 -(void)layoutSubviews{

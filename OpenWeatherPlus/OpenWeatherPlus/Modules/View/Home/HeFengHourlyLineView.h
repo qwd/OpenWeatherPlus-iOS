@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, HeFengHourlyLineViewType) {
 @property (nonatomic,strong) UIView *xLineView;
 @property (nonatomic,strong) CAShapeLayer *lineLayer;
 @property (nonatomic,strong) HeFengBaseLabel *tempLabel;
-@property (nonatomic,strong) NSArray <WeatherBaseClassHourly *>* hourlyArray;
+@property (nonatomic,strong) NSArray <Hourly *>* hourlyArray;
 @property (nonatomic,strong) HeFengHourlyLineImagesView *imagesView;
 @property (nonatomic,assign) HeFengHourlyLineViewType viewType;
 

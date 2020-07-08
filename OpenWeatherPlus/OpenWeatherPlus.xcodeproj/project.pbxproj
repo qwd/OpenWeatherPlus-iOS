@@ -9,55 +9,74 @@
 /* Begin PBXBuildFile section */
 		590AC966073D037CDCB36224 /* libPods-OpenWeatherPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56915BB9650C4810844EB00B /* libPods-OpenWeatherPlusTests.a */; };
 		8705B4FF225B40AB000903A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8705B501225B40AB000903A8 /* InfoPlist.strings */; };
-		870BF958225CAE7800C9CF77 /* HeFengWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF952225CAE7800C9CF77 /* HeFengWeatherRequest.m */; };
-		870BF959225CAE7800C9CF77 /* HeFengWeatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF956225CAE7800C9CF77 /* HeFengWeatherTool.m */; };
-		870BF95A225CAE7800C9CF77 /* HeFengWeatherDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF957225CAE7800C9CF77 /* HeFengWeatherDataManager.m */; };
 		870BF95C225D84EC00C9CF77 /* OpenWeatherPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF95B225D84EC00C9CF77 /* OpenWeatherPlusTests.m */; };
 		870BF95E225D858400C9CF77 /* OpenWeatherPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF95D225D858400C9CF77 /* OpenWeatherPlusUITests.m */; };
-		873DA146224B52F400F8FC1E /* HeFengSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA145224B52F400F8FC1E /* HeFengSearchCell.m */; };
-		873DA14A224B63D500F8FC1E /* HeFengCollectionCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA148224B63D500F8FC1E /* HeFengCollectionCityCell.m */; };
-		873DA151224C5DEE00F8FC1E /* HeFengBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA150224C5DEE00F8FC1E /* HeFengBaseLabel.m */; };
-		873DA157224C6B1B00F8FC1E /* HeFengBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA156224C6B1B00F8FC1E /* HeFengBaseButton.m */; };
-		873DA15A224C6FD600F8FC1E /* HeFengBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 873DA159224C6FD600F8FC1E /* HeFengBaseTextField.m */; };
 		873DA15F224C8AAC00F8FC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873DA15E224C8AAC00F8FC1E /* Assets.xcassets */; };
-		87B58868224CDD6300CAB314 /* HeFengNowWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B58867224CDD6300CAB314 /* HeFengNowWeatherView.m */; };
-		87B5886B224DC11D00CAB314 /* HeFengRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B5886A224DC11D00CAB314 /* HeFengRefreshHeader.m */; };
-		87B5886E224DC7C100CAB314 /* HeFengWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B5886D224DC7C100CAB314 /* HeFengWaterWaveView.m */; };
-		87B588732251AA1600CAB314 /* HeFengAuthorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B588722251AA1600CAB314 /* HeFengAuthorityViewController.m */; };
-		87B588792252234E00CAB314 /* HeFengHourlyLineImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B588782252234E00CAB314 /* HeFengHourlyLineImagesView.m */; };
+		874C230624B5C38F00EDB9B4 /* 中国地级市id.txt in Resources */ = {isa = PBXBuildFile; fileRef = 874C227D24B5C38D00EDB9B4 /* 中国地级市id.txt */; };
+		874C230724B5C38F00EDB9B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C227E24B5C38D00EDB9B4 /* AppDelegate.m */; };
+		874C230824B5C38F00EDB9B4 /* HeFengWeatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228024B5C38D00EDB9B4 /* HeFengWeatherTool.m */; };
+		874C230924B5C38F00EDB9B4 /* HeWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874C228424B5C38D00EDB9B4 /* HeWeather.framework */; };
+		874C230A24B5C38F00EDB9B4 /* HeFengWeatherDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228524B5C38D00EDB9B4 /* HeFengWeatherDataManager.m */; };
+		874C230B24B5C38F00EDB9B4 /* HeFengWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228624B5C38D00EDB9B4 /* HeFengWeatherRequest.m */; };
+		874C230C24B5C38F00EDB9B4 /* HeFengHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228A24B5C38E00EDB9B4 /* HeFengHomeViewController.m */; };
+		874C230D24B5C38F00EDB9B4 /* HeFengAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228E24B5C38E00EDB9B4 /* HeFengAboutViewController.m */; };
+		874C230E24B5C38F00EDB9B4 /* HeFengSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C229124B5C38E00EDB9B4 /* HeFengSettingViewController.m */; };
+		874C230F24B5C38F00EDB9B4 /* HeFengAuthorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C229224B5C38E00EDB9B4 /* HeFengAuthorityViewController.m */; };
+		874C231024B5C38F00EDB9B4 /* HeFengSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C229324B5C38E00EDB9B4 /* HeFengSearchViewController.m */; };
+		874C231124B5C38F00EDB9B4 /* HeFengCityManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C229424B5C38E00EDB9B4 /* HeFengCityManagerViewController.m */; };
+		874C231224B5C38F00EDB9B4 /* ImagesDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C229624B5C38E00EDB9B4 /* ImagesDownloadManager.m */; };
+		874C231324B5C38F00EDB9B4 /* HeFengHomeTabelViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C229A24B5C38E00EDB9B4 /* HeFengHomeTabelViewDataModel.m */; };
+		874C231424B5C38F00EDB9B4 /* HeFengSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C229B24B5C38E00EDB9B4 /* HeFengSettingModel.m */; };
+		874C231524B5C38F00EDB9B4 /* HeFengHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 874C229F24B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.xib */; };
+		874C231624B5C38F00EDB9B4 /* HeFengHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22A224B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.m */; };
+		874C231724B5C38F00EDB9B4 /* HeFengHourlyWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22A324B5C38E00EDB9B4 /* HeFengHourlyWeatherView.m */; };
+		874C231824B5C38F00EDB9B4 /* HeFengDayWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22A424B5C38E00EDB9B4 /* HeFengDayWeatherView.m */; };
+		874C231924B5C38F00EDB9B4 /* HeFengWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22A624B5C38E00EDB9B4 /* HeFengWaterWaveView.m */; };
+		874C231A24B5C38F00EDB9B4 /* HeFengHourlyLineImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22A724B5C38E00EDB9B4 /* HeFengHourlyLineImagesView.m */; };
+		874C231B24B5C38F00EDB9B4 /* HeFengDayWeatherRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22A824B5C38E00EDB9B4 /* HeFengDayWeatherRowView.m */; };
+		874C231C24B5C38F00EDB9B4 /* HeFengHomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22AB24B5C38E00EDB9B4 /* HeFengHomeScrollView.m */; };
+		874C231D24B5C38F00EDB9B4 /* HeFengRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22AC24B5C38E00EDB9B4 /* HeFengRefreshHeader.m */; };
+		874C231E24B5C38F00EDB9B4 /* HeFengHomeNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22AD24B5C38E00EDB9B4 /* HeFengHomeNavView.m */; };
+		874C231F24B5C38F00EDB9B4 /* HeFengInstructionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22AE24B5C38E00EDB9B4 /* HeFengInstructionView.m */; };
+		874C232024B5C38F00EDB9B4 /* HeFengHourlyLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22AF24B5C38E00EDB9B4 /* HeFengHourlyLineView.m */; };
+		874C232124B5C38F00EDB9B4 /* HeFengHourlyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22B524B5C38E00EDB9B4 /* HeFengHourlyImageView.m */; };
+		874C232224B5C38F00EDB9B4 /* HeFengNowWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22B624B5C38E00EDB9B4 /* HeFengNowWeatherView.m */; };
+		874C232324B5C38F00EDB9B4 /* HeFengCityManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22BB24B5C38E00EDB9B4 /* HeFengCityManagerCell.m */; };
+		874C232424B5C38F00EDB9B4 /* HeFengTodayWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22BE24B5C38E00EDB9B4 /* HeFengTodayWeatherView.m */; };
+		874C232524B5C38F00EDB9B4 /* HeFengTodayWeatherItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22BF24B5C38E00EDB9B4 /* HeFengTodayWeatherItemView.m */; };
+		874C232624B5C38F00EDB9B4 /* HeFengTodayWeatherMoonRiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22C224B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseView.m */; };
+		874C232724B5C38F00EDB9B4 /* HeFengTodayWeatherAQIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22C424B5C38E00EDB9B4 /* HeFengTodayWeatherAQIView.m */; };
+		874C232824B5C38F00EDB9B4 /* HeFengTodayWeatherMoonRiseCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22C624B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseCurveView.m */; };
+		874C232924B5C38F00EDB9B4 /* HeFengSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22CB24B5C38E00EDB9B4 /* HeFengSearchCell.m */; };
+		874C232A24B5C38F00EDB9B4 /* HeFengCollectionCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22CC24B5C38E00EDB9B4 /* HeFengCollectionCityCell.m */; };
+		874C232B24B5C38F00EDB9B4 /* HeFengSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22CD24B5C38E00EDB9B4 /* HeFengSearchBarView.m */; };
+		874C232C24B5C38F00EDB9B4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 874C22CF24B5C38E00EDB9B4 /* LICENSE */; };
+		874C232D24B5C38F00EDB9B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 874C22D024B5C38E00EDB9B4 /* README.md */; };
+		874C232E24B5C38F00EDB9B4 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22D424B5C38E00EDB9B4 /* SDWebImageManager.m */; };
+		874C232F24B5C38F00EDB9B4 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22D524B5C38E00EDB9B4 /* SDWebImageDecoder.m */; };
+		874C233024B5C38F00EDB9B4 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22D724B5C38E00EDB9B4 /* UIImageView+HighlightedWebCache.m */; };
+		874C233124B5C38F00EDB9B4 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22D924B5C38E00EDB9B4 /* SDWebImageDownloader.m */; };
+		874C233224B5C38F00EDB9B4 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22DA24B5C38E00EDB9B4 /* UIImage+GIF.m */; };
+		874C233324B5C38F00EDB9B4 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22DC24B5C38E00EDB9B4 /* UIImage+MultiFormat.m */; };
+		874C233424B5C38F00EDB9B4 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22DD24B5C38E00EDB9B4 /* SDWebImageCompat.m */; };
+		874C233524B5C38F00EDB9B4 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22DE24B5C38E00EDB9B4 /* SDWebImagePrefetcher.m */; };
+		874C233624B5C38F00EDB9B4 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22E024B5C38E00EDB9B4 /* SDImageCache.m */; };
+		874C233724B5C38F00EDB9B4 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22E224B5C38E00EDB9B4 /* SDWebImageDownloaderOperation.m */; };
+		874C233824B5C38F00EDB9B4 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22E524B5C38E00EDB9B4 /* NSData+ImageContentType.m */; };
+		874C233924B5C38F00EDB9B4 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22E624B5C38E00EDB9B4 /* UIImageView+WebCache.m */; };
+		874C233A24B5C38F00EDB9B4 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22E924B5C38E00EDB9B4 /* UIView+WebCacheOperation.m */; };
+		874C233B24B5C38F00EDB9B4 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22ED24B5C38E00EDB9B4 /* UIButton+WebCache.m */; };
+		874C233C24B5C38F00EDB9B4 /* UIBezierPath+HeFengPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22F524B5C38F00EDB9B4 /* UIBezierPath+HeFengPath.m */; };
+		874C233D24B5C38F00EDB9B4 /* HeFengBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22FA24B5C38F00EDB9B4 /* HeFengBaseLabel.m */; };
+		874C233E24B5C38F00EDB9B4 /* HeFengBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22FC24B5C38F00EDB9B4 /* HeFengBaseViewController.m */; };
+		874C233F24B5C38F00EDB9B4 /* HeFengBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22FE24B5C38F00EDB9B4 /* HeFengBaseButton.m */; };
+		874C234024B5C38F00EDB9B4 /* HeFengBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C22FF24B5C38F00EDB9B4 /* HeFengBaseNavigationViewController.m */; };
+		874C234124B5C38F00EDB9B4 /* HeFengBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C230024B5C38F00EDB9B4 /* HeFengBaseTextField.m */; };
+		874C234224B5C38F00EDB9B4 /* HeFengBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C230224B5C38F00EDB9B4 /* HeFengBaseView.m */; };
+		874C234324B5C38F00EDB9B4 /* HeFengBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C230424B5C38F00EDB9B4 /* HeFengBaseModel.m */; };
 		87D44D982254A5AB0060BB6F /* hefeng_refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87D44D972254A5AB0060BB6F /* hefeng_refresh.gif */; };
 		87DB8DEF224A233C00A4ACFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DB8DED224A233C00A4ACFC /* LaunchScreen.storyboard */; };
 		87DB8DF2224A233C00A4ACFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8DF1224A233C00A4ACFC /* main.m */; };
-		87DB8E69224A239B00A4ACFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E16224A239B00A4ACFC /* AppDelegate.m */; };
-		87DB8E6A224A239B00A4ACFC /* HeFengHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E1E224A239B00A4ACFC /* HeFengHomeViewController.m */; };
-		87DB8E6C224A239B00A4ACFC /* HeFengAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E22224A239B00A4ACFC /* HeFengAboutViewController.m */; };
-		87DB8E6D224A239B00A4ACFC /* HeFengSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E26224A239B00A4ACFC /* HeFengSettingViewController.m */; };
-		87DB8E6E224A239B00A4ACFC /* HeFengSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E27224A239B00A4ACFC /* HeFengSearchViewController.m */; };
-		87DB8E6F224A239B00A4ACFC /* HeFengCityManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E28224A239B00A4ACFC /* HeFengCityManagerViewController.m */; };
-		87DB8E70224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E2D224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m */; };
-		87DB8E71224A239B00A4ACFC /* HeFengSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E2E224A239B00A4ACFC /* HeFengSettingModel.m */; };
-		87DB8E72224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87DB8E32224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib */; };
-		87DB8E73224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E36224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m */; };
-		87DB8E74224A239B00A4ACFC /* HeFengHourlyWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E37224A239B00A4ACFC /* HeFengHourlyWeatherView.m */; };
-		87DB8E75224A239B00A4ACFC /* HeFengHomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3A224A239B00A4ACFC /* HeFengHomeScrollView.m */; };
-		87DB8E76224A239B00A4ACFC /* HeFengDayWeatherRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3B224A239B00A4ACFC /* HeFengDayWeatherRowView.m */; };
-		87DB8E77224A239B00A4ACFC /* HeFengHomeNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3C224A239B00A4ACFC /* HeFengHomeNavView.m */; };
-		87DB8E78224A239B00A4ACFC /* HeFengInstructionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3D224A239B00A4ACFC /* HeFengInstructionView.m */; };
-		87DB8E79224A239B00A4ACFC /* HeFengHourlyLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E3E224A239B00A4ACFC /* HeFengHourlyLineView.m */; };
-		87DB8E7A224A239B00A4ACFC /* HeFengDayWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E40224A239B00A4ACFC /* HeFengDayWeatherView.m */; };
-		87DB8E7B224A239B00A4ACFC /* HeFengHourlyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E43224A239B00A4ACFC /* HeFengHourlyImageView.m */; };
-		87DB8E7C224A239B00A4ACFC /* HeFengCityManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E46224A239B00A4ACFC /* HeFengCityManagerCell.m */; };
-		87DB8E7D224A239B00A4ACFC /* HeFengTodayWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E49224A239B00A4ACFC /* HeFengTodayWeatherView.m */; };
-		87DB8E7E224A239B00A4ACFC /* HeFengTodayWeatherItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E4A224A239B00A4ACFC /* HeFengTodayWeatherItemView.m */; };
-		87DB8E7F224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E4D224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m */; };
-		87DB8E80224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E4F224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m */; };
-		87DB8E81224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E51224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m */; };
-		87DB8E82224A239B00A4ACFC /* HeFengSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E54224A239B00A4ACFC /* HeFengSearchBarView.m */; };
-		87DB8E83224A239B00A4ACFC /* HeFengBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E58224A239B00A4ACFC /* HeFengBaseViewController.m */; };
-		87DB8E84224A239B00A4ACFC /* HeFengBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5A224A239B00A4ACFC /* HeFengBaseNavigationViewController.m */; };
-		87DB8E85224A239B00A4ACFC /* HeFengBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5B224A239B00A4ACFC /* HeFengBaseView.m */; };
-		87DB8E86224A239B00A4ACFC /* HeFengBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5C224A239B00A4ACFC /* HeFengBaseModel.m */; };
-		87DB8E87224A239B00A4ACFC /* UIBezierPath+HeFengPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DB8E5F224A239B00A4ACFC /* UIBezierPath+HeFengPath.m */; };
 		87DB8E95224A250B00A4ACFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87DB8E8D224A250B00A4ACFC /* Localizable.strings */; };
 		8F0DA026E046938480EB68DB /* libPods-OpenWeatherPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B90599F87F3726BDD250284 /* libPods-OpenWeatherPlus.a */; };
 		DC5CFFEDF8BD65DA7FF6EF4D /* libPods-OpenWeatherPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722BFD37AE0C2E07AF5AF79 /* libPods-OpenWeatherPlusUITests.a */; };
@@ -90,35 +109,133 @@
 		6E7C8D1E97AC4C93FE3D5599 /* Pods-OpenWeatherPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenWeatherPlus/Pods-OpenWeatherPlus.release.xcconfig"; sourceTree = "<group>"; };
 		8705B500225B40AB000903A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8705B502225B40AF000903A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		870BF952225CAE7800C9CF77 /* HeFengWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherRequest.m; sourceTree = "<group>"; };
-		870BF953225CAE7800C9CF77 /* HeFengWeatherTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherTool.h; sourceTree = "<group>"; };
-		870BF954225CAE7800C9CF77 /* HeFengWeatherDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherDataManager.h; sourceTree = "<group>"; };
-		870BF955225CAE7800C9CF77 /* HeFengWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherRequest.h; sourceTree = "<group>"; };
-		870BF956225CAE7800C9CF77 /* HeFengWeatherTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherTool.m; sourceTree = "<group>"; };
-		870BF957225CAE7800C9CF77 /* HeFengWeatherDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherDataManager.m; sourceTree = "<group>"; };
 		870BF95B225D84EC00C9CF77 /* OpenWeatherPlusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusTests.m; sourceTree = "<group>"; };
 		870BF95D225D858400C9CF77 /* OpenWeatherPlusUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusUITests.m; sourceTree = "<group>"; };
-		873DA144224B52F400F8FC1E /* HeFengSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengSearchCell.h; sourceTree = "<group>"; };
-		873DA145224B52F400F8FC1E /* HeFengSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchCell.m; sourceTree = "<group>"; };
-		873DA147224B63D500F8FC1E /* HeFengCollectionCityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengCollectionCityCell.h; sourceTree = "<group>"; };
-		873DA148224B63D500F8FC1E /* HeFengCollectionCityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengCollectionCityCell.m; sourceTree = "<group>"; };
-		873DA14F224C5DEE00F8FC1E /* HeFengBaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengBaseLabel.h; sourceTree = "<group>"; };
-		873DA150224C5DEE00F8FC1E /* HeFengBaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseLabel.m; sourceTree = "<group>"; };
-		873DA155224C6B1B00F8FC1E /* HeFengBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengBaseButton.h; sourceTree = "<group>"; };
-		873DA156224C6B1B00F8FC1E /* HeFengBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseButton.m; sourceTree = "<group>"; };
-		873DA158224C6FD600F8FC1E /* HeFengBaseTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengBaseTextField.h; sourceTree = "<group>"; };
-		873DA159224C6FD600F8FC1E /* HeFengBaseTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseTextField.m; sourceTree = "<group>"; };
 		873DA15E224C8AAC00F8FC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		87B58866224CDD6300CAB314 /* HeFengNowWeatherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengNowWeatherView.h; sourceTree = "<group>"; };
-		87B58867224CDD6300CAB314 /* HeFengNowWeatherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengNowWeatherView.m; sourceTree = "<group>"; };
-		87B58869224DC11D00CAB314 /* HeFengRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengRefreshHeader.h; sourceTree = "<group>"; };
-		87B5886A224DC11D00CAB314 /* HeFengRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengRefreshHeader.m; sourceTree = "<group>"; };
-		87B5886C224DC7C100CAB314 /* HeFengWaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengWaterWaveView.h; sourceTree = "<group>"; };
-		87B5886D224DC7C100CAB314 /* HeFengWaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengWaterWaveView.m; sourceTree = "<group>"; };
-		87B588712251AA1600CAB314 /* HeFengAuthorityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengAuthorityViewController.h; sourceTree = "<group>"; };
-		87B588722251AA1600CAB314 /* HeFengAuthorityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengAuthorityViewController.m; sourceTree = "<group>"; };
-		87B588772252234E00CAB314 /* HeFengHourlyLineImagesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyLineImagesView.h; sourceTree = "<group>"; };
-		87B588782252234E00CAB314 /* HeFengHourlyLineImagesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyLineImagesView.m; sourceTree = "<group>"; };
+		874C227C24B5C38D00EDB9B4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		874C227D24B5C38D00EDB9B4 /* 中国地级市id.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "中国地级市id.txt"; sourceTree = "<group>"; };
+		874C227E24B5C38D00EDB9B4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		874C228024B5C38D00EDB9B4 /* HeFengWeatherTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherTool.m; sourceTree = "<group>"; };
+		874C228124B5C38D00EDB9B4 /* HeFengWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherRequest.h; sourceTree = "<group>"; };
+		874C228224B5C38D00EDB9B4 /* HeFengWeatherDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherDataManager.h; sourceTree = "<group>"; };
+		874C228324B5C38D00EDB9B4 /* HeFengWeatherTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherTool.h; sourceTree = "<group>"; };
+		874C228424B5C38D00EDB9B4 /* HeWeather.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeWeather.framework; sourceTree = "<group>"; };
+		874C228524B5C38D00EDB9B4 /* HeFengWeatherDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherDataManager.m; sourceTree = "<group>"; };
+		874C228624B5C38D00EDB9B4 /* HeFengWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherRequest.m; sourceTree = "<group>"; };
+		874C228824B5C38E00EDB9B4 /* ImagesDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesDownloadManager.h; sourceTree = "<group>"; };
+		874C228A24B5C38E00EDB9B4 /* HeFengHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeViewController.m; sourceTree = "<group>"; };
+		874C228B24B5C38E00EDB9B4 /* HeFengAuthorityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengAuthorityViewController.h; sourceTree = "<group>"; };
+		874C228C24B5C38E00EDB9B4 /* HeFengSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSettingViewController.h; sourceTree = "<group>"; };
+		874C228D24B5C38E00EDB9B4 /* HeFengSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSearchViewController.h; sourceTree = "<group>"; };
+		874C228E24B5C38E00EDB9B4 /* HeFengAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengAboutViewController.m; sourceTree = "<group>"; };
+		874C228F24B5C38E00EDB9B4 /* HeFengCityManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengCityManagerViewController.h; sourceTree = "<group>"; };
+		874C229024B5C38E00EDB9B4 /* HeFengHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeViewController.h; sourceTree = "<group>"; };
+		874C229124B5C38E00EDB9B4 /* HeFengSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSettingViewController.m; sourceTree = "<group>"; };
+		874C229224B5C38E00EDB9B4 /* HeFengAuthorityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengAuthorityViewController.m; sourceTree = "<group>"; };
+		874C229324B5C38E00EDB9B4 /* HeFengSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchViewController.m; sourceTree = "<group>"; };
+		874C229424B5C38E00EDB9B4 /* HeFengCityManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengCityManagerViewController.m; sourceTree = "<group>"; };
+		874C229524B5C38E00EDB9B4 /* HeFengAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengAboutViewController.h; sourceTree = "<group>"; };
+		874C229624B5C38E00EDB9B4 /* ImagesDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesDownloadManager.m; sourceTree = "<group>"; };
+		874C229824B5C38E00EDB9B4 /* HeFengHomeTabelViewDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeTabelViewDataModel.h; sourceTree = "<group>"; };
+		874C229924B5C38E00EDB9B4 /* HeFengSettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSettingModel.h; sourceTree = "<group>"; };
+		874C229A24B5C38E00EDB9B4 /* HeFengHomeTabelViewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeTabelViewDataModel.m; sourceTree = "<group>"; };
+		874C229B24B5C38E00EDB9B4 /* HeFengSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSettingModel.m; sourceTree = "<group>"; };
+		874C229E24B5C38E00EDB9B4 /* HeFengRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengRefreshHeader.h; sourceTree = "<group>"; };
+		874C229F24B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeFengHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		874C22A024B5C38E00EDB9B4 /* HeFengInstructionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengInstructionView.h; sourceTree = "<group>"; };
+		874C22A124B5C38E00EDB9B4 /* HeFengHomeNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeNavView.h; sourceTree = "<group>"; };
+		874C22A224B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		874C22A324B5C38E00EDB9B4 /* HeFengHourlyWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyWeatherView.m; sourceTree = "<group>"; };
+		874C22A424B5C38E00EDB9B4 /* HeFengDayWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengDayWeatherView.m; sourceTree = "<group>"; };
+		874C22A524B5C38E00EDB9B4 /* HeFengHourlyLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyLineView.h; sourceTree = "<group>"; };
+		874C22A624B5C38E00EDB9B4 /* HeFengWaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWaterWaveView.m; sourceTree = "<group>"; };
+		874C22A724B5C38E00EDB9B4 /* HeFengHourlyLineImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyLineImagesView.m; sourceTree = "<group>"; };
+		874C22A824B5C38E00EDB9B4 /* HeFengDayWeatherRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengDayWeatherRowView.m; sourceTree = "<group>"; };
+		874C22A924B5C38E00EDB9B4 /* HeFengNowWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengNowWeatherView.h; sourceTree = "<group>"; };
+		874C22AA24B5C38E00EDB9B4 /* HeFengHourlyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyImageView.h; sourceTree = "<group>"; };
+		874C22AB24B5C38E00EDB9B4 /* HeFengHomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeScrollView.m; sourceTree = "<group>"; };
+		874C22AC24B5C38E00EDB9B4 /* HeFengRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengRefreshHeader.m; sourceTree = "<group>"; };
+		874C22AD24B5C38E00EDB9B4 /* HeFengHomeNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeNavView.m; sourceTree = "<group>"; };
+		874C22AE24B5C38E00EDB9B4 /* HeFengInstructionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengInstructionView.m; sourceTree = "<group>"; };
+		874C22AF24B5C38E00EDB9B4 /* HeFengHourlyLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyLineView.m; sourceTree = "<group>"; };
+		874C22B024B5C38E00EDB9B4 /* HeFengWaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWaterWaveView.h; sourceTree = "<group>"; };
+		874C22B124B5C38E00EDB9B4 /* HeFengHourlyWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyWeatherView.h; sourceTree = "<group>"; };
+		874C22B224B5C38E00EDB9B4 /* HeFengDayWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengDayWeatherView.h; sourceTree = "<group>"; };
+		874C22B324B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		874C22B424B5C38E00EDB9B4 /* HeFengHomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeScrollView.h; sourceTree = "<group>"; };
+		874C22B524B5C38E00EDB9B4 /* HeFengHourlyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyImageView.m; sourceTree = "<group>"; };
+		874C22B624B5C38E00EDB9B4 /* HeFengNowWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengNowWeatherView.m; sourceTree = "<group>"; };
+		874C22B724B5C38E00EDB9B4 /* HeFengDayWeatherRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengDayWeatherRowView.h; sourceTree = "<group>"; };
+		874C22B824B5C38E00EDB9B4 /* HeFengHourlyLineImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyLineImagesView.h; sourceTree = "<group>"; };
+		874C22BA24B5C38E00EDB9B4 /* HeFengCityManagerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengCityManagerCell.h; sourceTree = "<group>"; };
+		874C22BB24B5C38E00EDB9B4 /* HeFengCityManagerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengCityManagerCell.m; sourceTree = "<group>"; };
+		874C22BD24B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherMoonRiseView.h; sourceTree = "<group>"; };
+		874C22BE24B5C38E00EDB9B4 /* HeFengTodayWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherView.m; sourceTree = "<group>"; };
+		874C22BF24B5C38E00EDB9B4 /* HeFengTodayWeatherItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherItemView.m; sourceTree = "<group>"; };
+		874C22C024B5C38E00EDB9B4 /* HeFengTodayWeatherAQIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherAQIView.h; sourceTree = "<group>"; };
+		874C22C124B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherMoonRiseCurveView.h; sourceTree = "<group>"; };
+		874C22C224B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherMoonRiseView.m; sourceTree = "<group>"; };
+		874C22C324B5C38E00EDB9B4 /* HeFengTodayWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherView.h; sourceTree = "<group>"; };
+		874C22C424B5C38E00EDB9B4 /* HeFengTodayWeatherAQIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherAQIView.m; sourceTree = "<group>"; };
+		874C22C524B5C38E00EDB9B4 /* HeFengTodayWeatherItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherItemView.h; sourceTree = "<group>"; };
+		874C22C624B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherMoonRiseCurveView.m; sourceTree = "<group>"; };
+		874C22C824B5C38E00EDB9B4 /* HeFengCollectionCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengCollectionCityCell.h; sourceTree = "<group>"; };
+		874C22C924B5C38E00EDB9B4 /* HeFengSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSearchCell.h; sourceTree = "<group>"; };
+		874C22CA24B5C38E00EDB9B4 /* HeFengSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSearchBarView.h; sourceTree = "<group>"; };
+		874C22CB24B5C38E00EDB9B4 /* HeFengSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchCell.m; sourceTree = "<group>"; };
+		874C22CC24B5C38E00EDB9B4 /* HeFengCollectionCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengCollectionCityCell.m; sourceTree = "<group>"; };
+		874C22CD24B5C38E00EDB9B4 /* HeFengSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchBarView.m; sourceTree = "<group>"; };
+		874C22CF24B5C38E00EDB9B4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		874C22D024B5C38E00EDB9B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		874C22D224B5C38E00EDB9B4 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		874C22D324B5C38E00EDB9B4 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		874C22D424B5C38E00EDB9B4 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		874C22D524B5C38E00EDB9B4 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		874C22D624B5C38E00EDB9B4 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		874C22D724B5C38E00EDB9B4 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		874C22D824B5C38E00EDB9B4 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		874C22D924B5C38E00EDB9B4 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		874C22DA24B5C38E00EDB9B4 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		874C22DB24B5C38E00EDB9B4 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		874C22DC24B5C38E00EDB9B4 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		874C22DD24B5C38E00EDB9B4 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		874C22DE24B5C38E00EDB9B4 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		874C22DF24B5C38E00EDB9B4 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		874C22E024B5C38E00EDB9B4 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		874C22E124B5C38E00EDB9B4 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		874C22E224B5C38E00EDB9B4 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		874C22E324B5C38E00EDB9B4 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		874C22E424B5C38E00EDB9B4 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		874C22E524B5C38E00EDB9B4 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		874C22E624B5C38E00EDB9B4 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		874C22E724B5C38E00EDB9B4 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		874C22E824B5C38E00EDB9B4 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		874C22E924B5C38E00EDB9B4 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		874C22EA24B5C38E00EDB9B4 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		874C22EB24B5C38E00EDB9B4 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		874C22EC24B5C38E00EDB9B4 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		874C22ED24B5C38E00EDB9B4 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		874C22EE24B5C38E00EDB9B4 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		874C22F024B5C38E00EDB9B4 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		874C22F124B5C38E00EDB9B4 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		874C22F224B5C38E00EDB9B4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		874C22F324B5C38E00EDB9B4 /* FontAndColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
+		874C22F524B5C38F00EDB9B4 /* UIBezierPath+HeFengPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+HeFengPath.m"; sourceTree = "<group>"; };
+		874C22F624B5C38F00EDB9B4 /* UIBezierPath+HeFengPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+HeFengPath.h"; sourceTree = "<group>"; };
+		874C22F824B5C38F00EDB9B4 /* HeFengBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseNavigationViewController.h; sourceTree = "<group>"; };
+		874C22F924B5C38F00EDB9B4 /* HeFengBaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseTextField.h; sourceTree = "<group>"; };
+		874C22FA24B5C38F00EDB9B4 /* HeFengBaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseLabel.m; sourceTree = "<group>"; };
+		874C22FB24B5C38F00EDB9B4 /* HeFengBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseView.h; sourceTree = "<group>"; };
+		874C22FC24B5C38F00EDB9B4 /* HeFengBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseViewController.m; sourceTree = "<group>"; };
+		874C22FD24B5C38F00EDB9B4 /* HeFengBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseModel.h; sourceTree = "<group>"; };
+		874C22FE24B5C38F00EDB9B4 /* HeFengBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseButton.m; sourceTree = "<group>"; };
+		874C22FF24B5C38F00EDB9B4 /* HeFengBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseNavigationViewController.m; sourceTree = "<group>"; };
+		874C230024B5C38F00EDB9B4 /* HeFengBaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseTextField.m; sourceTree = "<group>"; };
+		874C230124B5C38F00EDB9B4 /* HeFengBaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseLabel.h; sourceTree = "<group>"; };
+		874C230224B5C38F00EDB9B4 /* HeFengBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseView.m; sourceTree = "<group>"; };
+		874C230324B5C38F00EDB9B4 /* HeFengBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseButton.h; sourceTree = "<group>"; };
+		874C230424B5C38F00EDB9B4 /* HeFengBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseModel.m; sourceTree = "<group>"; };
+		874C230524B5C38F00EDB9B4 /* HeFengBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseViewController.h; sourceTree = "<group>"; };
 		87D44D972254A5AB0060BB6F /* hefeng_refresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hefeng_refresh.gif; sourceTree = "<group>"; };
 		87DB8DDF224A233A00A4ACFC /* OpenWeatherPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DB8DEE224A233C00A4ACFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,69 +245,6 @@
 		87DB8DFD224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DB8E02224A233C00A4ACFC /* OpenWeatherPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWeatherPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DB8E08224A233C00A4ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87DB8E15224A239B00A4ACFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		87DB8E16224A239B00A4ACFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		87DB8E18224A239B00A4ACFC /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
-		87DB8E19224A239B00A4ACFC /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
-		87DB8E1A224A239B00A4ACFC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		87DB8E1B224A239B00A4ACFC /* FontAndColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
-		87DB8E1E224A239B00A4ACFC /* HeFengHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeViewController.m; sourceTree = "<group>"; };
-		87DB8E20224A239B00A4ACFC /* HeFengSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSettingViewController.h; sourceTree = "<group>"; };
-		87DB8E21224A239B00A4ACFC /* HeFengSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSearchViewController.h; sourceTree = "<group>"; };
-		87DB8E22224A239B00A4ACFC /* HeFengAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengAboutViewController.m; sourceTree = "<group>"; };
-		87DB8E23224A239B00A4ACFC /* HeFengCityManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengCityManagerViewController.h; sourceTree = "<group>"; };
-		87DB8E25224A239B00A4ACFC /* HeFengHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeViewController.h; sourceTree = "<group>"; };
-		87DB8E26224A239B00A4ACFC /* HeFengSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSettingViewController.m; sourceTree = "<group>"; };
-		87DB8E27224A239B00A4ACFC /* HeFengSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchViewController.m; sourceTree = "<group>"; };
-		87DB8E28224A239B00A4ACFC /* HeFengCityManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengCityManagerViewController.m; sourceTree = "<group>"; };
-		87DB8E29224A239B00A4ACFC /* HeFengAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengAboutViewController.h; sourceTree = "<group>"; };
-		87DB8E2B224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeTabelViewDataModel.h; sourceTree = "<group>"; };
-		87DB8E2C224A239B00A4ACFC /* HeFengSettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSettingModel.h; sourceTree = "<group>"; };
-		87DB8E2D224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeTabelViewDataModel.m; sourceTree = "<group>"; };
-		87DB8E2E224A239B00A4ACFC /* HeFengSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSettingModel.m; sourceTree = "<group>"; };
-		87DB8E31224A239B00A4ACFC /* HeFengDayWeatherRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengDayWeatherRowView.h; sourceTree = "<group>"; };
-		87DB8E32224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeFengHomeCollectionViewCell.xib; sourceTree = "<group>"; };
-		87DB8E33224A239B00A4ACFC /* HeFengInstructionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengInstructionView.h; sourceTree = "<group>"; };
-		87DB8E34224A239B00A4ACFC /* HeFengHomeNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeNavView.h; sourceTree = "<group>"; };
-		87DB8E35224A239B00A4ACFC /* HeFengDayWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengDayWeatherView.h; sourceTree = "<group>"; };
-		87DB8E36224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeCollectionViewCell.m; sourceTree = "<group>"; };
-		87DB8E37224A239B00A4ACFC /* HeFengHourlyWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyWeatherView.m; sourceTree = "<group>"; };
-		87DB8E38224A239B00A4ACFC /* HeFengHourlyLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyLineView.h; sourceTree = "<group>"; };
-		87DB8E39224A239B00A4ACFC /* HeFengHourlyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyImageView.h; sourceTree = "<group>"; };
-		87DB8E3A224A239B00A4ACFC /* HeFengHomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeScrollView.m; sourceTree = "<group>"; };
-		87DB8E3B224A239B00A4ACFC /* HeFengDayWeatherRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengDayWeatherRowView.m; sourceTree = "<group>"; };
-		87DB8E3C224A239B00A4ACFC /* HeFengHomeNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHomeNavView.m; sourceTree = "<group>"; };
-		87DB8E3D224A239B00A4ACFC /* HeFengInstructionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengInstructionView.m; sourceTree = "<group>"; };
-		87DB8E3E224A239B00A4ACFC /* HeFengHourlyLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyLineView.m; sourceTree = "<group>"; };
-		87DB8E3F224A239B00A4ACFC /* HeFengHourlyWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHourlyWeatherView.h; sourceTree = "<group>"; };
-		87DB8E40224A239B00A4ACFC /* HeFengDayWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengDayWeatherView.m; sourceTree = "<group>"; };
-		87DB8E41224A239B00A4ACFC /* HeFengHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeCollectionViewCell.h; sourceTree = "<group>"; };
-		87DB8E42224A239B00A4ACFC /* HeFengHomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengHomeScrollView.h; sourceTree = "<group>"; };
-		87DB8E43224A239B00A4ACFC /* HeFengHourlyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengHourlyImageView.m; sourceTree = "<group>"; };
-		87DB8E45224A239B00A4ACFC /* HeFengCityManagerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengCityManagerCell.h; sourceTree = "<group>"; };
-		87DB8E46224A239B00A4ACFC /* HeFengCityManagerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengCityManagerCell.m; sourceTree = "<group>"; };
-		87DB8E48224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherMoonRiseView.h; sourceTree = "<group>"; };
-		87DB8E49224A239B00A4ACFC /* HeFengTodayWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherView.m; sourceTree = "<group>"; };
-		87DB8E4A224A239B00A4ACFC /* HeFengTodayWeatherItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherItemView.m; sourceTree = "<group>"; };
-		87DB8E4B224A239B00A4ACFC /* HeFengTodayWeatherAQIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherAQIView.h; sourceTree = "<group>"; };
-		87DB8E4C224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherMoonRiseCurveView.h; sourceTree = "<group>"; };
-		87DB8E4D224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherMoonRiseView.m; sourceTree = "<group>"; };
-		87DB8E4E224A239B00A4ACFC /* HeFengTodayWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherView.h; sourceTree = "<group>"; };
-		87DB8E4F224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherAQIView.m; sourceTree = "<group>"; };
-		87DB8E50224A239B00A4ACFC /* HeFengTodayWeatherItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengTodayWeatherItemView.h; sourceTree = "<group>"; };
-		87DB8E51224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengTodayWeatherMoonRiseCurveView.m; sourceTree = "<group>"; };
-		87DB8E53224A239B00A4ACFC /* HeFengSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengSearchBarView.h; sourceTree = "<group>"; };
-		87DB8E54224A239B00A4ACFC /* HeFengSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengSearchBarView.m; sourceTree = "<group>"; };
-		87DB8E56224A239B00A4ACFC /* HeFengBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseNavigationViewController.h; sourceTree = "<group>"; };
-		87DB8E57224A239B00A4ACFC /* HeFengBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseView.h; sourceTree = "<group>"; };
-		87DB8E58224A239B00A4ACFC /* HeFengBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseViewController.m; sourceTree = "<group>"; };
-		87DB8E59224A239B00A4ACFC /* HeFengBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseModel.h; sourceTree = "<group>"; };
-		87DB8E5A224A239B00A4ACFC /* HeFengBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseNavigationViewController.m; sourceTree = "<group>"; };
-		87DB8E5B224A239B00A4ACFC /* HeFengBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseView.m; sourceTree = "<group>"; };
-		87DB8E5C224A239B00A4ACFC /* HeFengBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengBaseModel.m; sourceTree = "<group>"; };
-		87DB8E5D224A239B00A4ACFC /* HeFengBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengBaseViewController.h; sourceTree = "<group>"; };
-		87DB8E5F224A239B00A4ACFC /* UIBezierPath+HeFengPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+HeFengPath.m"; sourceTree = "<group>"; };
-		87DB8E60224A239B00A4ACFC /* UIBezierPath+HeFengPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+HeFengPath.h"; sourceTree = "<group>"; };
 		87DB8E8B224A24E200A4ACFC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		87DB8E8E224A250B00A4ACFC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		87DB8E8F224A250B00A4ACFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -203,6 +257,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874C230924B5C38F00EDB9B4 /* HeWeather.framework in Frameworks */,
 				8F0DA026E046938480EB68DB /* libPods-OpenWeatherPlus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +291,244 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		874C227B24B5C38D00EDB9B4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				874C227C24B5C38D00EDB9B4 /* AppDelegate.h */,
+				874C227D24B5C38D00EDB9B4 /* 中国地级市id.txt */,
+				874C227E24B5C38D00EDB9B4 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		874C227F24B5C38D00EDB9B4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				874C228424B5C38D00EDB9B4 /* HeWeather.framework */,
+				874C228024B5C38D00EDB9B4 /* HeFengWeatherTool.m */,
+				874C228124B5C38D00EDB9B4 /* HeFengWeatherRequest.h */,
+				874C228224B5C38D00EDB9B4 /* HeFengWeatherDataManager.h */,
+				874C228324B5C38D00EDB9B4 /* HeFengWeatherTool.h */,
+				874C228524B5C38D00EDB9B4 /* HeFengWeatherDataManager.m */,
+				874C228624B5C38D00EDB9B4 /* HeFengWeatherRequest.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		874C228724B5C38E00EDB9B4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				874C228824B5C38E00EDB9B4 /* ImagesDownloadManager.h */,
+				874C229624B5C38E00EDB9B4 /* ImagesDownloadManager.m */,
+				874C228924B5C38E00EDB9B4 /* Controller */,
+				874C229724B5C38E00EDB9B4 /* Model */,
+				874C229C24B5C38E00EDB9B4 /* View */,
+				874C22CE24B5C38E00EDB9B4 /* SDWebImage */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		874C228924B5C38E00EDB9B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				874C228A24B5C38E00EDB9B4 /* HeFengHomeViewController.m */,
+				874C228B24B5C38E00EDB9B4 /* HeFengAuthorityViewController.h */,
+				874C228C24B5C38E00EDB9B4 /* HeFengSettingViewController.h */,
+				874C228D24B5C38E00EDB9B4 /* HeFengSearchViewController.h */,
+				874C228E24B5C38E00EDB9B4 /* HeFengAboutViewController.m */,
+				874C228F24B5C38E00EDB9B4 /* HeFengCityManagerViewController.h */,
+				874C229024B5C38E00EDB9B4 /* HeFengHomeViewController.h */,
+				874C229124B5C38E00EDB9B4 /* HeFengSettingViewController.m */,
+				874C229224B5C38E00EDB9B4 /* HeFengAuthorityViewController.m */,
+				874C229324B5C38E00EDB9B4 /* HeFengSearchViewController.m */,
+				874C229424B5C38E00EDB9B4 /* HeFengCityManagerViewController.m */,
+				874C229524B5C38E00EDB9B4 /* HeFengAboutViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		874C229724B5C38E00EDB9B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				874C229824B5C38E00EDB9B4 /* HeFengHomeTabelViewDataModel.h */,
+				874C229924B5C38E00EDB9B4 /* HeFengSettingModel.h */,
+				874C229A24B5C38E00EDB9B4 /* HeFengHomeTabelViewDataModel.m */,
+				874C229B24B5C38E00EDB9B4 /* HeFengSettingModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		874C229C24B5C38E00EDB9B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				874C229D24B5C38E00EDB9B4 /* Home */,
+				874C22B924B5C38E00EDB9B4 /* City */,
+				874C22BC24B5C38E00EDB9B4 /* HeFengTodayWeatherView */,
+				874C22C724B5C38E00EDB9B4 /* Search */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		874C229D24B5C38E00EDB9B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				874C229E24B5C38E00EDB9B4 /* HeFengRefreshHeader.h */,
+				874C229F24B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.xib */,
+				874C22A024B5C38E00EDB9B4 /* HeFengInstructionView.h */,
+				874C22A124B5C38E00EDB9B4 /* HeFengHomeNavView.h */,
+				874C22A224B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.m */,
+				874C22A324B5C38E00EDB9B4 /* HeFengHourlyWeatherView.m */,
+				874C22A424B5C38E00EDB9B4 /* HeFengDayWeatherView.m */,
+				874C22A524B5C38E00EDB9B4 /* HeFengHourlyLineView.h */,
+				874C22A624B5C38E00EDB9B4 /* HeFengWaterWaveView.m */,
+				874C22A724B5C38E00EDB9B4 /* HeFengHourlyLineImagesView.m */,
+				874C22A824B5C38E00EDB9B4 /* HeFengDayWeatherRowView.m */,
+				874C22A924B5C38E00EDB9B4 /* HeFengNowWeatherView.h */,
+				874C22AA24B5C38E00EDB9B4 /* HeFengHourlyImageView.h */,
+				874C22AB24B5C38E00EDB9B4 /* HeFengHomeScrollView.m */,
+				874C22AC24B5C38E00EDB9B4 /* HeFengRefreshHeader.m */,
+				874C22AD24B5C38E00EDB9B4 /* HeFengHomeNavView.m */,
+				874C22AE24B5C38E00EDB9B4 /* HeFengInstructionView.m */,
+				874C22AF24B5C38E00EDB9B4 /* HeFengHourlyLineView.m */,
+				874C22B024B5C38E00EDB9B4 /* HeFengWaterWaveView.h */,
+				874C22B124B5C38E00EDB9B4 /* HeFengHourlyWeatherView.h */,
+				874C22B224B5C38E00EDB9B4 /* HeFengDayWeatherView.h */,
+				874C22B324B5C38E00EDB9B4 /* HeFengHomeCollectionViewCell.h */,
+				874C22B424B5C38E00EDB9B4 /* HeFengHomeScrollView.h */,
+				874C22B524B5C38E00EDB9B4 /* HeFengHourlyImageView.m */,
+				874C22B624B5C38E00EDB9B4 /* HeFengNowWeatherView.m */,
+				874C22B724B5C38E00EDB9B4 /* HeFengDayWeatherRowView.h */,
+				874C22B824B5C38E00EDB9B4 /* HeFengHourlyLineImagesView.h */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		874C22B924B5C38E00EDB9B4 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				874C22BA24B5C38E00EDB9B4 /* HeFengCityManagerCell.h */,
+				874C22BB24B5C38E00EDB9B4 /* HeFengCityManagerCell.m */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		874C22BC24B5C38E00EDB9B4 /* HeFengTodayWeatherView */ = {
+			isa = PBXGroup;
+			children = (
+				874C22BD24B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseView.h */,
+				874C22BE24B5C38E00EDB9B4 /* HeFengTodayWeatherView.m */,
+				874C22BF24B5C38E00EDB9B4 /* HeFengTodayWeatherItemView.m */,
+				874C22C024B5C38E00EDB9B4 /* HeFengTodayWeatherAQIView.h */,
+				874C22C124B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseCurveView.h */,
+				874C22C224B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseView.m */,
+				874C22C324B5C38E00EDB9B4 /* HeFengTodayWeatherView.h */,
+				874C22C424B5C38E00EDB9B4 /* HeFengTodayWeatherAQIView.m */,
+				874C22C524B5C38E00EDB9B4 /* HeFengTodayWeatherItemView.h */,
+				874C22C624B5C38E00EDB9B4 /* HeFengTodayWeatherMoonRiseCurveView.m */,
+			);
+			path = HeFengTodayWeatherView;
+			sourceTree = "<group>";
+		};
+		874C22C724B5C38E00EDB9B4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				874C22C824B5C38E00EDB9B4 /* HeFengCollectionCityCell.h */,
+				874C22C924B5C38E00EDB9B4 /* HeFengSearchCell.h */,
+				874C22CA24B5C38E00EDB9B4 /* HeFengSearchBarView.h */,
+				874C22CB24B5C38E00EDB9B4 /* HeFengSearchCell.m */,
+				874C22CC24B5C38E00EDB9B4 /* HeFengCollectionCityCell.m */,
+				874C22CD24B5C38E00EDB9B4 /* HeFengSearchBarView.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		874C22CE24B5C38E00EDB9B4 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				874C22CF24B5C38E00EDB9B4 /* LICENSE */,
+				874C22D024B5C38E00EDB9B4 /* README.md */,
+				874C22D124B5C38E00EDB9B4 /* SDWebImage */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		874C22D124B5C38E00EDB9B4 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				874C22D224B5C38E00EDB9B4 /* UIImageView+WebCache.h */,
+				874C22D324B5C38E00EDB9B4 /* NSData+ImageContentType.h */,
+				874C22D424B5C38E00EDB9B4 /* SDWebImageManager.m */,
+				874C22D524B5C38E00EDB9B4 /* SDWebImageDecoder.m */,
+				874C22D624B5C38E00EDB9B4 /* SDWebImageDownloaderOperation.h */,
+				874C22D724B5C38E00EDB9B4 /* UIImageView+HighlightedWebCache.m */,
+				874C22D824B5C38E00EDB9B4 /* SDImageCache.h */,
+				874C22D924B5C38E00EDB9B4 /* SDWebImageDownloader.m */,
+				874C22DA24B5C38E00EDB9B4 /* UIImage+GIF.m */,
+				874C22DB24B5C38E00EDB9B4 /* UIButton+WebCache.h */,
+				874C22DC24B5C38E00EDB9B4 /* UIImage+MultiFormat.m */,
+				874C22DD24B5C38E00EDB9B4 /* SDWebImageCompat.m */,
+				874C22DE24B5C38E00EDB9B4 /* SDWebImagePrefetcher.m */,
+				874C22DF24B5C38E00EDB9B4 /* UIView+WebCacheOperation.h */,
+				874C22E024B5C38E00EDB9B4 /* SDImageCache.m */,
+				874C22E124B5C38E00EDB9B4 /* UIImageView+HighlightedWebCache.h */,
+				874C22E224B5C38E00EDB9B4 /* SDWebImageDownloaderOperation.m */,
+				874C22E324B5C38E00EDB9B4 /* SDWebImageDecoder.h */,
+				874C22E424B5C38E00EDB9B4 /* SDWebImageManager.h */,
+				874C22E524B5C38E00EDB9B4 /* NSData+ImageContentType.m */,
+				874C22E624B5C38E00EDB9B4 /* UIImageView+WebCache.m */,
+				874C22E724B5C38E00EDB9B4 /* SDWebImageOperation.h */,
+				874C22E824B5C38E00EDB9B4 /* SDWebImageDownloader.h */,
+				874C22E924B5C38E00EDB9B4 /* UIView+WebCacheOperation.m */,
+				874C22EA24B5C38E00EDB9B4 /* SDWebImagePrefetcher.h */,
+				874C22EB24B5C38E00EDB9B4 /* SDWebImageCompat.h */,
+				874C22EC24B5C38E00EDB9B4 /* UIImage+MultiFormat.h */,
+				874C22ED24B5C38E00EDB9B4 /* UIButton+WebCache.m */,
+				874C22EE24B5C38E00EDB9B4 /* UIImage+GIF.h */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		874C22EF24B5C38E00EDB9B4 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				874C22F024B5C38E00EDB9B4 /* UtilsMacros.h */,
+				874C22F124B5C38E00EDB9B4 /* CommonMacros.h */,
+				874C22F224B5C38E00EDB9B4 /* PrefixHeader.pch */,
+				874C22F324B5C38E00EDB9B4 /* FontAndColorMacros.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		874C22F424B5C38F00EDB9B4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				874C22F524B5C38F00EDB9B4 /* UIBezierPath+HeFengPath.m */,
+				874C22F624B5C38F00EDB9B4 /* UIBezierPath+HeFengPath.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		874C22F724B5C38F00EDB9B4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				874C22F824B5C38F00EDB9B4 /* HeFengBaseNavigationViewController.h */,
+				874C22F924B5C38F00EDB9B4 /* HeFengBaseTextField.h */,
+				874C22FA24B5C38F00EDB9B4 /* HeFengBaseLabel.m */,
+				874C22FB24B5C38F00EDB9B4 /* HeFengBaseView.h */,
+				874C22FC24B5C38F00EDB9B4 /* HeFengBaseViewController.m */,
+				874C22FD24B5C38F00EDB9B4 /* HeFengBaseModel.h */,
+				874C22FE24B5C38F00EDB9B4 /* HeFengBaseButton.m */,
+				874C22FF24B5C38F00EDB9B4 /* HeFengBaseNavigationViewController.m */,
+				874C230024B5C38F00EDB9B4 /* HeFengBaseTextField.m */,
+				874C230124B5C38F00EDB9B4 /* HeFengBaseLabel.h */,
+				874C230224B5C38F00EDB9B4 /* HeFengBaseView.m */,
+				874C230324B5C38F00EDB9B4 /* HeFengBaseButton.h */,
+				874C230424B5C38F00EDB9B4 /* HeFengBaseModel.m */,
+				874C230524B5C38F00EDB9B4 /* HeFengBaseViewController.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		87DB8DD6224A233A00A4ACFC = {
 			isa = PBXGroup;
 			children = (
@@ -261,12 +554,12 @@
 		87DB8DE1224A233A00A4ACFC /* OpenWeatherPlus */ = {
 			isa = PBXGroup;
 			children = (
-				87DB8E14224A239B00A4ACFC /* AppDelegate */,
-				87DB8E1C224A239B00A4ACFC /* Modules */,
-				87DB8E55224A239B00A4ACFC /* Base */,
-				87DB8E5E224A239B00A4ACFC /* Category */,
-				87DB8E61224A239B00A4ACFC /* Helpers */,
-				87DB8E17224A239B00A4ACFC /* Define */,
+				874C227B24B5C38D00EDB9B4 /* AppDelegate */,
+				874C22F724B5C38F00EDB9B4 /* Base */,
+				874C22F424B5C38F00EDB9B4 /* Category */,
+				874C22EF24B5C38E00EDB9B4 /* Define */,
+				874C227F24B5C38D00EDB9B4 /* Helpers */,
+				874C228724B5C38E00EDB9B4 /* Modules */,
 				87DB8E8C224A250B00A4ACFC /* Supporting Files */,
 			);
 			path = OpenWeatherPlus;
@@ -288,193 +581,6 @@
 				87DB8E08224A233C00A4ACFC /* Info.plist */,
 			);
 			path = OpenWeatherPlusUITests;
-			sourceTree = "<group>";
-		};
-		87DB8E14224A239B00A4ACFC /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E15224A239B00A4ACFC /* AppDelegate.h */,
-				87DB8E16224A239B00A4ACFC /* AppDelegate.m */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		87DB8E17224A239B00A4ACFC /* Define */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E19224A239B00A4ACFC /* CommonMacros.h */,
-				87DB8E18224A239B00A4ACFC /* UtilsMacros.h */,
-				87DB8E1A224A239B00A4ACFC /* PrefixHeader.pch */,
-				87DB8E1B224A239B00A4ACFC /* FontAndColorMacros.h */,
-			);
-			path = Define;
-			sourceTree = "<group>";
-		};
-		87DB8E1C224A239B00A4ACFC /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E1D224A239B00A4ACFC /* Controller */,
-				87DB8E2A224A239B00A4ACFC /* Model */,
-				87DB8E2F224A239B00A4ACFC /* View */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		87DB8E1D224A239B00A4ACFC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				87B588712251AA1600CAB314 /* HeFengAuthorityViewController.h */,
-				87B588722251AA1600CAB314 /* HeFengAuthorityViewController.m */,
-				87DB8E25224A239B00A4ACFC /* HeFengHomeViewController.h */,
-				87DB8E1E224A239B00A4ACFC /* HeFengHomeViewController.m */,
-				87DB8E21224A239B00A4ACFC /* HeFengSearchViewController.h */,
-				87DB8E27224A239B00A4ACFC /* HeFengSearchViewController.m */,
-				87DB8E20224A239B00A4ACFC /* HeFengSettingViewController.h */,
-				87DB8E26224A239B00A4ACFC /* HeFengSettingViewController.m */,
-				87DB8E23224A239B00A4ACFC /* HeFengCityManagerViewController.h */,
-				87DB8E28224A239B00A4ACFC /* HeFengCityManagerViewController.m */,
-				87DB8E29224A239B00A4ACFC /* HeFengAboutViewController.h */,
-				87DB8E22224A239B00A4ACFC /* HeFengAboutViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		87DB8E2A224A239B00A4ACFC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E2C224A239B00A4ACFC /* HeFengSettingModel.h */,
-				87DB8E2E224A239B00A4ACFC /* HeFengSettingModel.m */,
-				87DB8E2B224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.h */,
-				87DB8E2D224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		87DB8E2F224A239B00A4ACFC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E47224A239B00A4ACFC /* HeFengTodayWeatherView */,
-				87DB8E30224A239B00A4ACFC /* Home */,
-				87DB8E44224A239B00A4ACFC /* City */,
-				87DB8E52224A239B00A4ACFC /* Search */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		87DB8E30224A239B00A4ACFC /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E34224A239B00A4ACFC /* HeFengHomeNavView.h */,
-				87DB8E3C224A239B00A4ACFC /* HeFengHomeNavView.m */,
-				87DB8E41224A239B00A4ACFC /* HeFengHomeCollectionViewCell.h */,
-				87DB8E36224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m */,
-				87DB8E32224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib */,
-				87DB8E42224A239B00A4ACFC /* HeFengHomeScrollView.h */,
-				87DB8E3A224A239B00A4ACFC /* HeFengHomeScrollView.m */,
-				87B58869224DC11D00CAB314 /* HeFengRefreshHeader.h */,
-				87B5886A224DC11D00CAB314 /* HeFengRefreshHeader.m */,
-				87B58866224CDD6300CAB314 /* HeFengNowWeatherView.h */,
-				87B58867224CDD6300CAB314 /* HeFengNowWeatherView.m */,
-				87B5886C224DC7C100CAB314 /* HeFengWaterWaveView.h */,
-				87B5886D224DC7C100CAB314 /* HeFengWaterWaveView.m */,
-				87DB8E3F224A239B00A4ACFC /* HeFengHourlyWeatherView.h */,
-				87DB8E37224A239B00A4ACFC /* HeFengHourlyWeatherView.m */,
-				87DB8E38224A239B00A4ACFC /* HeFengHourlyLineView.h */,
-				87DB8E3E224A239B00A4ACFC /* HeFengHourlyLineView.m */,
-				87B588772252234E00CAB314 /* HeFengHourlyLineImagesView.h */,
-				87B588782252234E00CAB314 /* HeFengHourlyLineImagesView.m */,
-				87DB8E39224A239B00A4ACFC /* HeFengHourlyImageView.h */,
-				87DB8E43224A239B00A4ACFC /* HeFengHourlyImageView.m */,
-				87DB8E35224A239B00A4ACFC /* HeFengDayWeatherView.h */,
-				87DB8E40224A239B00A4ACFC /* HeFengDayWeatherView.m */,
-				87DB8E31224A239B00A4ACFC /* HeFengDayWeatherRowView.h */,
-				87DB8E3B224A239B00A4ACFC /* HeFengDayWeatherRowView.m */,
-				87DB8E33224A239B00A4ACFC /* HeFengInstructionView.h */,
-				87DB8E3D224A239B00A4ACFC /* HeFengInstructionView.m */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		87DB8E44224A239B00A4ACFC /* City */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E45224A239B00A4ACFC /* HeFengCityManagerCell.h */,
-				87DB8E46224A239B00A4ACFC /* HeFengCityManagerCell.m */,
-			);
-			path = City;
-			sourceTree = "<group>";
-		};
-		87DB8E47224A239B00A4ACFC /* HeFengTodayWeatherView */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E4E224A239B00A4ACFC /* HeFengTodayWeatherView.h */,
-				87DB8E49224A239B00A4ACFC /* HeFengTodayWeatherView.m */,
-				87DB8E50224A239B00A4ACFC /* HeFengTodayWeatherItemView.h */,
-				87DB8E4A224A239B00A4ACFC /* HeFengTodayWeatherItemView.m */,
-				87DB8E4B224A239B00A4ACFC /* HeFengTodayWeatherAQIView.h */,
-				87DB8E4F224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m */,
-				87DB8E48224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.h */,
-				87DB8E4D224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m */,
-				87DB8E4C224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.h */,
-				87DB8E51224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m */,
-			);
-			path = HeFengTodayWeatherView;
-			sourceTree = "<group>";
-		};
-		87DB8E52224A239B00A4ACFC /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				873DA147224B63D500F8FC1E /* HeFengCollectionCityCell.h */,
-				873DA148224B63D500F8FC1E /* HeFengCollectionCityCell.m */,
-				87DB8E53224A239B00A4ACFC /* HeFengSearchBarView.h */,
-				87DB8E54224A239B00A4ACFC /* HeFengSearchBarView.m */,
-				873DA144224B52F400F8FC1E /* HeFengSearchCell.h */,
-				873DA145224B52F400F8FC1E /* HeFengSearchCell.m */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		87DB8E55224A239B00A4ACFC /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E57224A239B00A4ACFC /* HeFengBaseView.h */,
-				87DB8E5B224A239B00A4ACFC /* HeFengBaseView.m */,
-				87DB8E5D224A239B00A4ACFC /* HeFengBaseViewController.h */,
-				87DB8E58224A239B00A4ACFC /* HeFengBaseViewController.m */,
-				87DB8E56224A239B00A4ACFC /* HeFengBaseNavigationViewController.h */,
-				87DB8E5A224A239B00A4ACFC /* HeFengBaseNavigationViewController.m */,
-				87DB8E59224A239B00A4ACFC /* HeFengBaseModel.h */,
-				87DB8E5C224A239B00A4ACFC /* HeFengBaseModel.m */,
-				873DA14F224C5DEE00F8FC1E /* HeFengBaseLabel.h */,
-				873DA150224C5DEE00F8FC1E /* HeFengBaseLabel.m */,
-				873DA155224C6B1B00F8FC1E /* HeFengBaseButton.h */,
-				873DA156224C6B1B00F8FC1E /* HeFengBaseButton.m */,
-				873DA158224C6FD600F8FC1E /* HeFengBaseTextField.h */,
-				873DA159224C6FD600F8FC1E /* HeFengBaseTextField.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		87DB8E5E224A239B00A4ACFC /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				87DB8E60224A239B00A4ACFC /* UIBezierPath+HeFengPath.h */,
-				87DB8E5F224A239B00A4ACFC /* UIBezierPath+HeFengPath.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		87DB8E61224A239B00A4ACFC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				870BF954225CAE7800C9CF77 /* HeFengWeatherDataManager.h */,
-				870BF957225CAE7800C9CF77 /* HeFengWeatherDataManager.m */,
-				870BF955225CAE7800C9CF77 /* HeFengWeatherRequest.h */,
-				870BF952225CAE7800C9CF77 /* HeFengWeatherRequest.m */,
-				870BF953225CAE7800C9CF77 /* HeFengWeatherTool.h */,
-				870BF956225CAE7800C9CF77 /* HeFengWeatherTool.m */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		87DB8E8C224A250B00A4ACFC /* Supporting Files */ = {
@@ -613,10 +719,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87DB8E72224A239B00A4ACFC /* HeFengHomeCollectionViewCell.xib in Resources */,
+				874C231524B5C38F00EDB9B4 /* HeFengHomeCollectionViewCell.xib in Resources */,
 				8705B4FF225B40AB000903A8 /* InfoPlist.strings in Resources */,
+				874C232C24B5C38F00EDB9B4 /* LICENSE in Resources */,
+				874C230624B5C38F00EDB9B4 /* 中国地级市id.txt in Resources */,
 				87DB8E95224A250B00A4ACFC /* Localizable.strings in Resources */,
 				87DB8DEF224A233C00A4ACFC /* LaunchScreen.storyboard in Resources */,
+				874C232D24B5C38F00EDB9B4 /* README.md in Resources */,
 				87D44D982254A5AB0060BB6F /* hefeng_refresh.gif in Resources */,
 				873DA15F224C8AAC00F8FC1E /* Assets.xcassets in Resources */,
 			);
@@ -717,49 +826,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87DB8E77224A239B00A4ACFC /* HeFengHomeNavView.m in Sources */,
-				87DB8E79224A239B00A4ACFC /* HeFengHourlyLineView.m in Sources */,
-				87DB8E6E224A239B00A4ACFC /* HeFengSearchViewController.m in Sources */,
-				87DB8E84224A239B00A4ACFC /* HeFengBaseNavigationViewController.m in Sources */,
-				87DB8E86224A239B00A4ACFC /* HeFengBaseModel.m in Sources */,
-				873DA15A224C6FD600F8FC1E /* HeFengBaseTextField.m in Sources */,
-				87DB8E83224A239B00A4ACFC /* HeFengBaseViewController.m in Sources */,
-				87DB8E6C224A239B00A4ACFC /* HeFengAboutViewController.m in Sources */,
-				87DB8E6D224A239B00A4ACFC /* HeFengSettingViewController.m in Sources */,
-				87DB8E69224A239B00A4ACFC /* AppDelegate.m in Sources */,
-				873DA14A224B63D500F8FC1E /* HeFengCollectionCityCell.m in Sources */,
-				873DA157224C6B1B00F8FC1E /* HeFengBaseButton.m in Sources */,
-				87DB8E7E224A239B00A4ACFC /* HeFengTodayWeatherItemView.m in Sources */,
-				87B58868224CDD6300CAB314 /* HeFengNowWeatherView.m in Sources */,
-				87DB8E75224A239B00A4ACFC /* HeFengHomeScrollView.m in Sources */,
-				87DB8E74224A239B00A4ACFC /* HeFengHourlyWeatherView.m in Sources */,
-				873DA146224B52F400F8FC1E /* HeFengSearchCell.m in Sources */,
-				87DB8E7C224A239B00A4ACFC /* HeFengCityManagerCell.m in Sources */,
-				87DB8E6A224A239B00A4ACFC /* HeFengHomeViewController.m in Sources */,
-				87B5886E224DC7C100CAB314 /* HeFengWaterWaveView.m in Sources */,
-				87DB8E73224A239B00A4ACFC /* HeFengHomeCollectionViewCell.m in Sources */,
-				870BF958225CAE7800C9CF77 /* HeFengWeatherRequest.m in Sources */,
-				87DB8E71224A239B00A4ACFC /* HeFengSettingModel.m in Sources */,
-				87B588732251AA1600CAB314 /* HeFengAuthorityViewController.m in Sources */,
-				87DB8E7F224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseView.m in Sources */,
+				874C232924B5C38F00EDB9B4 /* HeFengSearchCell.m in Sources */,
+				874C231924B5C38F00EDB9B4 /* HeFengWaterWaveView.m in Sources */,
+				874C232E24B5C38F00EDB9B4 /* SDWebImageManager.m in Sources */,
+				874C233F24B5C38F00EDB9B4 /* HeFengBaseButton.m in Sources */,
+				874C230824B5C38F00EDB9B4 /* HeFengWeatherTool.m in Sources */,
+				874C231424B5C38F00EDB9B4 /* HeFengSettingModel.m in Sources */,
+				874C232624B5C38F00EDB9B4 /* HeFengTodayWeatherMoonRiseView.m in Sources */,
+				874C233E24B5C38F00EDB9B4 /* HeFengBaseViewController.m in Sources */,
+				874C232224B5C38F00EDB9B4 /* HeFengNowWeatherView.m in Sources */,
+				874C232424B5C38F00EDB9B4 /* HeFengTodayWeatherView.m in Sources */,
+				874C231624B5C38F00EDB9B4 /* HeFengHomeCollectionViewCell.m in Sources */,
+				874C231F24B5C38F00EDB9B4 /* HeFengInstructionView.m in Sources */,
+				874C233324B5C38F00EDB9B4 /* UIImage+MultiFormat.m in Sources */,
+				874C232824B5C38F00EDB9B4 /* HeFengTodayWeatherMoonRiseCurveView.m in Sources */,
+				874C233D24B5C38F00EDB9B4 /* HeFengBaseLabel.m in Sources */,
+				874C233424B5C38F00EDB9B4 /* SDWebImageCompat.m in Sources */,
+				874C230F24B5C38F00EDB9B4 /* HeFengAuthorityViewController.m in Sources */,
+				874C233024B5C38F00EDB9B4 /* UIImageView+HighlightedWebCache.m in Sources */,
+				874C232F24B5C38F00EDB9B4 /* SDWebImageDecoder.m in Sources */,
+				874C234024B5C38F00EDB9B4 /* HeFengBaseNavigationViewController.m in Sources */,
+				874C230D24B5C38F00EDB9B4 /* HeFengAboutViewController.m in Sources */,
+				874C233B24B5C38F00EDB9B4 /* UIButton+WebCache.m in Sources */,
+				874C232724B5C38F00EDB9B4 /* HeFengTodayWeatherAQIView.m in Sources */,
+				874C233224B5C38F00EDB9B4 /* UIImage+GIF.m in Sources */,
+				874C233624B5C38F00EDB9B4 /* SDImageCache.m in Sources */,
+				874C232A24B5C38F00EDB9B4 /* HeFengCollectionCityCell.m in Sources */,
+				874C232024B5C38F00EDB9B4 /* HeFengHourlyLineView.m in Sources */,
+				874C231024B5C38F00EDB9B4 /* HeFengSearchViewController.m in Sources */,
+				874C230E24B5C38F00EDB9B4 /* HeFengSettingViewController.m in Sources */,
+				874C231324B5C38F00EDB9B4 /* HeFengHomeTabelViewDataModel.m in Sources */,
+				874C234224B5C38F00EDB9B4 /* HeFengBaseView.m in Sources */,
+				874C230B24B5C38F00EDB9B4 /* HeFengWeatherRequest.m in Sources */,
+				874C233924B5C38F00EDB9B4 /* UIImageView+WebCache.m in Sources */,
+				874C230C24B5C38F00EDB9B4 /* HeFengHomeViewController.m in Sources */,
+				874C234124B5C38F00EDB9B4 /* HeFengBaseTextField.m in Sources */,
+				874C231224B5C38F00EDB9B4 /* ImagesDownloadManager.m in Sources */,
+				874C233124B5C38F00EDB9B4 /* SDWebImageDownloader.m in Sources */,
+				874C230724B5C38F00EDB9B4 /* AppDelegate.m in Sources */,
+				874C231D24B5C38F00EDB9B4 /* HeFengRefreshHeader.m in Sources */,
+				874C232124B5C38F00EDB9B4 /* HeFengHourlyImageView.m in Sources */,
+				874C233C24B5C38F00EDB9B4 /* UIBezierPath+HeFengPath.m in Sources */,
+				874C232524B5C38F00EDB9B4 /* HeFengTodayWeatherItemView.m in Sources */,
+				874C231824B5C38F00EDB9B4 /* HeFengDayWeatherView.m in Sources */,
+				874C232324B5C38F00EDB9B4 /* HeFengCityManagerCell.m in Sources */,
+				874C232B24B5C38F00EDB9B4 /* HeFengSearchBarView.m in Sources */,
+				874C231C24B5C38F00EDB9B4 /* HeFengHomeScrollView.m in Sources */,
+				874C231B24B5C38F00EDB9B4 /* HeFengDayWeatherRowView.m in Sources */,
+				874C233824B5C38F00EDB9B4 /* NSData+ImageContentType.m in Sources */,
+				874C231A24B5C38F00EDB9B4 /* HeFengHourlyLineImagesView.m in Sources */,
 				87DB8DF2224A233C00A4ACFC /* main.m in Sources */,
-				87DB8E7D224A239B00A4ACFC /* HeFengTodayWeatherView.m in Sources */,
-				870BF959225CAE7800C9CF77 /* HeFengWeatherTool.m in Sources */,
-				87DB8E80224A239B00A4ACFC /* HeFengTodayWeatherAQIView.m in Sources */,
-				87DB8E70224A239B00A4ACFC /* HeFengHomeTabelViewDataModel.m in Sources */,
-				87B5886B224DC11D00CAB314 /* HeFengRefreshHeader.m in Sources */,
-				87DB8E7B224A239B00A4ACFC /* HeFengHourlyImageView.m in Sources */,
-				87DB8E6F224A239B00A4ACFC /* HeFengCityManagerViewController.m in Sources */,
-				87DB8E7A224A239B00A4ACFC /* HeFengDayWeatherView.m in Sources */,
-				870BF95A225CAE7800C9CF77 /* HeFengWeatherDataManager.m in Sources */,
-				87DB8E82224A239B00A4ACFC /* HeFengSearchBarView.m in Sources */,
-				87B588792252234E00CAB314 /* HeFengHourlyLineImagesView.m in Sources */,
-				87DB8E78224A239B00A4ACFC /* HeFengInstructionView.m in Sources */,
-				87DB8E76224A239B00A4ACFC /* HeFengDayWeatherRowView.m in Sources */,
-				873DA151224C5DEE00F8FC1E /* HeFengBaseLabel.m in Sources */,
-				87DB8E81224A239B00A4ACFC /* HeFengTodayWeatherMoonRiseCurveView.m in Sources */,
-				87DB8E87224A239B00A4ACFC /* UIBezierPath+HeFengPath.m in Sources */,
-				87DB8E85224A239B00A4ACFC /* HeFengBaseView.m in Sources */,
+				874C233724B5C38F00EDB9B4 /* SDWebImageDownloaderOperation.m in Sources */,
+				874C231124B5C38F00EDB9B4 /* HeFengCityManagerViewController.m in Sources */,
+				874C231E24B5C38F00EDB9B4 /* HeFengHomeNavView.m in Sources */,
+				874C234324B5C38F00EDB9B4 /* HeFengBaseModel.m in Sources */,
+				874C233A24B5C38F00EDB9B4 /* UIView+WebCacheOperation.m in Sources */,
+				874C233524B5C38F00EDB9B4 /* SDWebImagePrefetcher.m in Sources */,
+				874C230A24B5C38F00EDB9B4 /* HeFengWeatherDataManager.m in Sources */,
+				874C231724B5C38F00EDB9B4 /* HeFengHourlyWeatherView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,6 +1071,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenWeatherPlus/Helpers",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenWeatherPlus/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenWeatherPlus/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -969,6 +1098,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FX8JNRA3ZJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenWeatherPlus/Helpers",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenWeatherPlus/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenWeatherPlus/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

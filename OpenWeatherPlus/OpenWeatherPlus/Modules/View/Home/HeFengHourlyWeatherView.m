@@ -48,8 +48,8 @@
     }];
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
-    self.maxTempLabel.hefengTempString = model.dataModel.daily_forecast.firstObject.tmp_max;
-    self.minTempLabel.hefengTempString = model.dataModel.daily_forecast.firstObject.tmp_min;
+    self.maxTempLabel.hefengTempString = model.dataModel.daily.firstObject.tempMax;
+    self.minTempLabel.hefengTempString = model.dataModel.daily.firstObject.tempMin;
     [self.weatherLineView reloadViewWithModel:model];
 }
 -(HeFengBaseLabel *)titleLabel{
@@ -83,7 +83,7 @@
 -(HeFengHourlyLineView *)weatherLineView{
     if (!_weatherLineView) {
         _weatherLineView = [HeFengHourlyLineView new];
-        _weatherLineView.viewType =HeConfigInstance.userType==USER_TYPE_USER?HeFengHourlyLineViewTypeExpense:HeFengHourlyLineViewTypeFree;
+        _weatherLineView.viewType =HeFengHourlyLineViewTypeFree;
     }
     return _weatherLineView;
 }

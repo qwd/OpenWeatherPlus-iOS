@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class AirBaseClass;
 @class WeatherBaseClass;
-
+@class Location;
 @interface HeFengHomeTabelViewDataModel : HeFengBaseModel
 /**
  天气数据模型
@@ -26,9 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  预警数据模型
  */
-@property (nonatomic,strong) AlarmBaseClass *AlarmDataModel;
-
-
+@property (nonatomic,strong) WarningBaseClass *AlarmDataModel;
+/**
+ Location数据模型
+*/
+@property (nonatomic,strong) Location *basic;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -33,6 +33,7 @@
     [self configLayout];
     [self addNotice];
 }
+
 -(void)addNotice{
     [[HeFengNotificationCenter rac_addObserverForName:KNotificationOpenSafari object:nil ]subscribeNext:^(NSNotification * _Nullable x) {
         [kApplication openURL:[NSURL URLWithString:@"https://www.heweather.com"]];
@@ -82,18 +83,22 @@
 -(void)getDataWithLocation:(NSString *)location isLoaction:(BOOL)isLoaction{
     NSDictionary *param = @{@"location":location};
     @weakify(self)
-    [[self.weatherRequest.citySearchCommand execute:param] subscribeNext:^(SearchBaseClass * x) {
+    [[self.weatherRequest.citySearchCommand execute:param] subscribeNext:^(GeoBaseClass * Geox) {
         @strongify(self)
-        if (x.basic.count>0) {
-            [self.homeNavView.locationTitleButton setTitle:x.basic.firstObject.location forState:UIControlStateNormal];
+        if (Geox.location.count>0) {
+            [self.homeNavView.locationTitleButton setTitle:Geox.location.firstObject.name forState:UIControlStateNormal];
             NSMutableDictionary *param = [NSMutableDictionary dictionary];
-            param[@"cityId"] = x.basic.firstObject.cid;
-            param[@"location"] = x.basic.firstObject.location;
-            param[@"parent_city"] = x.basic.firstObject.parent_city?x.basic.firstObject.parent_city:@"";
+            param[@"cityId"] = Geox.location.firstObject.cid;
+            param[@"location"] = Geox.location.firstObject.name;
+            param[@"parent_city"] = Geox.location.firstObject.adm2?Geox.location.firstObject.adm2:@"";
             [[self.weatherRequest.homeDataCommand execute:param] subscribeNext:^(HeFengHomeTabelViewDataModel  * x) {
+                x.basic = Geox.location.firstObject;
                 @strongify(self)
-                if (HeFengStrEqual(x.dataModel.status,@"ok")) {
+                if (HeFengStrEqual(x.dataModel.code,@"200")) {
                     [HeFengWeatherManager addCollectionDataArrayWithModel:x isLoaction:isLoaction];
+                }
+                else{
+                    HeFengLogError(@"%@",x.dataModel.code);
                 }
                 if (isLoaction) {
                     self.homeNavView.pageControl.currentPage = 0;
@@ -177,7 +182,6 @@
         _weatherCollectionView.delegate = self;
         _weatherCollectionView.pagingEnabled = YES;
         _weatherCollectionView.showsHorizontalScrollIndicator = NO;
-        _weatherCollectionView.backgroundColor = HeFengColor_F7F8FA;
         [_weatherCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([HeFengHomeCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([HeFengHomeCollectionViewCell class])];
         if (@available(iOS 11.0, *)) {
             _weatherCollectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -207,4 +211,5 @@
     }
     return _locationManager;
 }
+
 @end
