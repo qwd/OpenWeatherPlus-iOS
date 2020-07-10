@@ -22,5 +22,8 @@
 @property (nonatomic, copy) NSString *status;
 @property (nonatomic, copy) NSString *level;
 @property (nonatomic, copy) NSString *type;
-@property (nonatomic, copy) NSString *txt;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *sender;
+@property (nonatomic, copy) NSString *typeName;
+@property (nonatomic, copy) NSString *related;
 @end

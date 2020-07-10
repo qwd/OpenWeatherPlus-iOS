@@ -74,7 +74,7 @@
     self.locationButton.hidden = self.pageControl.currentPage!=0;
     if (HeFengWeatherManager.collectionDataArray.count>page) {
         [self.locationTitleButton setTitle:HeFengWeatherManager.collectionDataArray[page].basic.name forState:UIControlStateNormal];
-        self.image = [[[HeFengWeatherTool getWeatherImageWithWeatherCode:HeFengWeatherManager.collectionDataArray[page].dataModel.now.text date:HeFengWeatherManager.collectionDataArray[page].dataModel.updateTime formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop];
+        self.image = [[[HeFengWeatherTool getWeatherImageWithWeatherCode:HeFengWeatherManager.collectionDataArray[page].now.icon date:HeFengWeatherManager.collectionDataArray[page].updateTime formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop];
        
     }
 }

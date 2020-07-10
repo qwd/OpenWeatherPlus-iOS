@@ -11,8 +11,8 @@
 #pragma mark - ——————— 第三方相关Key ————————
 
 #define KAMapLocationAPPKey @"请添加key"
-#define HeWeatherSDK_USERKey  @""
-#define HeWeatherSDK_USERNameKey  @""
+#define HeWeatherSDK_USERKey  @"617be4795fdd40d09210ba3f7ac7cce3"
+#define HeWeatherSDK_USERNameKey  @"HE2006241539341230"
 
 
 #pragma mark - ——————— 通知相关key ————————

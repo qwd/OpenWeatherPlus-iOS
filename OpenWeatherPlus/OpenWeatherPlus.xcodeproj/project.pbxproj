@@ -11,11 +11,10 @@
 		8705B4FF225B40AB000903A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8705B501225B40AB000903A8 /* InfoPlist.strings */; };
 		870BF95C225D84EC00C9CF77 /* OpenWeatherPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF95B225D84EC00C9CF77 /* OpenWeatherPlusTests.m */; };
 		870BF95E225D858400C9CF77 /* OpenWeatherPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF95D225D858400C9CF77 /* OpenWeatherPlusUITests.m */; };
+		873C081124B81CBB00E60B36 /* HeWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873C081024B81CBB00E60B36 /* HeWeather.framework */; };
 		873DA15F224C8AAC00F8FC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873DA15E224C8AAC00F8FC1E /* Assets.xcassets */; };
-		874C230624B5C38F00EDB9B4 /* 中国地级市id.txt in Resources */ = {isa = PBXBuildFile; fileRef = 874C227D24B5C38D00EDB9B4 /* 中国地级市id.txt */; };
 		874C230724B5C38F00EDB9B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C227E24B5C38D00EDB9B4 /* AppDelegate.m */; };
 		874C230824B5C38F00EDB9B4 /* HeFengWeatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228024B5C38D00EDB9B4 /* HeFengWeatherTool.m */; };
-		874C230924B5C38F00EDB9B4 /* HeWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874C228424B5C38D00EDB9B4 /* HeWeather.framework */; };
 		874C230A24B5C38F00EDB9B4 /* HeFengWeatherDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228524B5C38D00EDB9B4 /* HeFengWeatherDataManager.m */; };
 		874C230B24B5C38F00EDB9B4 /* HeFengWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228624B5C38D00EDB9B4 /* HeFengWeatherRequest.m */; };
 		874C230C24B5C38F00EDB9B4 /* HeFengHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C228A24B5C38E00EDB9B4 /* HeFengHomeViewController.m */; };
@@ -111,15 +110,14 @@
 		8705B502225B40AF000903A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		870BF95B225D84EC00C9CF77 /* OpenWeatherPlusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusTests.m; sourceTree = "<group>"; };
 		870BF95D225D858400C9CF77 /* OpenWeatherPlusUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherPlusUITests.m; sourceTree = "<group>"; };
+		873C081024B81CBB00E60B36 /* HeWeather.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeWeather.framework; sourceTree = "<group>"; };
 		873DA15E224C8AAC00F8FC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874C227C24B5C38D00EDB9B4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		874C227D24B5C38D00EDB9B4 /* 中国地级市id.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "中国地级市id.txt"; sourceTree = "<group>"; };
 		874C227E24B5C38D00EDB9B4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		874C228024B5C38D00EDB9B4 /* HeFengWeatherTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherTool.m; sourceTree = "<group>"; };
 		874C228124B5C38D00EDB9B4 /* HeFengWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherRequest.h; sourceTree = "<group>"; };
 		874C228224B5C38D00EDB9B4 /* HeFengWeatherDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherDataManager.h; sourceTree = "<group>"; };
 		874C228324B5C38D00EDB9B4 /* HeFengWeatherTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeFengWeatherTool.h; sourceTree = "<group>"; };
-		874C228424B5C38D00EDB9B4 /* HeWeather.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeWeather.framework; sourceTree = "<group>"; };
 		874C228524B5C38D00EDB9B4 /* HeFengWeatherDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherDataManager.m; sourceTree = "<group>"; };
 		874C228624B5C38D00EDB9B4 /* HeFengWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeFengWeatherRequest.m; sourceTree = "<group>"; };
 		874C228824B5C38E00EDB9B4 /* ImagesDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesDownloadManager.h; sourceTree = "<group>"; };
@@ -257,7 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874C230924B5C38F00EDB9B4 /* HeWeather.framework in Frameworks */,
+				873C081124B81CBB00E60B36 /* HeWeather.framework in Frameworks */,
 				8F0DA026E046938480EB68DB /* libPods-OpenWeatherPlus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +293,6 @@
 			isa = PBXGroup;
 			children = (
 				874C227C24B5C38D00EDB9B4 /* AppDelegate.h */,
-				874C227D24B5C38D00EDB9B4 /* 中国地级市id.txt */,
 				874C227E24B5C38D00EDB9B4 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
@@ -304,7 +301,7 @@
 		874C227F24B5C38D00EDB9B4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				874C228424B5C38D00EDB9B4 /* HeWeather.framework */,
+				873C081024B81CBB00E60B36 /* HeWeather.framework */,
 				874C228024B5C38D00EDB9B4 /* HeFengWeatherTool.m */,
 				874C228124B5C38D00EDB9B4 /* HeFengWeatherRequest.h */,
 				874C228224B5C38D00EDB9B4 /* HeFengWeatherDataManager.h */,
@@ -722,7 +719,6 @@
 				874C231524B5C38F00EDB9B4 /* HeFengHomeCollectionViewCell.xib in Resources */,
 				8705B4FF225B40AB000903A8 /* InfoPlist.strings in Resources */,
 				874C232C24B5C38F00EDB9B4 /* LICENSE in Resources */,
-				874C230624B5C38F00EDB9B4 /* 中国地级市id.txt in Resources */,
 				87DB8E95224A250B00A4ACFC /* Localizable.strings in Resources */,
 				87DB8DEF224A233C00A4ACFC /* LaunchScreen.storyboard in Resources */,
 				874C232D24B5C38F00EDB9B4 /* README.md in Resources */,
@@ -1083,7 +1079,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.heweather.owp;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heweather.weatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1110,7 +1107,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.heweather.owp;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heweather.weatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

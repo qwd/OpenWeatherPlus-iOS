@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char HeWeatherVersionString[];
 //  #import <HeWeather/HeWeather.h>
 
 
-/* 当前版本 2020-07-02 4.0 */
+/* 当前版本 2020-07-10 4.1 */
 
 /**
  * 写在前面的（废）话

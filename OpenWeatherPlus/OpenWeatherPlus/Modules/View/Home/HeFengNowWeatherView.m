@@ -87,9 +87,9 @@
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
     titleArray =[HeFengWeatherManager isEnglish]? @[@"White",@"Blue",@"Yellow",@"Orange",@"Red"]: @[@"白色",@"蓝色",@"黄色",@"橙色",@"红色"];
-    self.tempLabel.hefengTempString = model.dataModel.now.temp;
-    self.weatherStateLabel.text = model.dataModel.now.text;
-    self.backImageView.image = [[HeFengWeatherTool getWeatherImageWithWeatherCode:model.dataModel.now.icon date:model.dataModel.updateTime formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale];
+    self.tempLabel.hefengTempString = model.now.temp;
+    self.weatherStateLabel.text = model.now.text;
+    self.backImageView.image = [[HeFengWeatherTool getWeatherImageWithWeatherCode:model.now.icon date:model.updateTime formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale];
     
     if (model.AlarmDataModel.warning.count>0) {
         //文字

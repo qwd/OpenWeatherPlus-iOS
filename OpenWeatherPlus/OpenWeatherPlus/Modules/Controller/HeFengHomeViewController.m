@@ -94,11 +94,11 @@
             [[self.weatherRequest.homeDataCommand execute:param] subscribeNext:^(HeFengHomeTabelViewDataModel  * x) {
                 x.basic = Geox.location.firstObject;
                 @strongify(self)
-                if (HeFengStrEqual(x.dataModel.code,@"200")) {
+                if (HeFengStrEqual(x.code,@"200")) {
                     [HeFengWeatherManager addCollectionDataArrayWithModel:x isLoaction:isLoaction];
                 }
                 else{
-                    HeFengLogError(@"%@",x.dataModel.code);
+                    HeFengLogError(@"%@",x.code);
                 }
                 if (isLoaction) {
                     self.homeNavView.pageControl.currentPage = 0;
@@ -208,6 +208,7 @@
         _locationManager = [[AMapLocationManager alloc] init];
         [_locationManager setDelegate:self];
         [_locationManager setPausesLocationUpdatesAutomatically:NO];
+        _locationManager.allowsBackgroundLocationUpdates = NO;
     }
     return _locationManager;
 }

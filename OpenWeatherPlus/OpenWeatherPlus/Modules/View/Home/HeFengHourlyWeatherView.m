@@ -48,8 +48,8 @@
     }];
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
-    self.maxTempLabel.hefengTempString = model.dataModel.daily.firstObject.tempMax;
-    self.minTempLabel.hefengTempString = model.dataModel.daily.firstObject.tempMin;
+    self.maxTempLabel.hefengTempString = model.daily.firstObject.tempMax;
+    self.minTempLabel.hefengTempString = model.daily.firstObject.tempMin;
     [self.weatherLineView reloadViewWithModel:model];
 }
 -(HeFengBaseLabel *)titleLabel{

@@ -12,13 +12,25 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class AirBaseClass;
-@class WeatherBaseClass;
 @class Location;
+@class Now;
+@class Hourly;
+@class Daily;
+
 @interface HeFengHomeTabelViewDataModel : HeFengBaseModel
 /**
- 天气数据模型
+ 实况天气
  */
-@property (nonatomic,strong) WeatherBaseClass *dataModel;
+@property (nonatomic,strong) Now *now;
+/**
+逐小时天气
+*/
+@property (nonatomic,strong) NSArray< Hourly *> *hourly;
+/**
+逐天天气
+*/
+@property (nonatomic,strong) NSArray< Daily*> *daily;
+
 /**
  空气数据模型
  */
@@ -31,6 +43,11 @@ NS_ASSUME_NONNULL_BEGIN
  Location数据模型
 */
 @property (nonatomic,strong) Location *basic;
+
+@property (nonatomic,copy) NSString *updateTime;
+
+@property (nonatomic,copy) NSString *code;
+
 @end
 
 NS_ASSUME_NONNULL_END

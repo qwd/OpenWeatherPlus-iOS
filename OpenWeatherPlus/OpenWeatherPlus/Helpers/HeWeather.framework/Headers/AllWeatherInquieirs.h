@@ -9,6 +9,7 @@
 #define HeConfigInstance [AllWeatherInquieirs sharedInstance]
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, APP_TYPE) {
     APP_TYPE_BIZ = 1,// 付费用户
@@ -101,27 +102,9 @@ typedef NS_ENUM(NSInteger, INDICES_TYPE) {
     INDICES_TYPE_spi = 16,//防晒指数
     INDICES_TYPE_ski = 17,//滑雪指数
 };
-const NSString *INDICES_TYPESTRING[] = {
-    [INDICES_TYPE_all] = @"0",//全部生活指数
-    [INDICES_TYPE_spt] = @"1" ,//运动指数
-    [INDICES_TYPE_cw] = @"2",//洗车指数
-    [INDICES_TYPE_drsg] = @"3" ,//穿衣指数
-    [INDICES_TYPE_fis] = @"4",//钓鱼指数
-    [INDICES_TYPE_uv] = @"5",//紫外线指数
-    [INDICES_TYPE_trav] = @"6" ,//旅游指数
-    [INDICES_TYPE_comf] = @"8" ,//舒适度指数
-    [INDICES_TYPE_ag] = @"7" ,//花粉过敏指数
-    [INDICES_TYPE_flu] = @"9" ,//感冒指数
-    [INDICES_TYPE_ap] = @"10" ,//空气污染扩散条件指数
-    [INDICES_TYPE_ac] = @"11" ,//空调开启指数
-    [INDICES_TYPE_gl] = @"12" ,//太阳镜指数
-    [INDICES_TYPE_mu] = @"13",//化妆指数
-    [INDICES_TYPE_dc] = @"14",//晾晒指数
-    [INDICES_TYPE_ptfc] = @"15",//交通指数
-    [INDICES_TYPE_spi] = @"16",//防晒指数
-    [INDICES_TYPE_ski] = @"17",//滑雪指数
-    
-};
+ 
+UIKIT_EXTERN NSString * const INDICES_TYPESTRING[];
+
 typedef NS_ENUM(NSInteger, SERCHMODE_TYPE) {
     SERCHMODE_TYPE_EXACT= 0,//精准查询
     SERCHMODE_TYPE_FUZZY = 1,//模糊搜索

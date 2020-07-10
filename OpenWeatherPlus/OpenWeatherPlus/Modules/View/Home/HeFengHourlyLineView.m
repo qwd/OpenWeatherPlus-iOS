@@ -54,12 +54,12 @@
     }];
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
-    if (model.dataModel.hourly.count!=8||model.dataModel.hourly.count!=25) {
+    if (model.hourly.count!=8&&model.hourly.count!=24) {
         return;
     }
     NSMutableArray<Hourly*> *dataArray = [NSMutableArray array];
-    [model.dataModel.hourly enumerateObjectsUsingBlock:^(Hourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (model.dataModel.hourly.count==8) {
+    [model.hourly enumerateObjectsUsingBlock:^(Hourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (model.hourly.count==8) {
             for (int i = 0; i<3; i++) {
                 Hourly *model = [Hourly new];
                 model.icon = obj.icon;
@@ -73,7 +73,7 @@
     }];
     [dataArray addObject:dataArray.lastObject];
     self.hourlyArray  = dataArray;
-    if (self.hourlyArray.count==25) {
+    if (self.hourlyArray.count==24) {
         [self.imagesView removeFromSuperview];
         [self.lineLayer removeFromSuperlayer];
         [self.xLabelsArray enumerateObjectsUsingBlock:^(HeFengBaseLabel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
