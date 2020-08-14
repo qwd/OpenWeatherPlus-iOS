@@ -43,9 +43,9 @@
         HeFengPostNotification(KNotificationScrollImages,@(expenseindex));
         if (self.hourlyArray.count==25&&expenseindex<=24&&expenseindex>=0) {
             if (expenseindex==8) {
-                self.tempLabel.text = [HeFengWeatherTool getTempStringWithString:self.hourlyArray.lastObject.tmp isHaveUnit:YES];
+                self.tempLabel.text = [HeFengWeatherTool getTempStringWithString:self.hourlyArray.lastObject.temp isHaveUnit:YES];
             }else{
-                self.tempLabel.text = [HeFengWeatherTool getTempStringWithString:self.hourlyArray[expenseindex].tmp isHaveUnit:YES];
+                self.tempLabel.text = [HeFengWeatherTool getTempStringWithString:self.hourlyArray[expenseindex].temp isHaveUnit:YES];
             }
             [UIView animateWithDuration:0.5 animations:^{
                 self.tempLabel.frame = CGRectMake(self.xLineView.qmui_left+self.qmui_left+(self.qmui_width-self.xLineView.qmui_left-60)/24.0*expenseindex, self.qmui_top-20, 30,20);
@@ -54,17 +54,17 @@
     }];
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
-    if (model.dataModel.hourly.count==0) {
+    if (model.hourly.count!=8&&model.hourly.count!=24) {
         return;
     }
-    NSMutableArray<WeatherBaseClassHourly*> *dataArray = [NSMutableArray array];
-    [model.dataModel.hourly enumerateObjectsUsingBlock:^(WeatherBaseClassHourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (model.dataModel.hourly.count==8) {
+    NSMutableArray<Hourly*> *dataArray = [NSMutableArray array];
+    [model.hourly enumerateObjectsUsingBlock:^(Hourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (model.hourly.count==8) {
             for (int i = 0; i<3; i++) {
-                WeatherBaseClassHourly *model = [WeatherBaseClassHourly new];
-                model.cond_code = obj.cond_code;
-                model.time = [[[NSDate dateWithString:obj.time formatString:HeFengFormatString1] dateBySubtractingHours:2-i] formattedDateWithFormat:HeFengFormatString1];
-                model.tmp = obj.tmp;
+                Hourly *model = [Hourly new];
+                model.icon = obj.icon;
+                model.fxTime = [[[NSDate dateWithString:obj.fxTime formatString:HeFengFormatString1] dateBySubtractingHours:2-i] formattedDateWithFormat:HeFengFormatString1];
+                model.temp = obj.temp;
                 [dataArray addObject:model];
             }
         }else{
@@ -73,15 +73,15 @@
     }];
     [dataArray addObject:dataArray.lastObject];
     self.hourlyArray  = dataArray;
-    if (self.hourlyArray.count==25) {
+    if (self.hourlyArray.count==24) {
         [self.imagesView removeFromSuperview];
         [self.lineLayer removeFromSuperlayer];
         [self.xLabelsArray enumerateObjectsUsingBlock:^(HeFengBaseLabel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if (idx>0) {
                 if (self.viewType==HeFengHourlyLineViewTypeFree) {
-                    obj.text = [[NSDate dateWithString:self.hourlyArray[(idx-1)*3+1].time formatString:HeFengFormatString1] formattedDateWithFormat:HeFengFormatString2];
+                    obj.text = [[NSDate dateWithString:self.hourlyArray[(idx-1)*3+1].fxTime formatString:HeFengFormatString1] formattedDateWithFormat:HeFengFormatString2];
                 }else{
-                    obj.text = [[NSDate dateWithString:self.hourlyArray[(idx-1)*2+1].time formatString:HeFengFormatString1] formattedDateWithFormat:HeFengFormatString2];
+                    obj.text = [[NSDate dateWithString:self.hourlyArray[(idx-1)*2+1].fxTime formatString:HeFengFormatString1] formattedDateWithFormat:HeFengFormatString2];
                 }
             }
         }];
@@ -92,15 +92,15 @@
             [self.imagesView reloadViewWithModelArray:self.hourlyArray];
             //计算最高温最低温
             NSMutableArray *NumberArray = [NSMutableArray array];
-            [self.hourlyArray enumerateObjectsUsingBlock:^(WeatherBaseClassHourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                [NumberArray addObject:obj.tmp];
+            [self.hourlyArray enumerateObjectsUsingBlock:^(Hourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [NumberArray addObject:obj.temp];
             }];
             CGFloat  max = [[NumberArray valueForKeyPath:@"@max.floatValue"] qmui_CGFloatValue];
             CGFloat  min = [[NumberArray valueForKeyPath:@"@min.floatValue"] qmui_CGFloatValue];
             //温度占比
             NSMutableArray *tempPercentArray = [NSMutableArray array];
-            [self.hourlyArray enumerateObjectsUsingBlock:^(WeatherBaseClassHourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                [tempPercentArray addObject:@((obj.tmp.floatValue-min)*1.0/(max-min+1))];
+            [self.hourlyArray enumerateObjectsUsingBlock:^(Hourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [tempPercentArray addObject:@((obj.temp.floatValue-min)*1.0/(max-min+1))];
             }];
             [self addLineWithArray:tempPercentArray];
         })

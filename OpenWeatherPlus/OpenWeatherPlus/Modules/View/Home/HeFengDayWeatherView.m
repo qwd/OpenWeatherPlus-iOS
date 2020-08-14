@@ -22,17 +22,6 @@
 }
 -(void)configUI{
     self.rowViewArray = [NSMutableArray array];
-    for (int i=0; i<5; i++) {
-        HeFengDayWeatherRowView *view = [HeFengDayWeatherRowView new];
-        view.dayLabel.hefengFontSize = HeFengFontSize_14;
-        view.dayLabel.textColor = i==0?HeFengColor_212121:HeFengColor_A4A4A4;
-        view.maxTempLabel.hefengFontSize = HeFengFontSize_14;
-        view.maxTempLabel.textColor = HeFengColor_4A4A4A;
-        view.minTempLabel.hefengFontSize = HeFengFontSize_14;
-        view.minTempLabel.textColor = HeFengColor_7A7A7A;
-        [self addSubview:view];
-        [self.rowViewArray addObject:view];
-    }
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
@@ -43,11 +32,27 @@
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
     [self.rowViewArray enumerateObjectsUsingBlock:^(HeFengDayWeatherRowView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        obj.dayLabel.text = HeFengLocal([HeFengWeatherTool getTimeStringWithSting:model.dataModel.daily_forecast[idx].date dateformat:HeFengFormatString3 isShowToday:YES]);
-        obj.maxTempLabel.hefengTempString = model.dataModel.daily_forecast[idx].tmp_max;
-        obj.minTempLabel.hefengTempString = model.dataModel.daily_forecast[idx].tmp_min;
-        obj.dayWeatherImageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.dataModel.daily_forecast[idx].cond_code_d isDay:YES formatString:HeFengWeatherImageFormatString];
-        obj.nightWeatherImageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.dataModel.daily_forecast[idx].cond_code_n isDay:NO formatString:HeFengWeatherImageFormatString];
+        [obj removeFromSuperview];
+    }];
+    [self.rowViewArray removeAllObjects];
+    
+    [model.daily enumerateObjectsUsingBlock:^(Daily * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        HeFengDayWeatherRowView *view = [HeFengDayWeatherRowView new];
+        view.dayLabel.hefengFontSize = HeFengFontSize_14;
+        view.dayLabel.textColor = idx==0?HeFengColor_212121:HeFengColor_A4A4A4;
+        view.maxTempLabel.hefengFontSize = HeFengFontSize_14;
+        view.maxTempLabel.textColor = HeFengColor_4A4A4A;
+        view.minTempLabel.hefengFontSize = HeFengFontSize_14;
+        view.minTempLabel.textColor = HeFengColor_7A7A7A;
+        [self addSubview:view];
+        [self.rowViewArray addObject:view];
+    }];
+    [self.rowViewArray enumerateObjectsUsingBlock:^(HeFengDayWeatherRowView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.dayLabel.text = HeFengLocal([HeFengWeatherTool getTimeStringWithSting:model.daily[idx].fxDate dateformat:HeFengFormatString3 isShowToday:YES]);
+        obj.maxTempLabel.hefengTempString = model.daily[idx].tempMax;
+        obj.minTempLabel.hefengTempString = model.daily[idx].tempMin;
+        obj.dayWeatherImageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.daily[idx].iconDay isDay:YES formatString:HeFengWeatherImageFormatString];
+        obj.nightWeatherImageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.daily[idx].iconNight isDay:NO formatString:HeFengWeatherImageFormatString];
     }];
 }
 @end

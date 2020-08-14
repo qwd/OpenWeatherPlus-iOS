@@ -31,9 +31,9 @@
     }
     
     if (HeFengStrValid(HeWeatherSDK_USERNameKey)||HeFengStrValid(HeWeatherSDK_USERKey)) {
-        HeConfigInstance.kHeAppUsername = HeWeatherSDK_USERNameKey;
-        HeConfigInstance.kHeAppKey = HeWeatherSDK_USERKey;
-        HeConfigInstance.userType = USER_TYPE_FREE_USER;
+        HeConfigInstance.publicID = HeWeatherSDK_USERNameKey;
+        HeConfigInstance.appKey = HeWeatherSDK_USERKey;
+        HeConfigInstance.appType = APP_TYPE_BIZ;
     }else{
         HeFengLogWarn(@"请添加和风天气的key👉🏻👉🏻👉🏻（替换HeWeatherSDK_USERNameKey和HeWeatherSDK_USERKey的值）");
     }

@@ -18,7 +18,7 @@
 @property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) HeFengBaseLabel *titleLabel;
 @property (nonatomic,strong) HeFengWeatherRequest *weatherRequest;
-@property (nonatomic,strong) NSArray<SearchBaseClassBasic *> *searchCityArray;
+@property (nonatomic,strong) NSArray<Location *> *searchCityArray;
 @property (nonatomic,copy) NSString *searchText;
 @property (nonatomic,strong) NSArray *citysArray;
 @end
@@ -45,9 +45,9 @@
     [[[self.searchView.searchTextField rac_textSignal]skip:1] subscribeNext:^(NSString * _Nullable x) {
         self.searchText = x;
         if (HeFengStrValid(x)) {
-            [[self.weatherRequest.citySearchCommand execute:@{@"location":[x qmui_trimAllWhiteSpace]}] subscribeNext:^(SearchBaseClass  * x) {
-                if (x.basic.count>0) {
-                    self.searchCityArray = x.basic;
+            [[self.weatherRequest.citySearchCommand execute:@{@"location":[x qmui_trimAllWhiteSpace]}] subscribeNext:^(GeoBaseClass  * x) {
+                if (x.location.count>0) {
+                    self.searchCityArray = x.location;
                 }else{
                     self.searchCityArray = @[];
                 }
@@ -56,6 +56,7 @@
                 }
                 [self reload];
             } error:^(NSError * _Nullable error) {
+                NSLog(@"%@",error);
                 if (self.isSelectLocatin) {
                     self.collectionView.hidden = NO;
                 }
@@ -124,7 +125,7 @@
         [text yy_setColor:HeFengColor_ED802D range:[[self cityTitleWithSearchModel:self.searchCityArray[indexPath.row]] rangeOfString:self.searchText]];
         cell.titleLabel.attributedText = text;
     }else{
-        cell.titleLabel.text = [self cityTitleWithModel:HeFengWeatherManager.collectionDataArray[indexPath.row].dataModel.basic];
+        cell.titleLabel.text = [self cityTitleWithModel:HeFengWeatherManager.collectionDataArray[indexPath.row].basic];
     }
     return cell;
 }
@@ -139,24 +140,24 @@
         if (self.searchCityArray.count>0) {
             HeFengPostNotification(KNotificationRefreshCity,self.searchCityArray[indexPath.row].cid);
         }else{
-            HeFengPostNotification(KNotificationRefreshCity,HeFengWeatherManager.collectionDataArray[indexPath.row].dataModel.basic.cid);
+            HeFengPostNotification(KNotificationRefreshCity,HeFengWeatherManager.collectionDataArray[indexPath.row].basic.cid);
         }
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
--(NSString *)cityTitleWithSearchModel:(SearchBaseClassBasic *)model{
+-(NSString *)cityTitleWithSearchModel:(Location *)model{
     NSMutableArray *array = [NSMutableArray array];
-    if (HeFengStrValid(model.location)) {
-        [array addObject:model.location];
+    if (HeFengStrValid(model.name)) {
+        [array addObject:model.name];
     }
-    if (HeFengStrValid(model.parent_city)) {
-        [array addObject:model.parent_city];
+    if (HeFengStrValid(model.adm2)) {
+        [array addObject:model.adm2];
     }
-    if (HeFengStrValid(model.admin_area)) {
-        [array addObject:model.admin_area];
+    if (HeFengStrValid(model.adm1)) {
+        [array addObject:model.adm1];
     }
-    if (HeFengStrValid(model.cnty)) {
-        [array addObject:model.cnty];
+    if (HeFengStrValid(model.country)) {
+        [array addObject:model.country];
     }
     NSMutableArray *titleArray = [NSMutableArray array];
     [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -164,19 +165,19 @@
     }];
     return [titleArray componentsJoinedByString:@","];
 }
--(NSString *)cityTitleWithModel:(WeatherBaseClassBasic *)model{
+-(NSString *)cityTitleWithModel:(Location *)model{
     NSMutableArray *array = [NSMutableArray array];
-    if (HeFengStrValid(model.location)) {
-        [array addObject:model.location];
+    if (HeFengStrValid(model.name)) {
+        [array addObject:model.name];
     }
-    if (HeFengStrValid(model.parent_city)) {
-        [array addObject:model.parent_city];
+    if (HeFengStrValid(model.adm2)) {
+        [array addObject:model.adm2];
     }
-    if (HeFengStrValid(model.admin_area)) {
-        [array addObject:model.admin_area];
+    if (HeFengStrValid(model.adm1)) {
+        [array addObject:model.adm1];
     }
-    if (HeFengStrValid(model.cnty)) {
-        [array addObject:model.cnty];
+    if (HeFengStrValid(model.country)) {
+        [array addObject:model.country];
     }
     NSMutableArray *titleArray = [NSMutableArray array];
     [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

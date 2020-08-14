@@ -97,7 +97,7 @@
     [self.itemViewArray enumerateObjectsUsingBlock:^(HeFengTodayWeatherItemView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj reloadViewWithModel:model];
     }];
-    self.aqiView.hidden = !model.airDataModel.air_now_city.pm25;
+    self.aqiView.hidden = !model.airDataModel.now.pm2p5;
 }
 -(HeFengBaseLabel *)titleLabel{
     if (!_titleLabel) {

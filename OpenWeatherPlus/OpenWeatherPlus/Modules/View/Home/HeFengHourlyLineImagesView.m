@@ -16,10 +16,10 @@
     }
     return self;
 }
--(void)reloadViewWithModelArray:(NSArray<WeatherBaseClassHourly*> *)array{
-    NSMutableArray<NSMutableArray<WeatherBaseClassHourly*>*> *viewDataArray = [NSMutableArray array];
-    [array enumerateObjectsUsingBlock:^(WeatherBaseClassHourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (!HeFengStrEqual(viewDataArray.lastObject.lastObject.cond_code, obj.cond_code)||[self isDaySpaceWithStr:obj.time]!=0) {
+-(void)reloadViewWithModelArray:(NSArray<Hourly*> *)array{
+    NSMutableArray<NSMutableArray<Hourly*>*> *viewDataArray = [NSMutableArray array];
+    [array enumerateObjectsUsingBlock:^(Hourly * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (!HeFengStrEqual(viewDataArray.lastObject.lastObject.text, obj.text)||[self isDaySpaceWithStr:obj.fxTime]!=0) {
             NSMutableArray *modelArray = [NSMutableArray array];
             [modelArray addObject:obj];
             [viewDataArray addObject:modelArray];
@@ -27,15 +27,15 @@
             [viewDataArray.lastObject addObject:obj];
         }
     }];
-    [viewDataArray enumerateObjectsUsingBlock:^(NSMutableArray<WeatherBaseClassHourly *> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [viewDataArray enumerateObjectsUsingBlock:^(NSMutableArray<Hourly *> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         HeFengHourlyImageView *imageView = [HeFengHourlyImageView new];
-        if ([self isDaySpaceWithStr:obj.firstObject.time]==1) {
-            imageView.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.cond_code isDay:NO formatString:HeFengWeatherImageFormatString];
-        }else if ([self isDaySpaceWithStr:obj.firstObject.time]==2)
+        if ([self isDaySpaceWithStr:obj.firstObject.fxTime]==1) {
+            imageView.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text isDay:NO formatString:HeFengWeatherImageFormatString];
+        }else if ([self isDaySpaceWithStr:obj.firstObject.fxTime]==2)
         {
-            imageView.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.cond_code isDay:YES formatString:HeFengWeatherImageFormatString];
+            imageView.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text isDay:YES formatString:HeFengWeatherImageFormatString];
         }else{
-            imageView.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.cond_code date:obj.firstObject.time formatString:HeFengWeatherImageFormatString];
+            imageView.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text date:obj.firstObject.fxTime formatString:HeFengWeatherImageFormatString];
             
         }
         if (idx==viewDataArray.count-1) {

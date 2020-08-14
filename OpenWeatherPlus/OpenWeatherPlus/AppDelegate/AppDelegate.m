@@ -10,6 +10,7 @@
 #import "HeFengAuthorityViewController.h"
 
 @interface AppDelegate ()
+@property (nonatomic,strong) NSMutableArray *idArray;
 
 @end
 
@@ -27,5 +28,4 @@
     [self.window makeKeyAndVisible];
     [self.window setRootViewController:HeFengWeatherManager.isFirstOpenApp?[HeFengAuthorityViewController new]:[[HeFengBaseNavigationViewController alloc]initWithRootViewController:[HeFengHomeViewController new]]];
 }
-
 @end

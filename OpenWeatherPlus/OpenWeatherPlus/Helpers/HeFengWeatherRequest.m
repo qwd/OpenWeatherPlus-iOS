@@ -23,9 +23,9 @@
     _citySearchCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             HeConfigInstance.location = [input objectForKey:@"location"];
-            HeConfigInstance.mode= @"match";
+            HeConfigInstance.mode= SERCHMODE_TYPE_EXACT;
             HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
-            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_SEARCH WithSuccess:^(SearchBaseClass  *responseObject) {
+            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_GEO_CITY_LOOKUP WithSuccess:^(GeoBaseClass  *responseObject) {
                 [subscriber sendNext:responseObject];
                 [subscriber sendCompleted];
             } faileureForError:^(NSError *error) {
@@ -40,27 +40,49 @@
         return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             __block AirBaseClass *AirBaseDataModel;
             __block AirBaseClass *locationAirBaseDataModel;
-            __block WeatherBaseClass *WeatherBaseDataModel;
-            __block AlarmBaseClass *alarmBaseClass;
+            __block WarningBaseClass *alarmBaseClass;
+            __block Now *now;
+            __block NSArray *hourly;
+            __block NSArray *daily;
+            __block NSString *updateTime;
+            __block NSString *code;
 
             __block NSError *error;
             HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
             dispatch_group_t group = dispatch_group_create();
             dispatch_group_enter(group);
             HeConfigInstance.location = [input objectForKey:@"cityId"];
-            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_WEATHER WithSuccess:^(WeatherBaseClass  *responseObject) {
-                WeatherBaseDataModel = responseObject;
+            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_WEATHER_NOW WithSuccess:^(WeatherBaseClass  *responseObject) {
+                now = responseObject.now;
+                updateTime = responseObject.updateTime;
+                code = responseObject.code;
                 dispatch_group_leave(group);
             } faileureForError:^(NSError *error) {
                 error = error;
                 dispatch_group_leave(group);
             }];
+            dispatch_group_enter(group);
+            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_WEATHER_24H WithSuccess:^(WeatherBaseClass  *responseObject) {
+                hourly = responseObject.hourly;
+                           dispatch_group_leave(group);
+                       } faileureForError:^(NSError *error) {
+                           error = error;
+                           dispatch_group_leave(group);
+                       }];
+            dispatch_group_enter(group);
+            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_WEATHER_3D WithSuccess:^(WeatherBaseClass  *responseObject) {
+                daily = responseObject.daily;
+                           dispatch_group_leave(group);
+                       } faileureForError:^(NSError *error) {
+                           error = error;
+                           dispatch_group_leave(group);
+                       }];
             
             if (HeFengStrValid([input objectForKey:@"parent_city"])) {
                 dispatch_group_enter(group);
                 HeConfigInstance.location = [input objectForKey:@"parent_city"];
                 HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
-                [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_AIR WithSuccess:^(AirBaseClass  *responseObject) {
+                [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_WEATHER_AIR_NOW WithSuccess:^(AirBaseClass  *responseObject) {
                     AirBaseDataModel = responseObject;
                     dispatch_group_leave(group);
                 } faileureForError:^(NSError *error) {
@@ -71,7 +93,7 @@
             dispatch_group_enter(group);
             HeConfigInstance.location = [input objectForKey:@"location"];
             HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
-            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_AIR WithSuccess:^(AirBaseClass  *responseObject) {
+            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_WEATHER_AIR_NOW WithSuccess:^(AirBaseClass  *responseObject) {
                 locationAirBaseDataModel = responseObject;
                 dispatch_group_leave(group);
             } faileureForError:^(NSError *error) {
@@ -82,7 +104,7 @@
             dispatch_group_enter(group);
             HeConfigInstance.location = [input objectForKey:@"cityId"];
             HeConfigInstance.languageType= [HeFengWeatherManager isEnglish]?LANGUAGE_TYPE_EN:LANGUAGE_TYPE_ZH;
-            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_ALARM WithSuccess:^(AlarmBaseClass  *responseObject) {
+            [HeConfigInstance weatherWithInquireType:INQUIRE_TYPE_WARNING WithSuccess:^(WarningBaseClass  *responseObject) {
                 alarmBaseClass = responseObject;
                 dispatch_group_leave(group);
             } faileureForError:^(NSError *error) {
@@ -95,13 +117,17 @@
                 }else{
                   
                     HeFengHomeTabelViewDataModel *model = [HeFengHomeTabelViewDataModel new];
-                    if (HeFengStrValid(locationAirBaseDataModel.air_now_city.pm25)) {
+                    if (HeFengStrValid(locationAirBaseDataModel.now.pm2p5)) {
                         model.airDataModel = locationAirBaseDataModel;
-                    }else if (HeFengStrValid(AirBaseDataModel.air_now_city.pm25)){
+                    }else if (HeFengStrValid(AirBaseDataModel.now.pm2p5)){
                         model.airDataModel = AirBaseDataModel;
                     }
-                    model.dataModel = WeatherBaseDataModel;
+                    model.daily = daily;
+                    model.hourly = hourly;
+                    model.now = now;
+                    model.updateTime = updateTime;
                     model.AlarmDataModel = alarmBaseClass;
+                    model.code = code;
                     [subscriber sendNext:model];
                     [subscriber sendCompleted];
                 }
@@ -117,11 +143,11 @@
             [HeFengWeatherManager.collectionDataArray enumerateObjectsUsingBlock:^(HeFengHomeTabelViewDataModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 dispatch_group_enter(group);
                 NSMutableDictionary *param = [NSMutableDictionary dictionary];
-                param[@"cityId"] = obj.dataModel.basic.cid;
-                param[@"location"] = obj.dataModel.basic.location;
-                param[@"parent_city"] = obj.dataModel.basic.parent_city?obj.dataModel.basic.parent_city:@"";
+                param[@"cityId"] = obj.basic.cid;
+                param[@"location"] = obj.basic.name;
+                param[@"parent_city"] = obj.basic.adm2?obj.basic.adm2:@"";
                 [[[HeFengWeatherRequest new].homeDataCommand execute:param] subscribeNext:^(HeFengHomeTabelViewDataModel * x) {
-                    if (HeFengStrEqual(x.dataModel.status, @"ok")) {
+                    if (HeFengStrEqual(x.code, @"200")) {
                         [dic setObject:x forKey:@(idx)];
                     }else{
                         hefengError = [NSError errorWithDomain:NSURLErrorDomain code:121 userInfo:@{NSLocalizedDescriptionKey:@"x.dataModel.status"}];

@@ -87,26 +87,26 @@
 }
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
     titleArray =[HeFengWeatherManager isEnglish]? @[@"White",@"Blue",@"Yellow",@"Orange",@"Red"]: @[@"白色",@"蓝色",@"黄色",@"橙色",@"红色"];
-    self.tempLabel.hefengTempString = model.dataModel.now.tmp;
-    self.weatherStateLabel.text = model.dataModel.now.cond_txt;
-    self.backImageView.image = [[HeFengWeatherTool getWeatherImageWithWeatherCode:model.dataModel.now.cond_code date:model.dataModel.update.loc formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale];
+    self.tempLabel.hefengTempString = model.now.temp;
+    self.weatherStateLabel.text = model.now.text;
+    self.backImageView.image = [[HeFengWeatherTool getWeatherImageWithWeatherCode:model.now.icon date:model.updateTime formatString:HeFengBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale];
     
-    if (model.AlarmDataModel.alarm.count>0) {
+    if (model.AlarmDataModel.warning.count>0) {
         //文字
         if ([HeFengWeatherManager isEnglish]) {
-            self.alarmLabel.text  = model.AlarmDataModel.alarm.firstObject.type;
+            self.alarmLabel.text  = model.AlarmDataModel.warning.firstObject.type;
         }else{
-            self.alarmLabel.text = HeFengStringFormat(@"%@%@",model.AlarmDataModel.alarm.firstObject.type,@"预警");
+            self.alarmLabel.text = HeFengStringFormat(@"%@%@",model.AlarmDataModel.warning.firstObject.type,@"预警");
         }
         //文字颜色
-        if (HeFengStrEqual(model.AlarmDataModel.alarm.firstObject.level, @"白色")||HeFengStrEqual(model.AlarmDataModel.alarm.firstObject.level, @"White")) {
+        if (HeFengStrEqual(model.AlarmDataModel.warning.firstObject.level, @"白色")||HeFengStrEqual(model.AlarmDataModel.warning.firstObject.level, @"White")) {
             self.alarmLabel.textColor = HeFengColor_333333;
         }else{
             self.alarmLabel.textColor = HeFengColor_FFFFFF;
         }
         //背景颜色
-        if ([titleArray containsObject:model.AlarmDataModel.alarm.firstObject.level]) {
-            backView.backgroundColor = [colorArray objectAtIndex:[titleArray indexOfObject:model.AlarmDataModel.alarm.firstObject.level]];
+        if ([titleArray containsObject:model.AlarmDataModel.warning.firstObject.level]) {
+            backView.backgroundColor = [colorArray objectAtIndex:[titleArray indexOfObject:model.AlarmDataModel.warning.firstObject.level]];
         }else{
             backView.backgroundColor = KClearColor;
         }

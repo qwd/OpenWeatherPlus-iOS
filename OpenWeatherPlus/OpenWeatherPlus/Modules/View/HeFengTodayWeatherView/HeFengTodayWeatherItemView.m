@@ -60,28 +60,28 @@
 -(void)reloadViewWithModel:(HeFengHomeTabelViewDataModel *)model{
     switch (_idx) {
         case 0:
-            self.contentLabel.hefengTempString = model.dataModel.daily_forecast.firstObject.tmp_max;
-            self.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.dataModel.daily_forecast.firstObject.cond_code_d isDay:YES formatString:HeFengWeatherImageFormatString];
+            self.contentLabel.hefengTempString = model.daily.firstObject.tempMax;
+            self.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.daily.firstObject.iconDay isDay:YES formatString:HeFengWeatherImageFormatString];
             break;
         case 1:
-            self.contentLabel.hefengTempString = model.dataModel.daily_forecast.firstObject.tmp_min;
-            self.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.dataModel.daily_forecast.firstObject.cond_code_n isDay:NO formatString:HeFengWeatherImageFormatString];
+            self.contentLabel.hefengTempString = model.daily.firstObject.tempMin;
+            self.imageView.image = [HeFengWeatherTool getWeatherImageWithWeatherCode:model.daily.firstObject.iconNight isDay:NO formatString:HeFengWeatherImageFormatString];
             break;
         case 2:
-            self.contentLabel.text = HeFengStringFormat(@"%@mm",model.dataModel.now.pcpn);
+            self.contentLabel.text = HeFengStringFormat(@"%@mm",model.now.precip);
             break;
         case 3:
-            self.contentLabel.text = HeFengStringFormat(@"%@%%",model.dataModel.now.hum);
+            self.contentLabel.text = HeFengStringFormat(@"%@%%",model.now.humidity);
             break;
         case 4:
-            self.contentLabel.text = HeFengStringFormat(@"%@HPA",model.dataModel.now.pres);
+            self.contentLabel.text = HeFengStringFormat(@"%@HPA",model.now.pressure);
             break;
         case 5:
-            self.contentLabel.text = HeFengStringFormat(@"%@KM",model.dataModel.now.vis);
+            self.contentLabel.text = HeFengStringFormat(@"%@KM",model.now.vis);
             break;
         case 6:
-            self.titleLabel.text = HeFengStringFormat(@"%@",model.dataModel.now.wind_dir);
-            self.contentLabel.text = HeFengStringFormat(@"%@%@",model.dataModel.now.wind_sc,HeFengLocal(@"hengfengLocalString_32"));
+            self.titleLabel.text = HeFengStringFormat(@"%@",model.now.windDir);
+            self.contentLabel.text = HeFengStringFormat(@"%@%@",model.now.windScale,HeFengLocal(@"hengfengLocalString_32"));
             break;
 
         default:

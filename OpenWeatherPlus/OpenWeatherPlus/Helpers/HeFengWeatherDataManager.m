@@ -67,7 +67,7 @@ SINGLETON_FOR_CLASS(HeFengWeatherDataManager);
     }else{
         __block BOOL isEqual = NO;
         [self.collectionDataArray enumerateObjectsUsingBlock:^(HeFengHomeTabelViewDataModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (HeFengStrEqual(obj.dataModel.basic.cid, model.dataModel.basic.cid)&&idx!=0) {
+            if (HeFengStrEqual(obj.basic.cid, model.basic.cid)&&idx!=0) {
                 [self.collectionDataArray removeObjectAtIndex:idx];
                 isEqual = YES;
             }
