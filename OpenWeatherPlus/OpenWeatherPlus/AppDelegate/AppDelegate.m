@@ -3,11 +3,11 @@
 //  OpenWeatherPlus
 //
 //  Created by he on 2019/3/29.
-//  Copyright © 2019 HeFengTianQi. All rights reserved.
+//  Copyright © 2019 QWeather. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "HeFengAuthorityViewController.h"
+#import "QWeatherAuthorityViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong) NSMutableArray *idArray;
@@ -23,9 +23,9 @@
 }
 #pragma mark 初始化rootVC
 -(void)initWindow{
-    [HeFengWeatherTool initLog];
+    [QWeatherWeatherTool initLog];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
-    [self.window setRootViewController:HeFengWeatherManager.isFirstOpenApp?[HeFengAuthorityViewController new]:[[HeFengBaseNavigationViewController alloc]initWithRootViewController:[HeFengHomeViewController new]]];
+    [self.window setRootViewController:QWeatherManager.isFirstOpenApp?[QWeatherAuthorityViewController new]:[[QWeatherBaseNavigationViewController alloc]initWithRootViewController:[QWeatherHomeViewController new]]];
 }
 @end

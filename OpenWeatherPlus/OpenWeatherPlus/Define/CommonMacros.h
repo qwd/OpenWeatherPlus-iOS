@@ -2,7 +2,7 @@
 //  OpenWeatherPlus
 //
 //  Created by he on 2019/3/29.
-//  Copyright © 2019 HeFengTianQi. All rights reserved.
+//  Copyright © 2019 QWeather. All rights reserved.
 //
 //
 
@@ -27,13 +27,13 @@
 #define KNotificationOpenSafari @"KNotificationOpenSafari"
 
 //时间Format
-#define HeFengFormatString1 @"yyyy-MM-dd HH:mm"
-#define HeFengFormatString2 @"HH:mm"
-#define HeFengFormatString3 @"yyyy-MM-dd"
-#define HeFengFormatString4 @"HH"
+#define QWeatherFormatString1 @"yyyy-MM-dd HH:mm"
+#define QWeatherFormatString2 @"HH:mm"
+#define QWeatherFormatString3 @"yyyy-MM-dd"
+#define QWeatherFormatString4 @"HH"
 
 //图片前缀Format
-#define HeFengBgImageFormatString @"hefengbg_"
-#define HeFengWeatherImageFormatString @"hefengweather_"
+#define QWeatherBgImageFormatString @"hefengbg_"
+#define QWeatherWeatherImageFormatString @"hefengweather_"
 
 #endif /* CommonMacros_h */

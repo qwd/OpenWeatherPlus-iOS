@@ -3,7 +3,7 @@
 //  OpenWeatherPlus
 //
 //  Created by he on 2019/10/30.
-//  Copyright © 2019 HeFengTianQi. All rights reserved.
+//  Copyright © 2019 QWeather. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

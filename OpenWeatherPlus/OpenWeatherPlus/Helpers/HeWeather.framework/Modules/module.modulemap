@@ -1,6 +1,0 @@
-framework module HeWeather {
-  umbrella header "HeWeather.h"
-
-  export *
-  module * { export * }
-}

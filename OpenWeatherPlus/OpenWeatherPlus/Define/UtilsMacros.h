@@ -2,7 +2,7 @@
 //  OpenWeatherPlus
 //
 //  Created by he on 2019/3/29.
-//  Copyright © 2019 HeFengTianQi. All rights reserved.
+//  Copyright © 2019 QWeather. All rights reserved.
 //
 
 #ifndef define_h
@@ -18,12 +18,12 @@
 //不同屏幕尺寸字体适配
 #define SCREEN_WIDTHRatio  (SCREEN_WIDTH / 375.0)
 #define SCREEN_HEIGHTRatio (SCREEN_HEIGHT / 667.0)
-#define HeFengAdaptedWidth(x)  ceilf((x) * SCREEN_WIDTHRatio)
-#define HeFengAdaptedHeight(x) ceilf((x) * SCREEN_HEIGHTRatio)
+#define QWeatherAdaptedWidth(x)  ceilf((x) * SCREEN_WIDTHRatio)
+#define QWeatherAdaptedHeight(x) ceilf((x) * SCREEN_HEIGHTRatio)
 
 //发送通知
-#define HeFengNotificationCenter [NSNotificationCenter defaultCenter]
-#define HeFengPostNotification(name,obj) [HeFengNotificationCenter postNotificationName:name object:obj];
+#define QWeatherNotificationCenter [NSNotificationCenter defaultCenter]
+#define QWeatherPostNotification(name,obj) [QWeatherNotificationCenter postNotificationName:name object:obj];
 
 //View 圆角和加边框
 #define kViewBorderRadius(View, Radius, Width, Color)\
@@ -48,23 +48,23 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 #endif
-#define HeFengLogError(frmt, ...)      DDLogError(frmt, ##__VA_ARGS__)
-#define HeFengLogWarn(frmt, ...)       DDLogWarn(frmt, ##__VA_ARGS__)
-#define HeFengLogInfo(frmt, ...)       DDLogInfo(frmt, ##__VA_ARGS__)
-#define HeFengLogDebug(frmt, ...)      DDLogDebug(frmt, ##__VA_ARGS__)
-#define HeFengLogVerbose(frmt, ...)    DDLogVerbose(frmt, ##__VA_ARGS__)
+#define QWeatherLogError(frmt, ...)      DDLogError(frmt, ##__VA_ARGS__)
+#define QWeatherLogWarn(frmt, ...)       DDLogWarn(frmt, ##__VA_ARGS__)
+#define QWeatherLogInfo(frmt, ...)       DDLogInfo(frmt, ##__VA_ARGS__)
+#define QWeatherLogDebug(frmt, ...)      DDLogDebug(frmt, ##__VA_ARGS__)
+#define QWeatherLogVerbose(frmt, ...)    DDLogVerbose(frmt, ##__VA_ARGS__)
 
 
-#define HeFengStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
-#define HeFengStrValid(f) (f!=nil && [f isKindOfClass:[NSString class]] && ![f isEqualToString:@""])
-#define HeFengStrEqual(a,b) [a isEqualToString:b]
-#define HeFengSafeStr(f) (StrValid(f) ? f:@"")
-#define HeFengHasString(str,key) ([str rangeOfString:key].location!=NSNotFound)
-#define HeFengValidDict(f) (f!=nil && [f isKindOfClass:[NSDictionary class]])
-#define HeFengValidArray(f) (f!=nil && [f isKindOfClass:[NSArray class]] && [f count]>0)
-#define HeFengValidNum(f) (f!=nil && [f isKindOfClass:[NSNumber class]])
-#define HeFengValidClass(f,cls) (f!=nil && [f isKindOfClass:[cls class]])
-#define HeFengValidData(f) (f!=nil && [f isKindOfClass:[NSData class]])
+#define QWeatherStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+#define QWeatherStrValid(f) (f!=nil && [f isKindOfClass:[NSString class]] && ![f isEqualToString:@""])
+#define QWeatherStrEqual(a,b) [a isEqualToString:b]
+#define QWeatherSafeStr(f) (StrValid(f) ? f:@"")
+#define QWeatherHasString(str,key) ([str rangeOfString:key].location!=NSNotFound)
+#define QWeatherValidDict(f) (f!=nil && [f isKindOfClass:[NSDictionary class]])
+#define QWeatherValidArray(f) (f!=nil && [f isKindOfClass:[NSArray class]] && [f count]>0)
+#define QWeatherValidNum(f) (f!=nil && [f isKindOfClass:[NSNumber class]])
+#define QWeatherValidClass(f,cls) (f!=nil && [f isKindOfClass:[cls class]])
+#define QWeatherValidData(f) (f!=nil && [f isKindOfClass:[NSData class]])
 
 //单例化一个类
 #define SINGLETON_FOR_HEADER(className) \
