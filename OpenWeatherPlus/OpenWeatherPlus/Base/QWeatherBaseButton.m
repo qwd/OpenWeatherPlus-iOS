@@ -24,6 +24,6 @@
 }
 
 -(void)changeTextSetting{
-    self.titleLabel.font = [QWeatherWeatherTool getFontWithFontSize:self.hefengFontSize];
+    self.titleLabel.font = [QWeatherTool getFontWithFontSize:self.hefengFontSize];
 }
 @end

@@ -23,7 +23,7 @@
 }
 #pragma mark 初始化rootVC
 -(void)initWindow{
-    [QWeatherWeatherTool initLog];
+    [QWeatherTool initLog];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     [self.window setRootViewController:QWeatherManager.isFirstOpenApp?[QWeatherAuthorityViewController new]:[[QWeatherBaseNavigationViewController alloc]initWithRootViewController:[QWeatherHomeViewController new]]];

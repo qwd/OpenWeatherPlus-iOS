@@ -61,11 +61,11 @@
     switch (_idx) {
         case 0:
             self.contentLabel.hefengTempString = model.daily.firstObject.tempMax;
-            self.imageView.image = [QWeatherWeatherTool getWeatherImageWithWeatherCode:model.daily.firstObject.iconDay isDay:YES formatString:QWeatherWeatherImageFormatString];
+            self.imageView.image = [QWeatherTool getWeatherImageWithWeatherCode:model.daily.firstObject.iconDay isDay:YES formatString:QWeatherImageFormatString];
             break;
         case 1:
             self.contentLabel.hefengTempString = model.daily.firstObject.tempMin;
-            self.imageView.image = [QWeatherWeatherTool getWeatherImageWithWeatherCode:model.daily.firstObject.iconNight isDay:NO formatString:QWeatherWeatherImageFormatString];
+            self.imageView.image = [QWeatherTool getWeatherImageWithWeatherCode:model.daily.firstObject.iconNight isDay:NO formatString:QWeatherImageFormatString];
             break;
         case 2:
             self.contentLabel.text = QWeatherStringFormat(@"%@mm",model.now.precip);

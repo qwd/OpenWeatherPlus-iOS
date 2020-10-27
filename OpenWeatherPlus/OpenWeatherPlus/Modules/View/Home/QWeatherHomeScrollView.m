@@ -95,7 +95,7 @@
 }
 -(void)setDataModel:(QWeatherHomeTabelViewDataModel *)dataModel{
     _dataModel = dataModel;
-    self.backgroundColor = [[[[QWeatherWeatherTool getWeatherImageWithWeatherCode:dataModel.now.icon date:dataModel.updateTime formatString:QWeatherBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop] qmui_averageColor];
+    self.backgroundColor = [[[[QWeatherTool getWeatherImageWithWeatherCode:dataModel.now.icon date:dataModel.updateTime formatString:QWeatherBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop] qmui_averageColor];
     [self.nowWeatherView reloadViewWithModel:dataModel];
     [self.hourlyWeatherView reloadViewWithModel:dataModel];
     [self.threeDayWeatherView reloadViewWithModel:dataModel];

@@ -24,6 +24,6 @@
 }
 
 -(void)changeTextSetting{
-    self.font = [QWeatherWeatherTool getFontWithFontSize:self.hefengFontSize];
+    self.font = [QWeatherTool getFontWithFontSize:self.hefengFontSize];
 }
 @end

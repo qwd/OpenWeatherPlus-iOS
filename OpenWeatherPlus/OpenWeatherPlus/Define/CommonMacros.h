@@ -34,6 +34,6 @@
 
 //图片前缀Format
 #define QWeatherBgImageFormatString @"hefengbg_"
-#define QWeatherWeatherImageFormatString @"hefengweather_"
+#define QWeatherImageFormatString @"hefengweather_"
 
 #endif /* CommonMacros_h */

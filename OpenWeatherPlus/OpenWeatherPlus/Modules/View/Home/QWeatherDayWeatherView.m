@@ -48,11 +48,11 @@
         [self.rowViewArray addObject:view];
     }];
     [self.rowViewArray enumerateObjectsUsingBlock:^(QWeatherDayWeatherRowView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        obj.dayLabel.text = QWeatherLocal([QWeatherWeatherTool getTimeStringWithSting:model.daily[idx].fxDate dateformat:QWeatherFormatString3 isShowToday:YES]);
+        obj.dayLabel.text = QWeatherLocal([QWeatherTool getTimeStringWithSting:model.daily[idx].fxDate dateformat:QWeatherFormatString3 isShowToday:YES]);
         obj.maxTempLabel.hefengTempString = model.daily[idx].tempMax;
         obj.minTempLabel.hefengTempString = model.daily[idx].tempMin;
-        obj.dayWeatherImageView.image = [QWeatherWeatherTool getWeatherImageWithWeatherCode:model.daily[idx].iconDay isDay:YES formatString:QWeatherWeatherImageFormatString];
-        obj.nightWeatherImageView.image = [QWeatherWeatherTool getWeatherImageWithWeatherCode:model.daily[idx].iconNight isDay:NO formatString:QWeatherWeatherImageFormatString];
+        obj.dayWeatherImageView.image = [QWeatherTool getWeatherImageWithWeatherCode:model.daily[idx].iconDay isDay:YES formatString:QWeatherImageFormatString];
+        obj.nightWeatherImageView.image = [QWeatherTool getWeatherImageWithWeatherCode:model.daily[idx].iconNight isDay:NO formatString:QWeatherImageFormatString];
     }];
 }
 @end

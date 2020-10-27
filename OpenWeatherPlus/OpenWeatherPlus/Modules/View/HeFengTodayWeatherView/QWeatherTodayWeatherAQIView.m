@@ -110,7 +110,7 @@
                        model.airDataModel.now.co,
                        model.airDataModel.now.o3];
         self.aqiLabel.text = QWeatherStringFormat(@"%@ %@",model.airDataModel.now.aqi,model.airDataModel.now.category);
-        self.aqiBackView.backgroundColor = [QWeatherWeatherTool getAqiColorWithString:model.airDataModel.now.aqi];
+        self.aqiBackView.backgroundColor = [QWeatherTool getAqiColorWithString:model.airDataModel.now.aqi];
     }
     [self.itemViewArray enumerateObjectsUsingBlock:^(QWeatherBaseLabel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:QWeatherStringFormat(@"%@ %@",self->titlesArray[idx],numbArray[idx])];

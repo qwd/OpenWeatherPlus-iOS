@@ -74,7 +74,7 @@
     self.locationButton.hidden = self.pageControl.currentPage!=0;
     if (QWeatherManager.collectionDataArray.count>page) {
         [self.locationTitleButton setTitle:QWeatherManager.collectionDataArray[page].basic.name forState:UIControlStateNormal];
-        self.image = [[[QWeatherWeatherTool getWeatherImageWithWeatherCode:QWeatherManager.collectionDataArray[page].now.icon date:QWeatherManager.collectionDataArray[page].updateTime formatString:QWeatherBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop];
+        self.image = [[[QWeatherTool getWeatherImageWithWeatherCode:QWeatherManager.collectionDataArray[page].now.icon date:QWeatherManager.collectionDataArray[page].updateTime formatString:QWeatherBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, 1) resizingMode:QMUIImageResizingModeScaleAspectFillTop];
        
     }
 }

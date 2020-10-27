@@ -23,7 +23,7 @@
     }];
 }
 -(void)changeTextSetting{
-    self.titleView.titleLabel.font = [QWeatherWeatherTool getFontWithFontSize:17];
+    self.titleView.titleLabel.font = [QWeatherTool getFontWithFontSize:17];
     self.titleView.title = QWeatherLocal(@"hengfengLocalString_13");
 }
 - (void)initTableView {
@@ -116,7 +116,7 @@
     QMUITableViewCell *cell = [tableView.qmui_staticCellDataSource cellForRowAtIndexPath:indexPath];
     QMUIStaticTableViewCellData *cellData = [tableView.qmui_staticCellDataSource cellDataAtIndexPath:indexPath];
     cell.textLabel.text = QWeatherLocal(cellData.text);
-    cell.textLabel.font = [QWeatherWeatherTool getFontWithFontSize:14];
+    cell.textLabel.font = [QWeatherTool getFontWithFontSize:14];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.tintColor = QWeatherColor_4CB055;
     if (indexPath.section==0||indexPath.section==4) {

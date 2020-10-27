@@ -89,7 +89,7 @@
     titleArray =[QWeatherManager isEnglish]? @[@"White",@"Blue",@"Yellow",@"Orange",@"Red"]: @[@"白色",@"蓝色",@"黄色",@"橙色",@"红色"];
     self.tempLabel.hefengTempString = model.now.temp;
     self.weatherStateLabel.text = model.now.text;
-    self.backImageView.image = [[QWeatherWeatherTool getWeatherImageWithWeatherCode:model.now.icon date:model.updateTime formatString:QWeatherBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale];
+    self.backImageView.image = [[QWeatherTool getWeatherImageWithWeatherCode:model.now.icon date:model.updateTime formatString:QWeatherBgImageFormatString] qmui_imageResizedInLimitedSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-160-NavigationContentTop) resizingMode:QMUIImageResizingModeScaleAspectFill scale:ScreenScale];
     
     if (model.AlarmDataModel.warning.count>0) {
         //文字

@@ -1,5 +1,5 @@
 //
-//  QWeatherWeatherTool.m
+//  QWeatherTool.m
 //  OpenWeatherPlus
 //
 //  Created by he on 2019/3/29.
@@ -11,7 +11,7 @@
 #import "QWeatherTool.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
-@implementation QWeatherWeatherTool
+@implementation QWeatherTool
 
 +(void)initLog{
     

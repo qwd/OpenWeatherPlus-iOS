@@ -8,8 +8,8 @@
 //  When I wrote this, only God and I understood what I was doing
 //  Now, God only knows
 
-#define QWeatherWeatherDataCacheKey @"QWeatherWeatherDataCacheKey"
-#define QWeatherWeatherDataCache [YYCache cacheWithName:QWeatherWeatherDataCacheKey]
+#define QWeatherDataCacheKey @"QWeatherDataCacheKey"
+#define QWeatherDataCache [YYCache cacheWithName:QWeatherDataCacheKey]
 
 #import "QWeatherDataManager.h"
 
@@ -30,14 +30,14 @@ SINGLETON_FOR_CLASS(QWeatherDataManager);
     return self;
 }
 -(void)setManager{
-    if ([QWeatherWeatherDataCache objectForKey:kcollectionDataArray]) {
-        self.collectionDataArray = [NSMutableArray arrayWithArray:(NSArray *)[QWeatherWeatherDataCache objectForKey:kcollectionDataArray]];
+    if ([QWeatherDataCache objectForKey:kcollectionDataArray]) {
+        self.collectionDataArray = [NSMutableArray arrayWithArray:(NSArray *)[QWeatherDataCache objectForKey:kcollectionDataArray]];
     }else{
         self.collectionDataArray = [NSMutableArray array];
-        [QWeatherWeatherDataCache setObject:self.collectionDataArray forKey:kcollectionDataArray];
+        [QWeatherDataCache setObject:self.collectionDataArray forKey:kcollectionDataArray];
     }
-    if ([QWeatherWeatherDataCache objectForKey:ksettingModel]) {
-        self.settingModel = (QWeatherSettingModel *)[QWeatherWeatherDataCache objectForKey:ksettingModel];
+    if ([QWeatherDataCache objectForKey:ksettingModel]) {
+        self.settingModel = (QWeatherSettingModel *)[QWeatherDataCache objectForKey:ksettingModel];
     }else{
         QWeatherSettingModel *model = [QWeatherSettingModel new];
         model.fontType = 1;
@@ -45,7 +45,7 @@ SINGLETON_FOR_CLASS(QWeatherDataManager);
         model.unitType = 1;
         model.isFirstOpenApp = YES;
         self.settingModel = model;
-        [QWeatherWeatherDataCache setObject:model forKey:ksettingModel];
+        [QWeatherDataCache setObject:model forKey:ksettingModel];
     }
     [self resetBundle];
     
@@ -55,7 +55,7 @@ SINGLETON_FOR_CLASS(QWeatherDataManager);
 }
 -(void)setIsFirstOpenApp:(BOOL)isFirstOpenApp{
     self.settingModel.isFirstOpenApp = isFirstOpenApp;
-    [QWeatherWeatherDataCache setObject:self.settingModel forKey:ksettingModel];
+    [QWeatherDataCache setObject:self.settingModel forKey:ksettingModel];
 }
 -(void)addCollectionDataArrayWithModel:(QWeatherHomeTabelViewDataModel *)model isLoaction:(BOOL)isLoaction{
     if (isLoaction) {
@@ -81,16 +81,16 @@ SINGLETON_FOR_CLASS(QWeatherDataManager);
             [self.collectionDataArray insertObject:model atIndex:1];
         }
     }
-    [QWeatherWeatherDataCache setObject:self.collectionDataArray forKey:kcollectionDataArray];
+    [QWeatherDataCache setObject:self.collectionDataArray forKey:kcollectionDataArray];
 }
 
 -(void)delCollectionDataArrayWithIndex:(NSInteger)index{
     [self.collectionDataArray removeObjectAtIndex:index];
-    [QWeatherWeatherDataCache setObject:self.collectionDataArray forKey:kcollectionDataArray];
+    [QWeatherDataCache setObject:self.collectionDataArray forKey:kcollectionDataArray];
 }
 -(void)updateCollectionDataArrayWithArray:(NSArray *)array{
     self.collectionDataArray = [NSMutableArray arrayWithArray:array];
-    [QWeatherWeatherDataCache setObject:array forKey:kcollectionDataArray];
+    [QWeatherDataCache setObject:array forKey:kcollectionDataArray];
 }
 -(void)updateSettingWithIndex:(NSInteger)index{
     switch (index) {
@@ -122,7 +122,7 @@ SINGLETON_FOR_CLASS(QWeatherDataManager);
             break;
     }
     
-    [QWeatherWeatherDataCache setObject:self.settingModel forKey:ksettingModel];
+    [QWeatherDataCache setObject:self.settingModel forKey:ksettingModel];
     if (index==1||index==2||index==3) {
         [self resetBundle];
         QWeatherPostNotification(KNotificationRefreshHomeData, nil);

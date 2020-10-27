@@ -43,9 +43,9 @@
         QWeatherPostNotification(KNotificationScrollImages,@(expenseindex));
         if (self.hourlyArray.count==25&&expenseindex<=24&&expenseindex>=0) {
             if (expenseindex==8) {
-                self.tempLabel.text = [QWeatherWeatherTool getTempStringWithString:self.hourlyArray.lastObject.temp isHaveUnit:YES];
+                self.tempLabel.text = [QWeatherTool getTempStringWithString:self.hourlyArray.lastObject.temp isHaveUnit:YES];
             }else{
-                self.tempLabel.text = [QWeatherWeatherTool getTempStringWithString:self.hourlyArray[expenseindex].temp isHaveUnit:YES];
+                self.tempLabel.text = [QWeatherTool getTempStringWithString:self.hourlyArray[expenseindex].temp isHaveUnit:YES];
             }
             [UIView animateWithDuration:0.5 animations:^{
                 self.tempLabel.frame = CGRectMake(self.xLineView.qmui_left+self.qmui_left+(self.qmui_width-self.xLineView.qmui_left-60)/24.0*expenseindex, self.qmui_top-20, 30,20);

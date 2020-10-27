@@ -66,7 +66,7 @@
         [self getDataWithLocation:QWeatherManager.selectLocation isLoaction:YES];
     }else{
         QWeatherPostNotification(KNotificationRefreshHomeData, nil);
-        if (![QWeatherWeatherTool isLocationAuthorizationStatusDenied]) {
+        if (![QWeatherTool isLocationAuthorizationStatusDenied]) {
             [self.locationManager startUpdatingLocation];
         }
     }

@@ -30,12 +30,12 @@
     [viewDataArray enumerateObjectsUsingBlock:^(NSMutableArray<Hourly *> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         QWeatherHourlyImageView *imageView = [QWeatherHourlyImageView new];
         if ([self isDaySpaceWithStr:obj.firstObject.fxTime]==1) {
-            imageView.imageView.image = [QWeatherWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text isDay:NO formatString:QWeatherWeatherImageFormatString];
+            imageView.imageView.image = [QWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text isDay:NO formatString:QWeatherImageFormatString];
         }else if ([self isDaySpaceWithStr:obj.firstObject.fxTime]==2)
         {
-            imageView.imageView.image = [QWeatherWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text isDay:YES formatString:QWeatherWeatherImageFormatString];
+            imageView.imageView.image = [QWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text isDay:YES formatString:QWeatherImageFormatString];
         }else{
-            imageView.imageView.image = [QWeatherWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text date:obj.firstObject.fxTime formatString:QWeatherWeatherImageFormatString];
+            imageView.imageView.image = [QWeatherTool getWeatherImageWithWeatherCode: obj.firstObject.text date:obj.firstObject.fxTime formatString:QWeatherImageFormatString];
             
         }
         if (idx==viewDataArray.count-1) {

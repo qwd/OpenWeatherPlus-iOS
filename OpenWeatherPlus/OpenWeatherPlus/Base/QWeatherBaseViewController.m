@@ -33,7 +33,7 @@
     
 }
 -(void)changeTextSetting{
-    self.titleView.titleLabel.font = [QWeatherWeatherTool getFontWithFontSize:17];
+    self.titleView.titleLabel.font = [QWeatherTool getFontWithFontSize:17];
 }
 
 - (nullable UIImage *)navigationBarBackgroundImage{

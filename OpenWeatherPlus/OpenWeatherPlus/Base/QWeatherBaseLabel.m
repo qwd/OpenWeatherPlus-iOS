@@ -33,12 +33,12 @@
 }
 
 -(void)changeTextSetting{
-    self.font = [QWeatherWeatherTool getFontWithFontSize:self.hefengFontSize];
+    self.font = [QWeatherTool getFontWithFontSize:self.hefengFontSize];
     if (self.hefengLocalString) {
         self.text = QWeatherLocal(self.hefengLocalString);
     }
     if (self.hefengTempString) {
-        self.text = [QWeatherWeatherTool getTempStringWithString:self.hefengTempString isHaveUnit:YES];
+        self.text = [QWeatherTool getTempStringWithString:self.hefengTempString isHaveUnit:YES];
     }
 }
 @end

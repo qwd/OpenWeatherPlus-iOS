@@ -1,5 +1,5 @@
 //
-//  QWeatherWeatherTool.h
+//  QWeatherTool.h
 //  OpenWeatherPlus
 //
 //  Created by he on 2019/3/29.
@@ -11,7 +11,7 @@
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QWeatherWeatherTool : NSObject
+@interface QWeatherTool : NSObject
 
 /**
  初始化日志，
