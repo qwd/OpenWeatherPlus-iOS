@@ -3,7 +3,7 @@
   OpenWeatherPlus
 
   Created by he on 2019/4/8.
-  Copyright © 2019 HeFengTianQi. All rights reserved.
+  Copyright © 2019 QWeather. All rights reserved.
 */
 "CFBundleDisplayName" = "OpenWeather+";
 "NSLocationAlwaysUsageDescription" = "Provide weather services based on your location and view the weather directly on the map.";
