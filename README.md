@@ -95,3 +95,6 @@ Requires iOS 9.0 or later. Compatible with iPhone, untested on iPad or iPod touc
 ## 许可证
 
 [Apache 2.0](https://github.com/heweather/OpenWeatherPlus-iOS/blob/master/LICENSE)
+
+## 其他
+[Flutter版(非官方)](https://github.com/danieldai/OpenWeatherPlus-Flutter)
